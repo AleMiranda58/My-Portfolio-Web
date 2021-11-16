@@ -3,7 +3,7 @@
   height: 100vh;
 
   .left {
-    flex: 2;
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,13 +11,12 @@
     .wrapper {
       padding: 50px;
       height: 50%;
-      background: chocolate;
       display: flex;
       flex-direction: column;
-      //justify-content: space-between;
+      justify-content: space-between;
 
       .greeting {
-        font-size: 30px;
+        font-size: 40px;
         font-weight: 300;
       }
 
@@ -30,6 +29,7 @@
         overflow: hidden;
 
         .wrapper-titles {
+          height: 100%;
           animation: move 10s ease-in-out infinite alternate;
           -webkit-animation: move 10s ease-in-out infinite alternate;
 
@@ -54,7 +54,6 @@
             font-size: 30px;
             font-weight: bold;
             color: purple;
-            background-color: gray;
             display: flex;
             align-items: center;
           }
@@ -64,33 +63,33 @@
   }
 
   .right {
-    flex: 2;
+    flex: 1;
     position: relative;
-
-    .profile-picture {
-      width: 90%;
-      height: 90%;
-      object-fit: cover;
-      position: absolute;
-      top: 10px;
-      right: 0;
-    }
 
     .background {
       clip-path: polygon(
         100% 0%,
-        100% 49%,
+        100% 50%,
         100% 100%,
         25% 100%,
         0% 50%,
         25% 0%
       );
+
       background-color: purple;
       width: 100%;
       height: 100%;
       position: absolute;
-      top: 0;
-      right: 0;
+
+      .profile-picture {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        // margin: 0;
+        // padding: 0;
+        top: 0;
+        right: 0;
+      }
     }
   }
 }

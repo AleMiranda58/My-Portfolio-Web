@@ -17,13 +17,14 @@ const Intro = () => {
                         </div>
                     </div>
                     <div className="description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis felis at mi pharetra fermentum. Vivamus a felis non arcu fermentum commodo quis at nisi. Aliquam cursus scelerisque lorem at auctor. Suspendisse dictum quis sem a maximus. Curabitur sodales tincidunt eleifend. Sed vitae risus feugiat, feugiat lectus eu, bibendum urna. Suspendisse vel facilisis augue, eu volutpat dolor.</p>
+                    <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis felis at mi pharetra fermentum. Vivamus a felis non arcu fermentum commodo quis at nisi. Aliquam cursus scelerisque lorem at auctor. Suspendisse dictum quis sem a maximus. Curabitur sodales tincidunt eleifend. Sed vitae risus feugiat, feugiat lectus eu, bibendum urna. Suspendisse vel facilisis augue, eu volutpat dolor.</p>
                     </div>
                 </div>
             </div>
             <div className="right">
-                <div className="background"></div>
+                <div className="background">
                 <img src={me} alt="" className="profile-picture" />
+                </div>
             </div>
 
         </div>
