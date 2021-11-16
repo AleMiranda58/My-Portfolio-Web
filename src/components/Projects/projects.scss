@@ -1,0 +1,27 @@
+.project-section {
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .intro-section {
+    // width: 85%;
+
+    h1 {
+      font-size: 50px;
+      font-weight: 600;
+    }
+
+    .description {
+      margin: 20px 0px;
+    }
+  }
+
+  .project-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

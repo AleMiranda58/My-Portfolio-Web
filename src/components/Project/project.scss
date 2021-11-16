@@ -1,0 +1,49 @@
+.pro {
+  width: 30%;
+  height: 40vh;
+  margin: 20px 10px;
+  border: 1px solid rgb(243, 243, 243);
+  border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -ms-border-radius: 10px 10px 0px 0px;
+  -o-border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+
+  .browser {
+    height: 20px;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    z-index: 2;
+
+    .cirle {
+      width: 6px;
+      height: 6px;
+      margin: auto 5px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      background-color: white;
+    }
+  }
+}
+
+.proj-img {
+  width: 100%;
+  transition: all 10s ease;
+  -webkit-transition: all 10s ease;
+  -moz-transition: all 10s ease;
+  -ms-transition: all 10s ease;
+  -o-transition: all 10s ease;
+  &:hover {
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+  }
+}
