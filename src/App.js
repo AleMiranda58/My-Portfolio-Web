@@ -1,14 +1,19 @@
+import React from 'react';
+import {BrowserRouter as Router} from 'react-router-dom'
+import Navbar from './components/navbar'
 import Intro from './components/Intro/Intro';
-import './App.css'
 import Projects from './components/Projects/Projects';
 import Contact from './components/contact/Contact';
+import './App.css'
+
 function App() {
   return (
-    <div>
+    <Router>
+      <Navbar />
       <Intro />
       <Projects />
       <Contact />
-    </div>
+    </Router>
   );
 }
 
