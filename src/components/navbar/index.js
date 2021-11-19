@@ -3,13 +3,13 @@ import {FaBars} from 'react-icons/fa'
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, SocialContainer,  SocialMedia} from './NavbarElements'
 
-const Navbar = () => {
+const Navbar = ( { toggle }) => {
     return (
         <>
         <Nav>
             <NavbarContainer>
                 <NavLogo to='/'>Portfolio</NavLogo>
-                <MobileIcon>
+                <MobileIcon onClick={toggle}>
                     <FaBars />
                 </MobileIcon>
                 <NavMenu>
