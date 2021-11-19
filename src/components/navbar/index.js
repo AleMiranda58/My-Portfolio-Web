@@ -14,16 +14,16 @@ const Navbar = () => {
                 </MobileIcon>
                 <NavMenu>
                     <NavItem>
-                        <NavLinks to="about">About</NavLinks>
+                        <NavLinks to="about">ABOUT</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="projets">Projets</NavLinks>
+                        <NavLinks to="projects">PROJECTS</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="contact">Contact</NavLinks>
+                        <NavLinks to="contact">CONTACT</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="contact">Others</NavLinks>
+                        <NavLinks to="others">OTHERS</NavLinks>
                     </NavItem>
                 </NavMenu>
                 <SocialContainer>
