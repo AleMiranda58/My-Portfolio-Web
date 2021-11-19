@@ -22,11 +22,13 @@ export const Nav = styled.nav`
     export const NavbarContainer = styled.div`
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 80px; 
     z-index: 1;
     width: 100%;
     padding: 0 24px;
-    max-width: 1100px;
+    ${'' /* max-width: 1100px; */}
+    max-width: 1700px;
     `
     //'cause this logo is actually gonna be a link
     export const NavLogo = styled(LinkRouter)`
@@ -60,7 +62,7 @@ export const Nav = styled.nav`
     align-items: center;
     list-style: none;
     text-align: center;
-    margin-right: -22px
+    margin-right: -22px;
 
     @media screen and (max-width: 768px) {
         display: none;
@@ -69,6 +71,7 @@ export const Nav = styled.nav`
 
     export const NavItem = styled.li`
     height: 80px;
+    font-size: 18px;
     `
     
     export const NavLinks = styled(LinkScroll)`
@@ -83,4 +86,22 @@ export const Nav = styled.nav`
     &.active {
         border-bottom: 3px solid #01bf71
     }
+    `
+
+
+    
+    export const SocialContainer = styled.div`
+        display: flex;
+
+        @media screen and (max-width: 768px) {
+        display: none;
+    }
+    `
+
+    export const SocialMedia = styled.nav`
+        ${'' /* display: flex; */}
+        align-items: center;
+        color: #fff;
+        font-size: 30px;
+        padding: 0 20px;
     `
