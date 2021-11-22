@@ -10,9 +10,6 @@ function App() {
   return (
     <Router>
       <Home />
-      {/* <Intro /> */}
-      {/* <Projects />
-      <Contact /> */}
     </Router>
   );
 }

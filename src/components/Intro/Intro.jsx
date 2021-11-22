@@ -4,7 +4,7 @@ import me from '../../images/me.png'
 
 const Intro = () => {
     return (
-        <div className="intro">
+        <div className="intro" id="about">
             <div className="left">
                 <div className="wrapper">
                     <h2 className="greeting">Hi, my name is</h2>

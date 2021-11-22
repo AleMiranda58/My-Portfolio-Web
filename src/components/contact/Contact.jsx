@@ -30,7 +30,7 @@ const Contact = () => {
     }
 
     return (
-        <div className="contact">
+        <div className="contact" id="contact">
             <div className="line" />
             <div className="wrapper">
                 <div className="left">
