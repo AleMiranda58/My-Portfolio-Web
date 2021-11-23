@@ -1,12 +1,15 @@
 .project-section {
+  width: 100%;
   padding: 50px 100px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   text-align: center;
 
   .intro-section {
-    width: 65%;
+    width: 75%;
 
     h1 {
       text-align: center;
@@ -25,5 +28,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .btn {
+    width: 30%;
+    margin-top: 15px;
   }
 }
