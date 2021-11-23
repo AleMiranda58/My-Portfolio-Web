@@ -17,13 +17,13 @@ const Hero = () => {
             </HeroBg>
             <HeroContent>
             <HeroP>
-                Hi, my name is 
+                Welcome to
             </HeroP>
                 <HeroH1>
-                    Alejandra Miranda Reyes
+                    My portfolio web
                 </HeroH1>
                 <HeroP>
-                    Wellcome to my portfolio web
+                    Here you will find some of my projects
                 </HeroP>
                 <HeroBtnWrapper>
                     <Button
@@ -31,7 +31,11 @@ const Hero = () => {
                     onMouseEnter={onHover}
                     onMouseLeave={onHover}
                     primary="true"
-                    dark="true">
+                    dark="true"
+                    smooth={true}
+                    duration={1000}
+                    spy={true}
+                    offset={-80}>
                     See projects
                     {hover ? <ArrowForward /> : <ArrowRight /> }
                     </Button>
