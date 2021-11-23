@@ -12,7 +12,6 @@ const Project = ({ img, link }) => {
         <a href={link} target="_blank" rel="noreferrer">
             <img src={img} className="proj-img" alt="All my projects"/>
         </a>
-            primer projecto
         </div>
     )
 }
