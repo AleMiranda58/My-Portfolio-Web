@@ -23,6 +23,7 @@ const Intro = () => {
             </div>
             <div className="right">
                 <div className="background">
+                {/* <img src={me} alt="" className="profile-picture" /> */}
                 <img src={me} alt="" className="profile-picture" />
                 </div>
             </div>
