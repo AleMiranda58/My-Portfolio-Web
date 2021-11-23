@@ -51,8 +51,9 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="right">
+                <div className="form-container">
                     <p className="description">
-                    <b>Lorem ipsum dolor</b> sit amet, consectetur adipiscing elit. Nulla mollis felis at mi pharetra fermentum. Vivamus a felis non arcu fermentum commodo quis at nisi. Aliquam cursus scelerisque lorem at auctor. Suspendisse dictum quis sem a maximus. Curabitur sodales tincidunt eleifend. Sed vitae risus feugiat, feugiat lectus eu, bibendum urna. Suspendisse vel facilisis augue, eu volutpat dolor.
+                    {/* <b>Lorem ipsum dolor</b> sit amet, consectetur adipiscing elit. Nulla mollis felis at mi pharetra fermentum. Vivamus a felis non arcu fermentum commodo quis at nisi. Aliquam cursus scelerisque lorem at auctor. Suspendisse dictum quis sem a maximus. Curabitur sodales tincidunt eleifend. Sed vitae risus feugiat, feugiat lectus eu, bibendum urna. Suspendisse vel facilisis augue, eu volutpat dolor. */}
                     </p>
                     <form ref={formRef} onSubmit={handleSubmit} >
                         <input type="text" placeholder="Name" name="user_name" />
@@ -62,6 +63,7 @@ const Contact = () => {
                         <button>Submit</button>
                         { done && "Thank you.."}
                     </form>
+                </div>
                 </div>
             </div>
         </div>

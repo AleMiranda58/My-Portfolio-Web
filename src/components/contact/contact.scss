@@ -1,12 +1,12 @@
 .contact {
-  height: 100vh;
+  height: 100%;
   position: relative;
 
   .line {
     width: 20px;
-    height: 80%;
+    height: 50vh;
     position: absolute;
-    background-color: purple;
+    background-color: #ff26f8;
   }
 
   .wrapper {
@@ -45,8 +45,16 @@
       //   align-items: center;
       //   justify-content: center;
 
+      .form-container {
+        border-radius: 25px;
+        background-color: black;
+      }
       .description {
         font-weight: 200;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
       }
 
       form {
@@ -57,6 +65,8 @@
         // justify-content: center;
 
         input {
+          border-radius: 25px;
+          background-color: black;
           width: 100%;
           height: 50px;
           border: none;
@@ -67,6 +77,9 @@
         }
 
         textarea {
+          border: 3px solid #ff26f8;
+
+          background-color: black;
           width: 100%;
           margin: 10px 0px;
           font-size: 14px;
@@ -76,7 +89,7 @@
         button {
           border: none;
           padding: 15px;
-          background-color: rgb(255, 209, 255);
+          background-color: #ff26f8;
           color: black;
           font-weight: 500;
           cursor: pointer;
