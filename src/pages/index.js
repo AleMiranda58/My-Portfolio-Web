@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import Hero from '../components/Hero'
-import InfoSection from '../components/InfoSection'
-import { homeObjOne } from '../components/InfoSection/data'
+// import InfoSection from '../components/InfoSection'
+// import { homeObjOne } from '../components/InfoSection/data'
 import Intro from '../components/Intro/Intro'
 import Navbar from '../components/navbar'
 import Projects from '../components/Projects/Projects'
@@ -23,7 +23,7 @@ const Home = () => {
         <Intro />
         <Projects />
         <Contact />
-        <InfoSection {...homeObjOne}/>
+        {/* <InfoSection {...homeObjOne}/> */}
         </>
     )
 }
