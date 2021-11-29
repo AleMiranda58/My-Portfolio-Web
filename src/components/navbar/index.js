@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import { animateScroll as scroll} from 'react-scroll'
 import {FaBars} from 'react-icons/fa'
-import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, SocialContainer,  SocialMedia} from './NavbarElements'
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, ImgLogo} from './NavbarElements'
+import logo from '../../images/logo.png'
+
 
 const Navbar = ( { toggle }) => {
     const [scrollNav, setScrollNav] = useState(false)
@@ -27,7 +28,9 @@ const Navbar = ( { toggle }) => {
         <>
         <Nav scrollNav={scrollNav}>
             <NavbarContainer>
-                <NavLogo to='/' onClick={toggleHome}>Portfolio</NavLogo>
+                <NavLogo to='/' onClick={toggleHome}>
+                <ImgLogo src={logo} alt="logo" />
+                </NavLogo>
                 <MobileIcon onClick={toggle}>
                     <FaBars />
                 </MobileIcon>
@@ -39,7 +42,7 @@ const Navbar = ( { toggle }) => {
                         spy={true}
                         offset={-80}
                         activeClass="active"
-                        >Home</NavLinks>
+                        >HOME</NavLinks>
                     </NavItem>
                     <NavItem>
                         <NavLinks to="about"
@@ -48,7 +51,7 @@ const Navbar = ( { toggle }) => {
                         spy={true}
                         offset={-80}
                         activeClass="active"
-                        >About</NavLinks>
+                        >ABOUT</NavLinks>
                     </NavItem>
                     <NavItem>
                         <NavLinks to="projects"
@@ -57,7 +60,7 @@ const Navbar = ( { toggle }) => {
                         spy={true}
                         offset={-80}
                         activeClass="active"
-                        >Projects</NavLinks>
+                        >PROJECTS</NavLinks>
                     </NavItem>
                     <NavItem>
                         <NavLinks to="contact"
@@ -66,17 +69,9 @@ const Navbar = ( { toggle }) => {
                         spy={true}
                         offset={-80}
                         activeClass="active"
-                        >Contact</NavLinks>
+                        >CONTACT</NavLinks>
                     </NavItem>
                 </NavMenu>
-                <SocialContainer>
-                    <SocialMedia>
-                        <AiFillLinkedin />
-                    </SocialMedia>
-                    <SocialMedia>
-                        <AiFillGithub />
-                    </SocialMedia>
-                </SocialContainer>
             </NavbarContainer>
         </Nav>
         </>
