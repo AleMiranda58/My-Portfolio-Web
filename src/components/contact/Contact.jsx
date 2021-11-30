@@ -1,9 +1,8 @@
 import React from 'react'
 import { useRef, useState } from 'react'
 import emailjs from 'emailjs-com';
-import phone from '../../images/phone.svg'
-import email from '../../images/email.svg'
-import linkedin from '../../images/linkedin.svg'
+import {Email, Phone, Linkedin} from '../../assets'
+
 import './contact.scss'
 
 
@@ -39,15 +38,15 @@ const Contact = () => {
                     <h1>Contact me</h1>
                     <div className="info">
                         <div className="item">
-                            <img src={phone} alt="phone icon" className="icones" />
+                            <img src={Phone} alt="phone icon" className="icones" />
                             (xxx)xxx-xxxx
                         </div>
                         <div className="item">
-                            <img src={email} alt="email icon" className="icones" />
+                            <img src={Email} alt="email icon" className="icones" />
                             ale.miranda890@gmail.com
                         </div>
                         <div className="item">
-                            <img src={linkedin} alt="linkedin icon" className="icones" />
+                            <img src={Linkedin} alt="linkedin icon" className="icones" />
                             www.linkedin.com/in/alejandra-mirandareyes/
                         </div>
                     </div>

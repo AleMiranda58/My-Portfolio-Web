@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
-// import Video from '../../videos/video.mp4'
+import Video from '../../assets/videos/video.mp4'
 import {HeroContainer, HeroBg, VideoBg, Photo, HeroContent,LeftSide, BgPhoto, RightSide, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight} from './heroElements'
 import {Button} from '../Button/buttonElements'
-import me from '../../images/me.png'
+import {ProfilePicture as me} from '../../assets/index'
 
 
 const Hero = () => {
@@ -15,12 +15,12 @@ const Hero = () => {
     return (
         <HeroContainer id="home">
             <HeroBg>
-                <VideoBg autoPlay loop muted src={""} type='video/mp4' />
+                <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
             </HeroBg>
             <HeroContent>
                 <LeftSide>
                     <HeroP>
-                    A passionate about technologies & web development
+                    Passionate about technologies & web development
                     </HeroP>
                     <HeroBtnWrapper>
                         <Button
@@ -33,14 +33,14 @@ const Hero = () => {
                         duration={1000}
                         spy={true}
                         offset={-80}>
-                        See projects
+                        MY PROJECTS
                         {hover ? <ArrowForward /> : <ArrowRight /> }
                         </Button>
-                    </HeroBtnWrapper>
+                        </HeroBtnWrapper>
                 </LeftSide>
                 <RightSide>
                     <BgPhoto>
-                    <Photo src={me} alt="" className="profile-picture" />
+                    <Photo src={me} alt="profile-picture" className="profile-picture" />
                     </BgPhoto>
                 </RightSide>
             </HeroContent>

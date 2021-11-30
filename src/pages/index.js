@@ -2,11 +2,12 @@ import React, {useState} from 'react'
 import Hero from '../components/Hero'
 // import InfoSection from '../components/InfoSection'
 // import { homeObjOne } from '../components/InfoSection/data'
-import Intro from '../components/Intro/Intro'
+// import Intro from '../components/Intro/Intro'
 import Navbar from '../components/navbar'
 import Projects from '../components/Projects/Projects'
 import Contact from '../components/contact/Contact'
 import Sidebar from '../components/Sidebar'
+import About from '../components/About'
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -20,7 +21,8 @@ const Home = () => {
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <Navbar toggle={toggle} />
         <Hero />
-        <Intro />
+        {/* <Intro /> */}
+        <About />
         <Projects />
         <Contact />
         {/* <InfoSection {...homeObjOne}/> */}

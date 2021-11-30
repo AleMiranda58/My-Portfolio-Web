@@ -63,6 +63,7 @@ export const HeroContent = styled.div`
 
 export const LeftSide = styled.div`
     width: 50%;
+    margin: 0 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,7 +89,7 @@ export const BgPhoto = styled.div`
    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
    width: 100%;
    height: 100%;
-   background: purple;
+   background: #ff26f8;
 
    @media screen and (max-width: 1200px) {
     width: 100%;
@@ -124,7 +125,7 @@ export const Photo = styled.img`
 
 export const HeroP = styled.p`
     color: #fff;
-    font-size: 60px;
+    font-size: 65px;
     text-align: center;
     font-family: "Poppins", sans-serif;
 
@@ -150,6 +151,7 @@ export const HeroP = styled.p`
 `
 
 export const HeroBtnWrapper = styled.div`
+    width: 30%;
     margin-top: 34px;
     cursor: pointer;
 `
