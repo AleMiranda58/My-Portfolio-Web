@@ -6,6 +6,8 @@ import email from '../../images/email.svg'
 import linkedin from '../../images/linkedin.svg'
 import './contact.scss'
 
+
+
 const Contact = () => {
     const formRef = useRef()
     const [done, setDone] = useState(false)

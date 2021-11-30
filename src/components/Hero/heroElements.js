@@ -1,28 +1,22 @@
 import styled from "styled-components";
 import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md'
 
+
 export const HeroContainer = styled.div`
     background: #0c0c0c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 30px;
-    ${'' /* height: 100%; */}
-    ${'' /* position: relative; */}
+    width: 100%;
     height: 100vh;
+    display: flex;
+    position: relative;
     z-index: 1;
-${'' /* 
-    :before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%),
-        linear-gradient(180deg, rgba(0,0,0,0.2) 0%, trasparent 100%;
-        z-index: 2;
-    } */}
+
+    @media screen and (max-width: 1200px) {
+        height: 75vh;
+    }
+
+    @media screen and (max-width: 800px) {
+        height: 70vh;
+    }
 `
 
 export const HeroBg = styled.div`
@@ -33,7 +27,7 @@ export const HeroBg = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    ${'' /* overflow: hidden; */}
+    overflow: hidden;
 `
 
 export const VideoBg = styled.video`
@@ -45,54 +39,119 @@ export const VideoBg = styled.video`
 `
 
 export const HeroContent = styled.div`
-    z-index: 3;
-    max-width: 1200px;
-    ${'' /* height: 100%; */}
-    margin: 10% 0;
-    position: relative;
-    padding: auto 24px;
+    width: 100%;
+    height: 100vh;
     display: flex;
-    align-content: center;
-    flex-direction: column;
-    align-items: center;
-    ${'' /* padding-top: 80px; */}
-`
+    position: relative;
+    z-index: 1;
 
-export const HeroH1 = styled.h1`
-    color: #fff;
-    font-size: 48px;
-    text-align: center;
-
-    @media screen and (max-width: 768px) {
-        font-size: 40px;
+    @media screen and (max-width: 900px) {
+    height: 75vh;
     }
 
-    @media screen and (max-width: 480px) {
-        font-size: 32px;
+    @media screen and (max-width: 800px) {
+        height: 70vh;
+    }
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+
+
+`
+
+
+export const LeftSide = styled.div`
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+    }
+`
+
+export const RightSide = styled.div`
+    width: 50%;
+    position: relative;
+    margin-top: 80px;
+
+    @media screen and (max-width: 800px) {
+        width: 50%;
+    }
+`
+
+export const BgPhoto = styled.div`
+   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+   width: 100%;
+   height: 100%;
+   background: purple;
+
+   @media screen and (max-width: 1200px) {
+    width: 100%;
+   height: 70%;
+    }
+
+    @media screen and (max-width: 800px) {
+    width: 100%;
+    height: 100%;
+    }
+
+   @media screen and (max-width: 600px) {
+    display: none
+    }
+`
+
+export const Photo = styled.img`
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    object-fit: cover;
+
+    
+    @media screen and (max-width: 900px) {
+    width: 100%;
+    }
+
+    @media screen and (max-width: 600px) {
+    display: none;
     }
 `
 
 export const HeroP = styled.p`
-    margin-top: 24px;
     color: #fff;
-    font-size: 24px;
+    font-size: 60px;
     text-align: center;
-    max-width: 600px;
+    font-family: "Poppins", sans-serif;
 
-    @media screen and (max-width: 768px) {
-        font-size: 24px;
+    @media screen and (max-width: 1500px) {
+        font-size: 50px;
+}
+
+    @media screen and (max-width: 1200px) {
+        font-size: 40px;
     }
 
-    @media screen and (max-width: 480px) {
-        font-size: 18px;
+    @media screen and (max-width: 900px) {
+        font-size: 30px;
+    }
+
+    @media screen and (max-width: 700px) {
+        font-size: 25px;
+    }
+
+    @media screen and (max-width: 500px) {
+        ${'' /* font-size: 15px; */}
     }
 `
 
 export const HeroBtnWrapper = styled.div`
     margin-top: 34px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    cursor: pointer;
 `
 
 export const ArrowForward = styled(MdArrowForward)`
@@ -103,3 +162,4 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
     margin-left: 8px;
     font-size: 20px
 `
+
