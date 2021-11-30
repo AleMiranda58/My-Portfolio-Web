@@ -23,19 +23,19 @@ const Intro = () => {
             </div>
             <div className="right">
                 <div className="background">
-                <img src={ProfilePicture} alt="" className="profile-picture" />
-                {/* Top glasses */}
-                {/* <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 505.11 45.34">
-                <path class="lineGlasses" d="M366.17-282.3S332.47-315.49,257.91-314s-95.48,34.73-95.48,34.73-42.39-19.41-77.11,0C0-371.66-138.34-290.47-138.34-290.47" transform="translate(138.59 323.94)"/>
-                </svg> */}
+                <div className="container">
+                    <img src={ProfilePicture} alt="" className="profile-picture" />
+                    {/* Top glasses */}
+                    {/* <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 505.11 45.34">
+                    <path class="lineGlasses" d="M366.17-282.3S332.47-315.49,257.91-314s-95.48,34.73-95.48,34.73-42.39-19.41-77.11,0C0-371.66-138.34-290.47-138.34-290.47" transform="translate(138.59 323.94)"/>
+                    </svg> */}
 
-                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 498.63 190.85">
-                <path class="lineGlasses" d="M364.64-293.36S321.23-321.11,250-315s-86.55,35.75-86.55,35.75-38.3-19.92-79.66-2C48-339.49-81.66-318.55-81.66-318.55s-51.57,7.66-50.55,26,4.59,88.85,31.66,115.91,65.36,41.37,112.85,31.66S94-209.28,90.15-271.06c34.85-21.45,70.23,1.53,70.23,1.53S140-170,212-141.89c22.75,8.88,51.35,13.71,78.2,4.73A104.27,104.27,0,0,0,330-161.72C373.64-204,364.64-293.36,364.64-293.36Z" transform="translate(132.73 322.72)"/>
-                </svg>
-
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 498.63 190.85">
+                    <path class="lineGlasses" d="M364.64-293.36S321.23-321.11,250-315s-86.55,35.75-86.55,35.75-38.3-19.92-79.66-2C48-339.49-81.66-318.55-81.66-318.55s-51.57,7.66-50.55,26,4.59,88.85,31.66,115.91,65.36,41.37,112.85,31.66S94-209.28,90.15-271.06c34.85-21.45,70.23,1.53,70.23,1.53S140-170,212-141.89c22.75,8.88,51.35,13.71,78.2,4.73A104.27,104.27,0,0,0,330-161.72C373.64-204,364.64-293.36,364.64-293.36Z" transform="translate(132.73 322.72)"/>
+                    </svg>
+                </div>
                 </div>
             </div>
-
         </div>
     )
 }
