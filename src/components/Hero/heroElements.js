@@ -162,6 +162,58 @@ export const ArrowForward = styled(MdArrowForward)`
 `
 export const ArrowRight = styled(MdKeyboardArrowRight)`
     margin-left: 8px;
-    font-size: 20px
+    font-size: 20px;
 `
 
+/*SVG */
+export const PhotoContainer = styled.div`
+    display: block;
+    position: relative;
+`
+
+
+export const Svgcontent = styled.svg`
+    width: 31%;
+    height: 500px;
+    position: absolute;
+    top: 29%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+
+    @media screen and (max-width: 900px) {
+        width: 42%;
+    }
+`
+
+export const PathContent = styled.path`
+    stroke: #fff;
+    stroke-width: 1px;
+    fill: transparent;
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500;
+    stroke-linejoin: round;
+    animation: animate 5s forwards infinite;
+    -webkit-animation: animate 5s forwards infinite;
+
+    @keyframes animate {
+          0% {
+            filter: drop-shadow(0px 0px 1px #fff)
+            drop-shadow(0px 0px 3px #fff)
+            drop-shadow(0px 0px 10px #ff80b3)
+            drop-shadow(0px 0px 10px #ff4d94)
+            drop-shadow(0px 0px 10px #ff0066);
+          }
+
+          100% {
+            stroke-dashoffset: 0;
+            filter: drop-shadow(0px 0px 3px #fff)
+            drop-shadow(0px 0px 6px #fff)
+            drop-shadow(0px 0px 15px #ff80b3)
+            drop-shadow(0px 0px 5px #ff4d94)
+            drop-shadow(0px 0px 5px #ff0066);
+          }
+`
