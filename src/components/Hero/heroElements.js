@@ -71,7 +71,7 @@ export const BgPhoto = styled.div`
    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
    width: 100%;
    height: 100%;
-   background: #ff26f8;
+   background: rgba(255,255,255, 0.5);
 
    @media screen and (max-width: 1200px) {
     width: 100%;
@@ -107,9 +107,10 @@ export const Photo = styled.img`
 
 export const HeroP = styled.p`
     color: #fff;
-    font-size: 65px;
+    font-size: 70px;
+    font-weight: bold;
     text-align: center;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Waiting for the Sunrise', cursive;
 
     @media screen and (max-width: 1500px) {
         font-size: 50px;

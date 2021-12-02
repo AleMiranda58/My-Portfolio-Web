@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import Particles from 'react-tsparticles'
-// import Video from '../../assets/videos/video.mp4'
 import {HeroContainer, Photo, Svgcontent, PathContent, PhotoContainer, HeroContent,LeftSide, BgPhoto, RightSide, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight} from './heroElements'
 import {Button} from '../Button/buttonElements'
 import {ProfilePicture as me} from '../../assets/index'
@@ -105,7 +104,6 @@ const Hero = () => {
                 detectRetina: true,
             }}
             />
-                {/* <VideoBg autoPlay loop muted src={""} type='video/mp4' /> */}
             <HeroContent>
                 <LeftSide>
                     <HeroP>
