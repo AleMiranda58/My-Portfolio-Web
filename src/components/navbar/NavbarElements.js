@@ -12,7 +12,8 @@ export const Nav = styled.nav`
     font-size: 1rem;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 3;
+    width: 100%;
 
 
     @media screen and (max-width: 960px) {
@@ -31,16 +32,22 @@ export const Nav = styled.nav`
     z-index: 1;
     width: 100%;
     padding: 0 24px;
-    max-width: 1700px;
+    ${'' /* max-width: 1700px; */}
     `
 
     export const NavLogo = styled(LinkRouter)`
     width: 100%;
     margin-left: 24px;
-    font-weight: bold;
+    ${'' /* font-weight: bold; */}
     text-decoration: none;
     margin-left: 40px;
     cursor: pointer;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Dosis', sans-serif;
+    
 
     @media screen and (max-width: 768px) {
         margin-left: 0;
@@ -48,7 +55,17 @@ export const Nav = styled.nav`
         align-items: center;
     }
     `
-   
+   /*Testing */
+   export const Name = styled.p`
+    font-size: 35px;
+    color: #ff26f8;
+   `
+
+   export const Profession = styled.p`
+    font-size: 20px;
+   `
+//  fin  testing
+
     export const ImgLogo = styled.img`
     width: 300px;
     padding-top: 10px;
@@ -101,6 +118,6 @@ export const Nav = styled.nav`
     cursor: pointer;
 
     &.active {
-        border-bottom: 3px solid #ff26f8;
+        border-bottom: 5px solid #fff;
     }
     `

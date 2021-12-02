@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from '../Button/buttonElements'
+import {Undraw} from '../../assets'
 import { 
     InfoContainer, 
     InfoWrapper, 
@@ -13,7 +14,7 @@ import {
     Column2, 
     Img, 
     ImgWrap 
-    } from './InfoElements'
+    } from './InfoElements';
 
 
 const InfoSection = ({
@@ -26,7 +27,7 @@ const InfoSection = ({
     headline, 
     description,
     buttonLabel, 
-    img, 
+    // img, 
     alt,
     primary,
     dark,
@@ -58,7 +59,7 @@ const InfoSection = ({
                      </Column1>
                      <Column2>
                          <ImgWrap>
-                             <Img src={img} alt={alt} />
+                             <Img src={Undraw} alt={alt} />
                          </ImgWrap>
                      </Column2>
                  </InfoRow>

@@ -1,101 +1,108 @@
-.contact {
-  height: 100vh;
+.contact-container {
+  z-index: 2;
   position: relative;
-  background-color: black;
+  height: 70vh;
+  background: rgba(0, 0, 0, 0.2);
 
-  .line {
-    width: 20px;
+  .contact {
     height: 100vh;
-    position: absolute;
-    background-color: #ff26f8;
-  }
+    position: relative;
+    z-index: 2;
 
-  .wrapper {
-    color: white;
-    padding: 50px;
-    display: flex;
+    // .line {
+    //   width: 20px;
+    //   height: 100vh;
+    //   position: absolute;
+    //   background-color: #ff26f8;
+    // }
 
-    .left {
-      flex: 1;
+    .wrapper {
+      color: white;
+      padding: 50px;
+      display: flex;
 
-      h1 {
-        font-size: 60px;
-        width: 80%;
-      }
+      .left {
+        flex: 1;
 
-      .info {
-        // display: flex;
-        // align-items: center;
-        margin: 50px 0px;
-        font-weight: 300;
-        width: 70%;
+        h1 {
+          font-size: 60px;
+          width: 80%;
+        }
 
-        .item {
-          img {
-            width: 30px;
-            height: 30px;
-            margin-right: 20px;
-            background-color: white;
+        .info {
+          // display: flex;
+          // align-items: center;
+          margin: 50px 0px;
+          font-weight: 300;
+          width: 70%;
+
+          .item {
+            img {
+              width: 30px;
+              height: 30px;
+              margin-right: 20px;
+              background-color: white;
+            }
           }
         }
       }
-    }
 
-    .right {
-      flex: 1;
-      //   display: flex;
-      //   flex-direction: column;
-      //   align-items: center;
-      //   justify-content: center;
+      .right {
+        flex: 1;
+        //   display: flex;
+        //   flex-direction: column;
+        //   align-items: center;
+        //   justify-content: center;
 
-      .form-container {
-        border-radius: 25px;
-        background-color: black;
-      }
-      .description {
-        font-weight: 200;
-        -webkit-border-radius: 25px;
-        -moz-border-radius: 25px;
-        -ms-border-radius: 25px;
-        -o-border-radius: 25px;
-      }
-
-      form {
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        // justify-content: center;
-
-        input {
+        .form-container {
           border-radius: 25px;
           background-color: black;
-          width: 100%;
-          height: 50px;
-          border: none;
-          border-bottom: 1px solid black;
-          margin: 10px 0px;
-          padding-left: 10px;
-          font-size: 14px;
+        }
+        .description {
+          font-weight: 200;
+          -webkit-border-radius: 25px;
+          -moz-border-radius: 25px;
+          -ms-border-radius: 25px;
+          -o-border-radius: 25px;
         }
 
-        textarea {
-          border: 3px solid #ff26f8;
+        form {
+          margin-top: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          // justify-content: center;
 
-          background-color: black;
-          width: 100%;
-          margin: 10px 0px;
-          font-size: 14px;
-          padding-left: 10px;
-        }
+          input {
+            border-radius: 25px;
+            background-color: black;
+            width: 100%;
+            height: 50px;
+            border: none;
+            border-bottom: 1px solid black;
+            margin: 10px 0px;
+            padding-left: 10px;
+            font-size: 14px;
+          }
 
-        button {
-          border: none;
-          padding: 15px;
-          background-color: #ff26f8;
-          color: black;
-          font-weight: 500;
-          cursor: pointer;
+          textarea {
+            border: 3px solid #ff26f8;
+
+            background-color: black;
+            width: 100%;
+            margin: 10px 0px;
+            font-size: 14px;
+            padding-left: 10px;
+          }
+
+          button {
+            border: none;
+            padding: 15px;
+            background-color: #ff26f8;
+            color: black;
+            font-weight: 500;
+            cursor: pointer;
+          }
         }
       }
     }

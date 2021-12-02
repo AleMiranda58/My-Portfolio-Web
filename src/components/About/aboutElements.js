@@ -7,12 +7,16 @@ export const ContainerAbout = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 2;
+
 `
 
 export const Description = styled.div`
     width: 70%;
     display: flex;
     flex-direction: column;
+    z-index: 2;
+
 `
 
 
@@ -39,6 +43,7 @@ export const Skills = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 2;
     
 `
 

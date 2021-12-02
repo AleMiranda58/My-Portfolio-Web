@@ -18,6 +18,8 @@ import Email from '../assets/SocialMedia/email.svg';
 import Linkedin from '../assets/SocialMedia/linkedin.svg';
 import Phone from '../assets/SocialMedia/phone.svg';
 
+import Undraw from '../assets/photos/undraw.svg';
+
 
 export {
     ProfilePicture,
@@ -35,5 +37,6 @@ export {
     Js,
     Email,
     Phone,
-    Linkedin
+    Linkedin,
+    Undraw
 }

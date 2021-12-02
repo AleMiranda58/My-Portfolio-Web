@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 
 export const InfoContainer = styled.div`
+    z-index: 3;
     color: #fff;
     background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
 
@@ -12,16 +13,18 @@ export const InfoContainer = styled.div`
 
 export const InfoWrapper = styled.div`
     display: grid;
-    z-index: 1;
     height: 860px;
     width: 100%;
-    max-width: 1100px;
+    ${'' /* max-width: 1100px; */}
     margin-right: auto;
     margin-left: auto;
     padding: 0 24px;
     justify-content: center;
+    z-index: 3;
+
 `
 export const InfoRow = styled.div`
+    z-index: 3;
     display: grid;
     grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
@@ -34,24 +37,28 @@ export const InfoRow = styled.div`
 `
 
 export const Column1 = styled.div`
+    z-index: 3;
     margin-botton: 15px;
     padding: 0 15px;
     grid-area: col1;
 `
 
 export const Column2 = styled.div`
+    z-index: 3;
     margin-botton: 15px;
     padding: 0 15px;
     grid-area: col2;
 `
 
 export const TextWrapper = styled.div`
+    z-index: 3;
     max-width: 540px;
     padding-top: 0;
     padding-botton: 60px;
 `
 
 export const TopLine = styled.p`
+    z-index: 3;
     color: #01bf71;
     font-size: 16px;
     line-height: 15px;
@@ -62,6 +69,7 @@ export const TopLine = styled.p`
 `
 
 export const Heading = styled.h1`
+    z-index: 3;
     padding-botton: 24px;
     font-size: 48px;
     line-height: 1.1;
@@ -69,11 +77,13 @@ export const Heading = styled.h1`
     color: ${({ lighText }) => (lighText ? '#010606' : '#f7f8fa')};
 
     @media screen and (max-width: 480px) {
+    z-index: 3;
         font-size: 32px;
     }
 `
 
 export const Subtitle = styled.p`
+    z-index: 3;
     max-width: 440px;
     margin-botton: 35px;
     font-size: 18px;
@@ -83,16 +93,19 @@ export const Subtitle = styled.p`
 `
 
 export const BtnWrap = styled.p`
+    z-index: 3;
     display: flex;
     justify-content: flex-start;
 `
 
 export const ImgWrap = styled.div`
+    z-index: 3;
     max-width: 55px;
     height: 100%
 `
 
 export const Img = styled.img`
+    z-index: 3;
     width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
