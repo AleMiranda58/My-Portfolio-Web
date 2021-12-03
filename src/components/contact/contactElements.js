@@ -1,42 +1,47 @@
 import styled from "styled-components";
-import {MdPhone, MdEmail} from 'react-icons/md'
-import { SiLinkedin} from 'react-icons/si'
 
 
 export const ContactSection = styled.div`
   position: relative;
   height: 100vh;
   background: rgba(0, 0, 0, 0.2);
-  z-index: 3;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
 `
 export const ContentIntro = styled.div`
-  max-width: 800px;
+  ${'' /* max-width: 800px; */}
   text-align: center;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
 `
 
 export const TitleSection = styled.h2`
-  font-size: 36px;
+  font-size: 80px;
   font-weight: 500;
   color: #fff;
+  font-weight: bold;
 `
 
 
 export const Container = styled.div`
   width: 100%;
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
 `
 
 export const ContactInfo = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
+  
 `
 
 export const Box = styled.div`
@@ -45,10 +50,13 @@ export const Box = styled.div`
   display: flex;
 `
 
-export const Icon = styled.div`
-  min-width: 60px;
+
+
+export const IconBg = styled.div`
+  width: 60px;
   height: 60px;
   background: #fff;
+  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
@@ -57,6 +65,10 @@ export const Icon = styled.div`
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   font-size: 22px;
+`
+
+export const IconImage = styled.img`
+  width: 25px;
 `
 
 export const Info = styled.div`
@@ -69,6 +81,19 @@ export const Info = styled.div`
   justify-content: center;
 `
 
+export const InfoLink = styled.a`
+  text-decoration:none;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 300;
+  justify-content: center;
+    &:hover{
+    color: blue;
+    }
+`
 
 export const Item = styled.h3`
   font-size: 25px;
@@ -77,6 +102,7 @@ export const Item = styled.h3`
 
 export const ValueItem = styled.p`
   color: #fff;
+  
 `
 
 

@@ -1,8 +1,8 @@
 import React from 'react'
 import { useRef, useState } from 'react'
 import emailjs from 'emailjs-com';
-import { ContactSection, ContentIntro, TitleSection, Container, ContactInfo, Box, Icon, Info, Item, ValueItem, ContactForm, Form, FormTitle, InputBox, InputForm, InputDescr, TextAreaForm} from './contactElements'
-
+import { ContactSection, ContentIntro, TitleSection, Container, IconImage, ContactInfo, Box, IconBg, Info, InfoLink, Item, ValueItem, ContactForm, Form, FormTitle, InputBox, InputForm, InputDescr, TextAreaForm} from './contactElements'
+import { Email, Linkedin, Phone } from '../../assets/index'
 
 const Contact = () => {
     const formRef = useRef()
@@ -36,21 +36,27 @@ const Contact = () => {
             <Container>
                 <ContactInfo>
                     <Box>
-                        <Icon></Icon>
+                        <IconBg>
+                            <IconImage src={Phone}/>
+                        </IconBg>
                         <Info>
                             <Item>Phone</Item>
                             <ValueItem>514 267 6620</ValueItem>
                         </Info>
                     </Box>
                     <Box>
-                        <Icon></Icon>
-                        <Info>
+                        <IconBg>
+                            <IconImage src={Linkedin}/>
+                        </IconBg>
+                        <InfoLink href="https://www.linkedin.com/in/alejandra-mirandareyes/" target="_blank" rel="noreferrer">
                             <Item>Linkedin</Item>
-                            <ValueItem>https://www.linkedin.com/in/alejandra-mirandareyes/</ValueItem>
-                        </Info>
+                            <ValueItem>www.linkedin.com/in/alejandra-mirandareyes/</ValueItem>
+                        </InfoLink>
                     </Box>
                     <Box>
-                        <Icon></Icon>
+                        <IconBg>
+                            <IconImage src={Email}/>
+                        </IconBg>
                         <Info>
                             <Item>Email</Item>
                             <ValueItem>ale.miranda890@gmail.com</ValueItem>
