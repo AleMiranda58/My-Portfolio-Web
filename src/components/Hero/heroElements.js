@@ -108,9 +108,8 @@ export const Photo = styled.img`
 export const HeroP = styled.p`
     color: #fff;
     font-size: 70px;
-    font-weight: bold;
+    font-weight: 200;
     text-align: center;
-    font-family: 'Waiting for the Sunrise', cursive;
 
     @media screen and (max-width: 1500px) {
         font-size: 50px;

@@ -109,7 +109,7 @@ const Hero = () => {
                     <HeroP>
                     Passionate about technologies & web development
                     </HeroP>
-                    <HeroBtnWrapper>
+                    {/* <HeroBtnWrapper>
                         <Button
                         to="projects"
                         onMouseEnter={onHover}
@@ -123,7 +123,7 @@ const Hero = () => {
                         MY PROJECTS
                         {hover ? <ArrowForward /> : <ArrowRight /> }
                         </Button>
-                        </HeroBtnWrapper>
+                        </HeroBtnWrapper> */}
                 </LeftSide>
                 <RightSide>
                     <BgPhoto>
