@@ -14,21 +14,25 @@ export const projects = [
     {
     id: 3,
     img: "https://i.ibb.co/ctQ1bYH/testing-Full-Img.png",
-    link: "https://github.com/AleMiranda58"
+    link: "https://github.com/AleMiranda58",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     },
     {
     id: 4,
     img: "https://i.ibb.co/ctQ1bYH/testing-Full-Img.png",
-    link: "https://github.com/AleMiranda58"
+    link: "https://github.com/AleMiranda58",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     },
     {
     id: 5,
     img: "https://i.ibb.co/ctQ1bYH/testing-Full-Img.png",
-    link: "https://github.com/AleMiranda58"
+    link: "https://github.com/AleMiranda58",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     },
     {
     id: 6,
     img: "https://i.ibb.co/ctQ1bYH/testing-Full-Img.png",
-    link: "https://github.com/AleMiranda58"
+    link: "https://github.com/AleMiranda58",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     }
 ]

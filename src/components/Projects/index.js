@@ -9,7 +9,7 @@ const Projects = () => {
         <ProjectsSection id="projects">
         <Intro>
             <TitleSection>My Projects</TitleSection>
-            <Psection>Lorem ipsum dolor sit amet consectetur adipiscing elit</Psection>
+            <Psection></Psection>
         </Intro>
         <ProjectsLlist>
             { projects.map((item)=> (

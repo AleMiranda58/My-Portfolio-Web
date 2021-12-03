@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const ProjectElement = styled.div`
-  width: 48%;
+  width: 30%;
   height: 50vh;
   margin: 20px 5px;
   border: 1px solid rgb(243, 243, 243);
@@ -21,12 +21,15 @@ export const ProjectContainer = styled.div`
 `
 
 export const UpSide = styled.div`
-  height: 70%
+  height: 70%;
+
+ 
 `
 
 export const Browsesr = styled.div`
    height: 20px;
-    background-color: #ff26f8;
+    ${'' /* background-color: #ff26f8; */}
+    background-color: #fff;
     display: flex;
     align-items: center;
     position: sticky;
@@ -42,7 +45,8 @@ export const Circles = styled.div`
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  background-color: white;
+  ${'' /* background-color: #fff; */}
+  background-color: #808080;
 `
 
 export const ImgProject = styled.img`
@@ -53,33 +57,37 @@ export const ImgProject = styled.img`
   -moz-transition: all 10s ease;
   -ms-transition: all 10s ease;
   -o-transition: all 10s ease;
-  ${'' /* &:hover {
+  &:hover {
     transform: translateY(-100%);
     -webkit-transform: translateY(-100%);
     -moz-transform: translateY(-100%);
     -ms-transform: translateY(-100%);
     -o-transform: translateY(-100%);
-  } */}
+  }
 `
 
 export const DownSide = styled.div`
   width: 100%;
-    background-color: rgba(black, 0.8);
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    bottom: 0;
-    z-index: 4;
+  background-color: rgba(black, 0.8);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  z-index: 3;
 `
 
 export const ProDescription = styled.div`
-  position: sticky;
+  width: 100%;
+  height: 100px;;
   z-index: 4;
+  background: #000;
   color: #fff;
   font-size: 18px;
   margin: 10px 0;
+  position: absolute;
+  display: none;
 `
 
 export const CodeSource = styled.a`

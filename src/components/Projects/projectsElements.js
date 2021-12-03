@@ -19,8 +19,9 @@ export const Intro = styled.div`
 
 export const TitleSection = styled.h1`
   text-align: center;
-  font-size: 50px;
+  font-size: 70px;
   font-weight: 600;
+  color: #fff;
 `
 
 export const Psection = styled.p`
