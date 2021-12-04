@@ -130,17 +130,16 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
     z-index: 2;
-    
 `
 
 export const InfoWrapper = styled.div`
     z-index: 2;
-
-  
 `
+
 export const InfoRow = styled.div`
     z-index: 2;
     display: flex;
+    flex-direction: ${({boxesPosition}) => (boxesPosition ? 'row' : 'row-reverse')};
     justify-content: space-between;
     width: 100%;
     height: 100vh;
@@ -154,20 +153,13 @@ export const Column1 = styled.div`
     justify-content: flex-start;
     align-items: center;
     margin: 0 80px;
-    ${'' /* width: 50%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 80px; */}
 `
 
 export const Column2 = styled.div`
     z-index: 2;
-    background: red;
-    clip-path: ${({pathClip}) => (pathClip ? 'polygon(50% 0, 100% 50%, 50% 100%, 0% 100%, 0 48%, 0% 0%)' : 'polygon(100% 0%, 100% 52%, 100% 100%, 50% 100%, 0% 50%, 50% 0)')}; */}
-    width: 30%;
+    background: rgba(255,255,255, 0.5);
+    clip-path: ${({pathClip}) => (pathClip ? 'polygon(50% 0, 100% 50%, 50% 100%, 0% 100%, 0 48%, 0% 0%)' : 'polygon(100% 0%, 100% 52%, 100% 100%, 50% 100%, 0% 50%, 50% 0)')};
+    width: 35%;
 `
 
 export const TextWrapper = styled.div`
@@ -183,10 +175,13 @@ export const TextWrapper = styled.div`
 export const TopLine = styled.p`
 `
 
-export const Heading = styled.h1`
-    font-size: 60px;
+export const Heading = styled.h3`
+    font-size: 70px;
+    font-weight: 200;
+    text-align: center;
     color: ${({ lighText }) => (lighText ? '#010606' : '#f7f8fa')};
 `
+
 
 export const Subtitle = styled.p`
     color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
@@ -207,4 +202,10 @@ export const ImgWrap = styled.div`
 
 export const Img = styled.img`
     z-index: 2;
+`
+
+export const TextSide = styled.h3`
+    font-size: 70px;
+    font-weight: 600;
+    color: ${({ lighText }) => (lighText ? '#f7f8fa' : '#010606')};
 `
