@@ -13,6 +13,7 @@ import Redux from '../assets/Tech/redux.png';
 import Sass from '../assets/Tech/sass.png';
 import WordPress from '../assets/Tech/wordpress.png';
 import Js from '../assets/Tech/js.png';
+import StiledComponents from '../assets/Tech/styledComponents.png';
 
 import Email from '../assets/SocialMedia/email.svg';
 import Linkedin from '../assets/SocialMedia/linkedin.svg';
@@ -38,5 +39,6 @@ export {
     Email,
     Phone,
     Linkedin,
+    StiledComponents,
     Undraw
 }

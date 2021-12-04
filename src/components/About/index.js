@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {AboutContainer, TitleSection, Text, AboutContent, Subtitle, LeftSide, Bground, RightSide, Psection, BtnWrapper, ArrowForward, ArrowRight, Skills, ListSkill, Item} from './aboutElements'
 import {Button} from '../Button/buttonElements'
-import {Html, Css, Js, Jquery, LogoReact, Redux, Firebase, WordPress, Sass, Git, Figma} from '../../assets'
+import {Html, Css, Js, Jquery, LogoReact, Redux, Firebase, StiledComponents, WordPress, Sass, Git, Figma} from '../../assets'
 
 
 
@@ -30,17 +30,19 @@ const About = () => {
                     <Psection>However, I'm ready to learn new tools</Psection>
                     <Skills>
                         <ListSkill>
-                            <Item src={Html} alt="asdf"></Item>
-                            <Item src={Css} alt="asdf"></Item>
-                            <Item src={Js} alt="asdf"></Item>
-                            <Item src={Jquery} alt="asdf"></Item>
-                            <Item src={LogoReact} alt="asdf"></Item>
-                            <Item src={Redux} alt="asdf"></Item>
-                            <Item src={Firebase} alt="asdf"></Item>
-                            <Item src={WordPress} alt="asdf"></Item>
-                            <Item src={Sass} alt="asdf"></Item>
-                            <Item src={Git} alt="asdf"></Item>
-                            <Item src={Figma} alt="asdf"></Item>
+                            <Item src={Html} alt="html logo"></Item>
+                            <Item src={Css} alt="css logo"></Item>
+                            <Item src={Js} alt="js logo"></Item>
+                            <Item src={Jquery} alt="jQuery logo"></Item>
+                            <Item src={LogoReact} alt="React logo"></Item>
+                            <Item src={Redux} alt="Redux logo"></Item>
+                            <Item src={Firebase} alt="Firebase logo"></Item>
+                            <Item src={WordPress} alt="WordPress logo"></Item>
+                            <Item src={Sass} alt="Sass logo"></Item>
+                            <Item src={Git} alt="Git logo"></Item>
+                            <Item src={Figma} alt="Figma logo"></Item>
+                            <Item src={StiledComponents} alt="Styled components logo"></Item>
+                            
                         </ListSkill>
                     </Skills>
                     {/* <BtnWrapper>
