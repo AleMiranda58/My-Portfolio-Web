@@ -3,7 +3,7 @@ import { Link as LinkRouter } from 'react-router-dom'
 import { Link as LinkScroll } from 'react-scroll'
 
 export const Nav = styled.nav`
-    background: ${({ scrollNav }) => (scrollNav ? '#000' : 'rgba(0,0,0, 0.1)')};
+    background: ${({ scrollNav }) => (scrollNav ? '#172438' : 'rgba(0,0,0, 0.1)')};
     border-bottom: 1px solid  rgba(255, 255, 255, 0.2);
     height: 80px;
     margin-top: -80px;
@@ -58,7 +58,7 @@ export const Nav = styled.nav`
    /*Testing */
    export const Name = styled.p`
     font-size: 35px;
-    color: #ff26f8;
+    color: #fff;
    `
 
    export const Profession = styled.p`

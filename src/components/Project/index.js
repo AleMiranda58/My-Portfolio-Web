@@ -17,9 +17,9 @@ const Project = ({ img, link, description }) => {
                 </UpSide>
                 <DownSide>
                     <ProDescription>{description}</ProDescription>
-                    {/* <CodeSource>
-                         <Button primary="true" dark="true"> Code Source </Button>
-                    </CodeSource> */}
+                    <CodeSource>
+                         <Button primary="true" dark="true" /> 
+                    </CodeSource>
                 </DownSide>
             </ProjectContainer>
         </ProjectElement>

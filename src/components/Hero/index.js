@@ -32,7 +32,7 @@ const Hero = () => {
                     value: "#0d47a1",
                 },
                 },
-                fpsLimit: 60,
+                fpsLimit: 30,
                 interactivity: {
                 events: {
                     onClick: {
@@ -40,7 +40,7 @@ const Hero = () => {
                     mode: "push",
                     },
                     onHover: {
-                    enable: true,
+                    enable: false,
                     mode: "repulse",
                     },
                     resize: true,
@@ -57,7 +57,7 @@ const Hero = () => {
                     },
                     repulse: {
                     distance: 200,
-                    duration: 0.4,
+                    duration: 0.1,
                     },
                 },
                 },
@@ -68,19 +68,19 @@ const Hero = () => {
                 links: {
                     color: "#ffffff",
                     distance: 150,
-                    enable: true,
+                    enable: false,
                     opacity: 0.5,
                     width: 1,
                 },
                 collisions: {
-                    enable: true,
+                    enable: false,
                 },
                 move: {
                     direction: "none",
                     enable: true,
                     outMode: "bounce",
-                    random: false,
-                    speed: 6,
+                    random: true,
+                    speed: 4,
                     straight: false,
                 },
                 number: {
@@ -88,17 +88,17 @@ const Hero = () => {
                     enable: true,
                     value_area: 800,
                     },
-                    value: 80,
+                    value: 10,
                 },
                 opacity: {
-                    value: 0.5,
+                    value: 0.1,
                 },
                 shape: {
                     type: "circle",
                 },
                 size: {
                     random: true,
-                    value: 5,
+                    value: 10,
                 },
                 },
                 detectRetina: true,
@@ -109,9 +109,9 @@ const Hero = () => {
                     <HeroP>
                     Passionate about technologies & web development
                     </HeroP>
-                    {/* <HeroBtnWrapper>
+                    <HeroBtnWrapper>
                         <Button
-                        to="projects"
+                        to="about"
                         onMouseEnter={onHover}
                         onMouseLeave={onHover}
                         primary="true"
@@ -120,10 +120,10 @@ const Hero = () => {
                         duration={1000}
                         spy={true}
                         offset={-80}>
-                        MY PROJECTS
+                        MORE ABOUT ME
                         {hover ? <ArrowForward /> : <ArrowRight /> }
                         </Button>
-                        </HeroBtnWrapper> */}
+                        </HeroBtnWrapper>
                 </LeftSide>
                 <RightSide>
                     <BgPhoto>

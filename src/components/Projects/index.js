@@ -6,9 +6,9 @@ import { Button } from '../Button/buttonElements'
 
 const Projects = () => {
     return (
-        <ProjectsSection id="projects">
+        <ProjectsSection id="AllProjects">
         <Intro>
-            <TitleSection>My Projects</TitleSection>
+            <TitleSection></TitleSection>
             <Psection></Psection>
         </Intro>
         <ProjectsLlist>

@@ -9,6 +9,7 @@ export const HeroContainer = styled.div`
     display: flex;
     position: relative;
     z-index: 1;
+    margin-bottom: 200px;
 
     @media screen and (max-width: 1200px) {
         height: 75vh;
@@ -68,10 +69,11 @@ export const RightSide = styled.div`
 `
 
 export const BgPhoto = styled.div`
-   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
-   width: 100%;
-   height: 100%;
-   background: rgba(255,255,255, 0.5);
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255, 0.5);
+;
 
    @media screen and (max-width: 1200px) {
     width: 100%;

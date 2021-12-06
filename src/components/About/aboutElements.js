@@ -1,14 +1,12 @@
 import styled from "styled-components";
-import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md'
 
 
 export const AboutContainer = styled.div`
     width: 100%;
     height: 100vh;
-    ${'' /* display: flex; */}
     position: relative;
     z-index: 1;
-
+    margin-bottom: 200px;
 `
 
 
@@ -16,7 +14,6 @@ export const AboutContent = styled.div`
     width: 100%;
     height: 100vh;
     display: flex;
-    ${'' /* position: relative; */}
 `
 
 export const LeftSide = styled.div`
@@ -31,13 +28,13 @@ export const Bground = styled.div`
     background: rgba(255,255,255, 0.5);
     display: flex;
     flex-direction: column;
-    ${'' /* align-items: center; */}
+    align-items: center;
     justify-content: center;
     
 `
 export const Text = styled.div`
-    padding-left: 60px;
-k
+    padding-right: 60px;
+    color: #172438;
 `
 
 export const TitleSection = styled.h3`
@@ -46,61 +43,23 @@ export const TitleSection = styled.h3`
 `
 
 export const Subtitle = styled.p`
-
+    color: #172438;
 `
 
 
 export const RightSide = styled.div`
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-evenly;
-    padding-top: 80px;
 `
 
 export const Psection = styled.p`
     color: #fff;
     font-size: 30px;
-    text-align: center;
+    text-align: justify;
     font-family: 'Dosis', sans-serif;
 `
 
-export const BtnWrapper = styled.div`
-    width: 30%;
-    margin-top: 34px;
-    cursor: pointer;
-`
 
-export const ArrowForward = styled(MdArrowForward)`
-    margin-left: 8px;
-    font-size: 20px
-`
-export const ArrowRight = styled(MdKeyboardArrowRight)`
-    margin-left: 8px;
-    font-size: 20px;
-`
-
-export const Skills = styled.div`
-    width: 100%;
-    height: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-    
-`
-
-export const ListSkill = styled.div`
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-`
-
-export const Item = styled.img`
-    width: 50px;
-`
