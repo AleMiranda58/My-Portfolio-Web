@@ -20,11 +20,7 @@ export const ProjectContainer = styled.div`
   width: 100%;
 `
 
-export const UpSide = styled.div`
-  height: 70%;
 
- 
-`
 
 export const Browsesr = styled.div`
    height: 20px;
@@ -68,14 +64,16 @@ export const ImgProject = styled.img`
 
 export const DownSide = styled.div`
   width: 100%;
-  background-color: rgba(black, 0.8);
-  position: absolute;
+  background-color: #000;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   bottom: 0;
   z-index: 3;
+  position: absolute;
+  bottom: 0;
+  display: none;
 `
 
 export const ProDescription = styled.div`
@@ -86,11 +84,19 @@ export const ProDescription = styled.div`
   color: #fff;
   font-size: 18px;
   margin: 10px 0;
-  position: absolute;
-  display: none;
+  ${'' /* position: absolute; */}
 `
 
 export const CodeSource = styled.a`
   text-decoration: none;
   margin-bottom: 10px;
+`
+
+export const UpSide = styled.div`
+  height: 70%;
+  position: relative;
+  &:hover + ${DownSide} {
+        display: block;
+    }
+ 
 `
