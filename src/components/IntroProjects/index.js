@@ -15,7 +15,7 @@ const IntroProjects = () => {
     return (
         <AboutContainer id="projects">
             <AboutContent>
-                <RightSide>
+                <LeftSide>
                     <Psection>I have developed some projects using the following technologies 
                     <br />&  I'm ready to learn new ones ! </Psection>
                     <Skills>
@@ -86,15 +86,15 @@ const IntroProjects = () => {
                             </ItemContainer>
                             <ItemContainer>
                                 <LogoContainer>
-                                    <Item src={Css} alt="css logo" />
+                                    <Item src={Css} alt="html logo" />
                                 </LogoContainer>
-                                <TextItem>HTML5</TextItem>
+                                <TextItem>CSS</TextItem>
                             </ItemContainer>
                             <ItemContainer>
                                 <LogoContainer>
-                                    <Item src={Html} alt="html logo" />
+                                    <Item src={Html} alt="css logo" />
                                 </LogoContainer>
-                                <TextItem>CSS</TextItem>
+                                <TextItem>HTML</TextItem>
                             </ItemContainer>
                         </ListSkill>
                     </Skills>
@@ -113,15 +113,15 @@ const IntroProjects = () => {
                         {hover ? <ArrowForward /> : <ArrowRight /> }
                         </Button>
                     </BtnWrapper>
-                </RightSide>
-                <LeftSide>
+                </LeftSide>
+                <RightSide>
                         <Bground>
                         <Text>
                         <TitleSection>PROJECTS</TitleSection>
                         <Subtitle></Subtitle>
                         </Text>
                         </Bground>
-                </LeftSide>
+                </RightSide>
             </AboutContent>
         </AboutContainer>
     )

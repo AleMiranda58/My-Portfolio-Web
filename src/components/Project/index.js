@@ -1,8 +1,14 @@
-import React from 'react'
-import { Button } from 'react-scroll'
-import {ProjectElement, ContainerVideo, Browsesr, Circles, ImgProject, DescriptionProject, ProDescription, CodeSource} from './projectElements'
+import React, {useState} from 'react'
+import { LinksProjects } from '../links/link'
+import {ProjectElement, ContainerVideo, Browsesr, Circles, ImgProject, DescriptionProject, ProDescription, LinksVisit} from './projectElements'
 
 const Project = ({ img, link, description }) => {
+    const [hover, setHover] = useState(false)
+
+    const onHover = () => {
+        setHover(!hover)
+    }
+
     return (
         <>
         <ProjectElement>
@@ -16,9 +22,69 @@ const Project = ({ img, link, description }) => {
                 </ContainerVideo>
                 <DescriptionProject>
                     <ProDescription>{description}</ProDescription>
-                    <CodeSource>
-                         <Button primary="true" dark="true" /> 
-                    </CodeSource>
+                    <LinksVisit>
+                        <LinksProjects
+                        onMouseEnter={onHover}
+                        onMouseLeave={onHover}
+                        href={link}
+                        target="_blank"
+                        rel="noreferrer"
+                        primary= "true"
+                        dark= "true"
+                        fontBig= "true"
+                        bold= "true"
+                        smooth={true}
+                        duration={1000}
+                        spy={true}
+                        offset={-80}>
+                        CODE SOURCE
+                        </LinksProjects>
+                        <LinksProjects
+                        href={link}
+                        target="_blank"
+                        rel="noreferrer"
+                        primary= "true"
+                        dark= "false"
+                        fontBig= "true"
+                        bold= "true"
+                        smooth={true}
+                        duration={1000}
+                        spy={true}
+                        offset={-80}>
+                        WEB SITE
+                        </LinksProjects>
+                        {/* <CodeSource
+                        onMouseEnter={onHover}
+                        onMouseLeave={onHover}
+                        href={link}
+                        target="_blank"
+                        rel="noreferrer"
+                        primary= "true"
+                        dark= "true"
+                        fontBig= "true"
+                        bold= "true"
+                        smooth={true}
+                        duration={1000}
+                        spy={true}
+                        offset={-80}>
+                        CODE SOURCE
+                        </CodeSource> */}
+                        {/* <CodeSource
+                        href={link}
+                        target="_blank"
+                        rel="noreferrer"
+                        primary= "true"
+                        dark= "false"
+                        fontBig= "true"
+                        bold= "true"
+                        smooth={true}
+                        duration={1000}
+                        spy={true}
+                        offset={-80}>
+                        tEST
+                        </CodeSource> */}
+                    </LinksVisit>
+                   
                 </DescriptionProject>
         </ProjectElement>
         </>
