@@ -2,30 +2,24 @@ import styled from "styled-components";
 
 
 export const ProjectElement = styled.div`
-  width: 30%;
+  width: 75%;
   height: 50vh;
-  margin: 20px 5px;
+  margin: 20px auto;
   border: 1px solid rgb(243, 243, 243);
-  border-radius: 10px 10px 0px 0px;
-  -webkit-border-radius: 10px 10px 0px 0px;
-  -moz-border-radius: 10px 10px 0px 0px;
-  -ms-border-radius: 10px 10px 0px 0px;
-  -o-border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -ms-border-radius: 10px 10px 10px 10px;
+  -o-border-radius: 10px 10px 10px 10px;
   overflow: hidden;
-  position: relative;
   z-index: 2;
+  display: flex;
 `
-
-export const ProjectContainer = styled.div`
-  width: 100%;
-`
-
 
 
 export const Browsesr = styled.div`
    height: 20px;
-    ${'' /* background-color: #ff26f8; */}
-    background-color: #fff;
+    background-color: #000;
     display: flex;
     align-items: center;
     position: sticky;
@@ -41,7 +35,6 @@ export const Circles = styled.div`
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  ${'' /* background-color: #fff; */}
   background-color: #808080;
 `
 
@@ -62,29 +55,24 @@ export const ImgProject = styled.img`
   }
 `
 
-export const DownSide = styled.div`
+export const DescriptionProject = styled.div`
   width: 100%;
-  background-color: #000;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   bottom: 0;
   z-index: 3;
-  position: absolute;
   bottom: 0;
-  display: none;
 `
 
 export const ProDescription = styled.div`
   width: 100%;
   height: 100px;;
   z-index: 4;
-  background: #000;
   color: #fff;
   font-size: 18px;
   margin: 10px 0;
-  ${'' /* position: absolute; */}
 `
 
 export const CodeSource = styled.a`
@@ -92,11 +80,10 @@ export const CodeSource = styled.a`
   margin-bottom: 10px;
 `
 
-export const UpSide = styled.div`
-  height: 70%;
-  position: relative;
-  &:hover + ${DownSide} {
+export const ContainerVideo = styled.div`
+  height: 100%;
+  ${'' /* &:hover + ${DescriptionProject} {
         display: block;
-    }
+    } */}
  
 `

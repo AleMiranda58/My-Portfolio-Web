@@ -1,27 +1,25 @@
 import React from 'react'
 import { Button } from 'react-scroll'
-import {ProjectElement, ProjectContainer, UpSide, Browsesr, Circles, ImgProject, DownSide, ProDescription, CodeSource} from './projectElements'
+import {ProjectElement, ContainerVideo, Browsesr, Circles, ImgProject, DescriptionProject, ProDescription, CodeSource} from './projectElements'
 
 const Project = ({ img, link, description }) => {
     return (
         <>
         <ProjectElement>
-            <ProjectContainer>
-                <UpSide>
+                <ContainerVideo>
                     <Browsesr>
                         <Circles></Circles>
                         <Circles></Circles>
                         <Circles></Circles>
                     </Browsesr>
                     <ImgProject src={img} alt="Project image"></ImgProject>
-                </UpSide>
-                <DownSide>
+                </ContainerVideo>
+                <DescriptionProject>
                     <ProDescription>{description}</ProDescription>
                     <CodeSource>
                          <Button primary="true" dark="true" /> 
                     </CodeSource>
-                </DownSide>
-            </ProjectContainer>
+                </DescriptionProject>
         </ProjectElement>
         </>
     )
