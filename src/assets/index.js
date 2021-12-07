@@ -25,6 +25,7 @@ import Phone from '../assets/SocialMedia/phone.svg';
 import Undraw from '../assets/photos/undraw.svg';
 
 
+
 export {
     ProfilePicture,
     Logo,

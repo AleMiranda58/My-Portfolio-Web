@@ -13,7 +13,8 @@ const Projects = () => {
         </Intro>
         <ProjectsLlist>
             { projects.map((item)=> (
-            <Project key={item.id} img={item.img} link={item.link} description={item.description}/>
+            /*<Project key={item.id} img={item.img} link={item.link} description={item.description} video={item.video}/>*/
+            <Project key={item.id} link={item.link} description={item.description} video={item.video}/>
             ))}
         </ProjectsLlist>
         <SeeMore>
