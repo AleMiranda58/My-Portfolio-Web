@@ -1,5 +1,8 @@
 import styled from "styled-components";
+import SVG from "react-inlinesvg";
+
 import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md'
+
 
 
 export const AboutContainer = styled.div`
@@ -49,7 +52,7 @@ export const Subtitle = styled.p`
 
 
 export const RightSide = styled.div`
-    width: 50%;
+    width: 60%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -68,11 +71,7 @@ export const Psection = styled.p`
 
 export const Skills = styled.div`
     width: 100%;
-    height: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 50%;
     z-index: 2;
     margin: 50px 0;
 `
@@ -80,13 +79,49 @@ export const Skills = styled.div`
 export const ListSkill = styled.div`
     width: 100%;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
 `
+export const ItemContainer = styled.div`
+    ${'' /* width: 40%; */}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+`
 
-export const Item = styled.img`
-    width: 50px;
+export const TextItem = styled.div`
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    display: none;
+`
+
+export const Item = styled(SVG)`
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    path {
+        fill: #fff;
+    }
+    &:hover {
+        path {
+        fill: #000;
+        transition: 0.1s ease-out;
+        width: 150px;
+        }
+    }
+   
+`
+
+
+export const LogoContainer = styled.div`
+    &:hover + ${TextItem} {
+        display: block;
+    }
 `
 
 export const BtnWrapper = styled.div`

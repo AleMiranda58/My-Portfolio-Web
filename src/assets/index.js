@@ -2,18 +2,21 @@ import ProfilePicture from '../assets/profilePicutre.png';
 import Logo from '../assets/logo.png';
 
 
-import Css from '../assets/Tech/css.png';
-import Figma from '../assets/Tech/figma.png';
-import Firebase from '../assets/Tech/firebase.png';
-import Git from '../assets/Tech/git.png';
-import Html from '../assets/Tech/html.png';
-import Jquery from '../assets/Tech/jquery.png';
-import LogoReact from '../assets/Tech/react.png';
-import Redux from '../assets/Tech/redux.png';
-import Sass from '../assets/Tech/sass.png';
-import WordPress from '../assets/Tech/wordpress.png';
-import Js from '../assets/Tech/js.png';
-import StiledComponents from '../assets/Tech/styledComponents.png';
+import Js from '../assets/Tech/js.svg';
+import Jquery from '../assets/Tech/jquery.svg';
+import LogoReact from '../assets/Tech/react.svg';
+import Redux from '../assets/Tech/redux.svg';
+import Firebase from '../assets/Tech/firebase.svg';
+import Git from '../assets/Tech/git.svg';
+import GitHub from '../assets/Tech/github.svg';
+import GitLab from '../assets/Tech/gitlab.svg';
+import Html from '../assets/Tech/html.svg';
+import Css from '../assets/Tech/css.svg';
+import Sass from '../assets/Tech/sass.svg';
+import Figma from '../assets/Tech/figma.svg';
+import Photoshop from '../assets/Tech/photoshop.svg';
+import Illustrator from '../assets/Tech/illustrator.svg';
+import Tailwindcss from '../assets/Tech/tailwindcss.svg';
 
 import Email from '../assets/SocialMedia/email.svg';
 import Linkedin from '../assets/SocialMedia/linkedin.svg';
@@ -27,18 +30,21 @@ export {
     Logo,
     Css,
     Figma,
+    Illustrator,
+    Photoshop,
     Firebase,
     Git,
+    GitHub,
+    GitLab,
     Html,
     Jquery,
     LogoReact,
     Redux,
     Sass,
-    WordPress,
     Js,
     Email,
     Phone,
     Linkedin,
-    StiledComponents,
+    Tailwindcss,
     Undraw
 }
