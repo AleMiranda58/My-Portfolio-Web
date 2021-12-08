@@ -24,6 +24,10 @@ import Phone from '../assets/SocialMedia/phone.svg';
 
 import Developer from '../assets/photos/developer.jpg';
 
+import Heart from '../assets/about/heart-regular.svg';
+import Star from '../assets/about/star-regular.svg';
+import Energy from '../assets/about/charging-station-solid.svg';
+import Smile from '../assets/about/smile-regular.svg';
 
 
 export {
@@ -47,5 +51,9 @@ export {
     Phone,
     Linkedin,
     Tailwindcss,
-    Developer
+    Developer,
+    Heart,
+    Star,
+    Energy,
+    Smile
 }
