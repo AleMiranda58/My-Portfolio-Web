@@ -11,14 +11,14 @@ export const ContactSection = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  margin-top: 100px;
 `
 export const ContentIntro = styled.div`
-  ${'' /* max-width: 800px; */}
+  padding: 100px 0px;
   text-align: center;
   height: 20%;
   display: flex;
   align-items: center;
-  padding-top: 40px;
 `
 
 export const TitleSection = styled.h2`

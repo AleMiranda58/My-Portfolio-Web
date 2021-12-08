@@ -1,5 +1,7 @@
 import React from 'react'
-import {AboutContainer, TitleSection, Text, AboutContent, Subtitle, LeftSide, Bground, RightSide, Psection} from './aboutElements'
+import {AboutContainer,  AboutContent, LeftSide, RightSide, Psection, TitleSection, ContentSide,
+    PhotoContainer, BgPhoto, Photo} from './aboutElements'
+    import { Developer } from '../../assets/index'
 
 
 const About = () => {
@@ -8,23 +10,24 @@ const About = () => {
         <AboutContainer id="about">
             <AboutContent>
                 <LeftSide>
-                        <Bground>
-                        <Text>
-                        <Subtitle></Subtitle>
-                        <TitleSection>ABOUT ME</TitleSection>
-                        </Text>
-                        </Bground>
+                        <BgPhoto>
+                            <PhotoContainer>
+                            <Photo src={Developer} alt="web-dev-person" className="profile-picture" />
+                            </PhotoContainer>
+                        </BgPhoto>
                 </LeftSide>
                 <RightSide>
-                    <Psection>Hi, I am junior front-end developer with a background in digital marketing.
-                    <br />I am a creative and problem-solving person who likes logical challenges,
-                    <br />One of my passions is to build  dynamics and reactives web sites in order to provide great user experiences</Psection>
-                    <Psection>Professional brief:
-                    <br />Motivation: 
-                    <br />Professional goal: Become a full stack developer
-                    <br />Enery drink: Coffee
-                    <br />Best feeling: Find out solutions
-                    </Psection>
+                    <TitleSection>Hi, I'm Alejandra</TitleSection>
+                    <ContentSide>
+                        <Psection>I am junior front-end developer with a background in digital marketing. I am a creative and problem-solving person who likes logical challenges, One of my passions is to build  dynamics and reactives web sites in order to provide great user experiences</Psection>
+                        <Psection>I am junior front-end developer with a background in digital marketing. I am a creative and problem-solving person who likes logical challenges, One of my passions is to build  dynamics and reactives web sites in order to provide great user experiences</Psection>
+                        <Psection>
+                        <br />Motivation: 
+                        <br />Professional goal: Become a full stack developer
+                        <br />Enery drink: Coffee
+                        <br />Best feeling: Find out solutions
+                        </Psection>
+                    </ContentSide>
                 </RightSide>
             </AboutContent>
         </AboutContainer>

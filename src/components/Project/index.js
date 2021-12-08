@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
-import ReactPlayer from 'react-player'
+// import ReactPlayer from 'react-player'
 import { LinksProjects } from '../links/link'
-import {ProjectElement, ContainerVideo, Browsesr, Circles, DescriptionProject, ProDescription, LinksVisit} from './projectElements'
+import {ProjectElement, ContainerVideo, Browsesr, Circles, DescriptionProject, ProDescription, LinksVisit, ImgProject} from './projectElements'
 
 
-// const Project = ({ img, link, description, video }) => {
-const Project = ({ link, description, video }) => {
+const Project = ({ img, link, description }) => {
+// const Project = ({ link, description, video }) => {
     const [hover, setHover] = useState(false)
 
     const onHover = () => {
@@ -21,8 +21,8 @@ const Project = ({ link, description, video }) => {
                         <Circles></Circles>
                         <Circles></Circles>
                     </Browsesr>
-                    {/* <ImgProject src={img} alt="Project image"></ImgProject> */}
-                    <ReactPlayer url={video} />
+                    <ImgProject src={img} alt="Project image"></ImgProject>
+                    {/* <ReactPlayer url={video} /> */}
                 </ContainerVideo>
                 <DescriptionProject>
                     <ProDescription>{description}</ProDescription>

@@ -22,7 +22,7 @@ import Email from '../assets/SocialMedia/email.svg';
 import Linkedin from '../assets/SocialMedia/linkedin.svg';
 import Phone from '../assets/SocialMedia/phone.svg';
 
-import Undraw from '../assets/photos/undraw.svg';
+import Developer from '../assets/photos/developer.jpg';
 
 
 
@@ -47,5 +47,5 @@ export {
     Phone,
     Linkedin,
     Tailwindcss,
-    Undraw
+    Developer
 }

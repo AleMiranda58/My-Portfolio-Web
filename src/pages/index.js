@@ -5,7 +5,6 @@ import Hero from '../components/Hero'
 // import { homeObjTwo } from '../components/InfoSection/data'
 // import Intro from '../components/Intro/Intro'
 import Navbar from '../components/navbar'
-import IntroProjects from '../components/IntroProjects'
 import Projects from '../components/Projects'
 import Contact from '../components/contact'
 import Sidebar from '../components/Sidebar'
@@ -25,7 +24,6 @@ const Home = () => {
         <Hero />
         {/* <Intro /> */}
         <About />
-        <IntroProjects />
         <Projects />
         <Contact />
         {/* <InfoSection {...homeObjTwo}/>

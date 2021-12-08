@@ -38,22 +38,22 @@ export const Circles = styled.div`
   background-color: #808080;
 `
 
-// export const ImgProject = styled.img`
-//   width: 100%;
-//   z-index: -1;
-//   transition: all 10s ease;
-//   -webkit-transition: all 10s ease;
-//   -moz-transition: all 10s ease;
-//   -ms-transition: all 10s ease;
-//   -o-transition: all 10s ease;
-//   &:hover {
-//     transform: translateY(-100%);
-//     -webkit-transform: translateY(-100%);
-//     -moz-transform: translateY(-100%);
-//     -ms-transform: translateY(-100%);
-//     -o-transform: translateY(-100%);
-//   }
-// `
+export const ImgProject = styled.img`
+  width: 100%;
+  z-index: -1;
+  transition: all 10s ease;
+  -webkit-transition: all 10s ease;
+  -moz-transition: all 10s ease;
+  -ms-transition: all 10s ease;
+  -o-transition: all 10s ease;
+  &:hover {
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+  }
+`
 
 
 

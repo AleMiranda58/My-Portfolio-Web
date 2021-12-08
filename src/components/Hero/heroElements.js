@@ -9,7 +9,7 @@ export const HeroContainer = styled.div`
     display: flex;
     position: relative;
     z-index: 1;
-    margin-bottom: 200px;
+    padding-bottom: 200px;
 
     @media screen and (max-width: 1200px) {
         height: 75vh;
@@ -51,7 +51,6 @@ export const LeftSide = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 80px;
 
     @media screen and (max-width: 600px) {
         width: 100%;
@@ -61,7 +60,6 @@ export const LeftSide = styled.div`
 export const RightSide = styled.div`
     width: 50%;
     position: relative;
-    margin-top: 80px;
 
     @media screen and (max-width: 800px) {
         width: 50%;
@@ -152,7 +150,8 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
 /*SVG */
 export const PhotoContainer = styled.div`
     display: block;
-    position: relative;
+    position: absolute;
+    bottom: 0;
 `
 
 
