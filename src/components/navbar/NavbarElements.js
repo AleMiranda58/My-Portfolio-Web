@@ -3,7 +3,8 @@ import { Link as LinkRouter } from 'react-router-dom'
 import { Link as LinkScroll } from 'react-scroll'
 
 export const Nav = styled.nav`
-    background: ${({ scrollNav }) => (scrollNav ? '#172438' : 'rgba(0,0,0, 0.1)')};
+    ${'' /* background: ${({ scrollNav }) => (scrollNav ? '#fff' : '#000')}; */}
+    background: ${({ scrollNav }) => (scrollNav ? '#000' : '#000')};
     border-bottom: 1px solid  rgba(255, 255, 255, 0.2);
     height: 80px;
     ${'' /* margin-top: -80px; */}
@@ -12,7 +13,7 @@ export const Nav = styled.nav`
     font-size: 1rem;
     position: sticky;
     top: 0;
-    z-index: 3;
+    z-index: 4;
     width: 100%;
 
 
@@ -57,14 +58,15 @@ export const Nav = styled.nav`
     `
    /*Testing */
    export const Name = styled.p`
-    font-size: 35px;
+    font-size: 20px;
+    font-weight: bold;
     color: #fff;
    `
 
    export const Profession = styled.p`
-    font-size: 20px;
-   `
-//  fin  testing
+    font-size: 15px;
+    font-weight: bold;
+    `
 
     export const ImgLogo = styled.img`
     width: 300px;
@@ -105,19 +107,33 @@ export const Nav = styled.nav`
     export const NavItem = styled.li`
     height: 80px;
     font-size: 18px;
+    display: flex;
+    align-items: center;
+    align-items: center;
     `
     
     export const NavLinks = styled(LinkScroll)`
     display: flex;
     align-items: center;
+    align-items: center;
     text-decoration: none;
     color: #fff;
     font-size: 20px;
-    padding: 0 1rem;
-    height: 100%;
+    margin: 0 1rem;
+    height: 35px;
     cursor: pointer;
+    border-bottom: 1px solid #000;
+    ${'' /* border-bottom: ${({ borderBottom }) => (borderBottom ? '#fff' : '#000')}; */}
+    ${'' /* color: ${({ color }) => (color ? '#000' : '#fff')}; */}
 
     &.active {
-        border-bottom: 5px solid #fff;
+        border-bottom: 1px solid #fff;
+        ${'' /* border-bottom: ${({ borderBottom }) => (borderBottom ? 'red' : 'blue')}; */}
+        
+    }
+
+    &:hover {
+        border-bottom: 1px solid #fff;
+        ${'' /* border-bottom: ${({ borderBottom }) => (borderBottom ? 'red' : 'blue')}; */}
     }
     `
