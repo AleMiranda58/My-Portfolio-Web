@@ -1,18 +1,21 @@
 import React from 'react'
 import Project from '../Project'
 import { projects } from '../../data'
-import {AboutContainer, TitleSection, AboutContent, LeftSide, Bground, RightSide, Psection, Skills, ListSkill, Item, TextItem, ItemContainer, LogoContainer, SectionProjects, AllProjects, ProjectsLlist, SeeMore} from './projectsElements'
+import {AboutContainer, TitleSection, AboutContent, Content, Text, SidesBg, Psection, Skills, ListSkill, Item, TextItem, ItemContainer, LogoContainer, SectionProjects, AllProjects, ProjectsLlist} from './projectsElements'
 import {Html, Css, Js, Jquery, LogoReact, Redux, Firebase, Sass, Git, GitHub, GitLab, Tailwindcss} from '../../assets'
-import { Button } from '../Button/buttonElements'
+// import { Button } from '../Button/buttonElements'
 
 const Projects = () => {
     return (
     <SectionProjects id="projects">
         <AboutContainer>
+                <SidesBg />
             <AboutContent>
-                <LeftSide>
+                <Content>
                     <TitleSection>PROJECTS</TitleSection>
-                    <Psection>I have developed some projects using the following technologies and I'm ready to learn new ones ! </Psection>
+                    <Text>
+                    <Psection>I have developed some projects such as websites, eCommerce, and apps using the following technologies.</Psection>
+                    </Text>
                     <Skills>
                         <ListSkill>
                             <ItemContainer>
@@ -88,29 +91,21 @@ const Projects = () => {
                                 <TextItem>HTML</TextItem>
                             </ItemContainer>
                         </ListSkill>
+                        <Psection className='plus'>+ I'm ready to learn new ones !</Psection>
                     </Skills>
-                </LeftSide>
-                <RightSide>
-                        <Bground>
-                        {/* <Text>
-                        <TitleSection></TitleSection>
-                        <Subtitle></Subtitle>
-                        </Text> */}
-                        </Bground>
-                </RightSide>
+                </Content>
+                <AllProjects>
+                        <Psection className='watch'>Take a look at my projects  </Psection>
+                {/* <Psection className='test'>Take a look at my projects </Psection> */}
+                    <ProjectsLlist>
+                        { projects.map((item)=> (
+                        <Project key={item.id} img={item.img} link={item.link} description={item.description} />
+                        ))}
+                    </ProjectsLlist>
+                </AllProjects>
             </AboutContent>
         </AboutContainer>
-        <AllProjects>
-            <ProjectsLlist>
-                { projects.map((item)=> (
-                /*<Project key={item.id} link={item.link} description={item.description} video={item.video}/>*/
-                <Project key={item.id} img={item.img} link={item.link} description={item.description} />
-                ))}
-            </ProjectsLlist>
-            <SeeMore>
-                <Button>See more projects</Button>
-            </SeeMore>
-        </AllProjects>
+        
     </SectionProjects>
     )
 }

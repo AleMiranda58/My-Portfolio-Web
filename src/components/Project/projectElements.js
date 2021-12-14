@@ -5,15 +5,19 @@ export const ProjectElement = styled.div`
   width: 100%;
   height: 50vh;
   margin: 20px auto;
-  border: 1px solid rgb(243, 243, 243);
+  overflow: hidden;
   border-radius: 10px 10px 10px 10px;
   -webkit-border-radius: 10px 10px 10px 10px;
   -moz-border-radius: 10px 10px 10px 10px;
   -ms-border-radius: 10px 10px 10px 10px;
   -o-border-radius: 10px 10px 10px 10px;
-  overflow: hidden;
   z-index: 2;
   display: flex;
+
+  &:hover {
+    border: 1px solid rgb(243, 243, 243);
+  
+  }
 `
 
 
@@ -61,54 +65,31 @@ export const DescriptionProject = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   bottom: 0;
   z-index: 3;
   bottom: 0;
+  background: rgba(0,0,0, 0.3);
+  padding: 40px;
 `
 
-export const ProDescription = styled.div`
+export const ProDescription = styled.p`
   width: 100%;
-  height: 100px;;
+  height: 100px;
   z-index: 4;
   color: #fff;
   font-size: 18px;
   margin: 10px 0;
+  text-align: justify;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
 `
 
 export const ContainerVideo = styled.div`
   height: 100%;
-  ${'' /* &:hover + ${DescriptionProject} {
-        display: block;
-    } */}
- 
 `
-
-// export const CodeSource = styled.a`
-//   width: 40%;
-//   height: 40px;
-//   padding: 20px;
-//   text-decoration: none;
-//   border-radius: 15px;
-//   background: ${({primary}) => (primary ? '#fff' : 'rgba(255,255,255, 0.5)')};
-//   color: ${({dark}) => (dark ? '#010606' : '#fff')};
-//   font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
-//   outline: none;
-//   border: none;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   align-items: center;
-//   transition: all 0.2s ease-in-out;
-
-//   &:hover {
-//       transition: all 0.2s ease-in-out;
-//       background: ${({primary}) => (primary ? 'rgba(255,255,255, 0.5)' : '#fff')}; 
-//       color: ${({dark}) => (dark ? '#fff' : '#010606')};
-//       ${'' /* font-weight: ${({bold}) => (bold ? 'bold' : '')}; */}
-//   }
-// `
 
 
 export const LinksVisit = styled.div`

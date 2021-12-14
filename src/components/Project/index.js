@@ -34,7 +34,6 @@ const Project = ({ img, link, description }) => {
                         target="_blank"
                         rel="noreferrer"
                         primary= "true"
-                        dark= "true"
                         fontBig= "true"
                         bold= "true"
                         smooth={true}
@@ -43,50 +42,6 @@ const Project = ({ img, link, description }) => {
                         offset={-80}>
                         CODE SOURCE
                         </LinksProjects>
-                        <LinksProjects
-                        href={link}
-                        target="_blank"
-                        rel="noreferrer"
-                        primary= "true"
-                        dark= "false"
-                        fontBig= "true"
-                        bold= "true"
-                        smooth={true}
-                        duration={1000}
-                        spy={true}
-                        offset={-80}>
-                        WEB SITE
-                        </LinksProjects>
-                        {/* <CodeSource
-                        onMouseEnter={onHover}
-                        onMouseLeave={onHover}
-                        href={link}
-                        target="_blank"
-                        rel="noreferrer"
-                        primary= "true"
-                        dark= "true"
-                        fontBig= "true"
-                        bold= "true"
-                        smooth={true}
-                        duration={1000}
-                        spy={true}
-                        offset={-80}>
-                        CODE SOURCE
-                        </CodeSource> */}
-                        {/* <CodeSource
-                        href={link}
-                        target="_blank"
-                        rel="noreferrer"
-                        primary= "true"
-                        dark= "false"
-                        fontBig= "true"
-                        bold= "true"
-                        smooth={true}
-                        duration={1000}
-                        spy={true}
-                        offset={-80}>
-                        tEST
-                        </CodeSource> */}
                     </LinksVisit>
                    
                 </DescriptionProject>

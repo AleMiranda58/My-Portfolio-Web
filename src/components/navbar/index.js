@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { animateScroll as scroll} from 'react-scroll'
 import {FaBars} from 'react-icons/fa'
-import {Nav, NavbarContainer, NavLogo, Profession, Name, MobileIcon, NavMenu, NavItem, NavLinks} from './NavbarElements'
+import {Nav, NavbarContainer, NavLogo, Name, MobileIcon, NavMenu, NavItem, NavLinks} from './NavbarElements'
 // import {Logo} from '../../assets'............... also add up there "ImgLogo" component
 
 
@@ -29,8 +29,7 @@ const Navbar = ( { toggle }) => {
         <Nav scrollNav={scrollNav}>
             <NavbarContainer>
                 <NavLogo to='/' onClick={toggleHome}>
-                <Name>Alejandra Miranda</Name>
-                <Profession>Front-end Developer</Profession>
+                <Name></Name>
                 {/* <ImgLogo src={Logo} alt="logo" /> */}
                 </NavLogo>
                 <MobileIcon onClick={toggle}>

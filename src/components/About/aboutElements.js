@@ -1,113 +1,94 @@
 import styled from "styled-components";
-import SVG from "react-inlinesvg";
 
 
 export const AboutContainer = styled.div`
     width: 100%;
-    ${'' /* height: 100vh; */}
+    height: 92vh;
     position: relative;
-    z-index: 1;
-    margin-top: 100px;
-
 `
 
 
 export const AboutContent = styled.div`
-    width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
 `
 
 export const LeftSide = styled.div`
     width: 30%;
-    height: 100%;
-    ${'' /* position: relative; */}
-    display: flex;
-    justify-content: center;
 `
 
-export const Psection = styled.p`
-    color: #fff;
-    font-size: 25px;
-    font-family: 'Dosis', sans-serif;
-    & + & {
-    margin: 20px 0px;
-    }
+export const BgPhoto = styled.div`
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0% 100%, 0 50%, 0% 0%);
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255, 0.5);
+    position: relative;
+
 `
-export const TitleSection = styled.h3`
-    font-size: 70px;
-    font-weight: 600;
+
+export const Photo = styled.img`
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+`
+
+export const PhotoContainer = styled.div`
+    display: block;
+    position: absolute;
+    bottom: 0;
+`
+
+export const Intro = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+`
+
+export const Text = styled.p`
     color: #fff;
-    align-self: flex-end;
+    font-size: 50px;
+    font-weight: 200;
+    letter-spacing: 5px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+    & + & + &{
+        font-size: 80px;
+        font-weight: 800;
+        color: #000;
+        letter-spacing: 2px;
+    }
+
+    & + & + & + &{
+        font-size: 40px;
+        font-weight: 200;
+        color: #fff;
+        letter-spacing: 3px;
+    }
 `
 
 export const RightSide = styled.div`
     width: 60%;
     height: 100%;
     margin: 0 auto;
-    padding: 0 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 `
 
-
-export const ContentBotton = styled.div`
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    ${Psection} {
-        text-align: justify;
-    }
-    
+export const Slider = styled.div`
+    margin-top: 80px;
 `
 
-export const ContentTop = styled.div`
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 40px;
-    ${Psection} {
-        font-size: 25px;
-         align-self: flex-end;
-    }
-`
-
-
-export const Bref = styled.div`
-    width: 100%;
-`
-
-export const BrefItem = styled.div`
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-`
-
-export const IconItem = styled(SVG)`
-    width: 30px;
-    height: 30px;
+export const Item = styled.p`
     color: #fff;
-    margin-right: 25px;
-`
-export const BgPhoto = styled.div`
-    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0% 100%, 0 50%, 0% 0%);
-    width: 100%;
-    height: 100%;
-    background: rgba(255,255,255, 0.5);
-;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
 `
 
-export const Photo = styled.img`
-    display: block;
-    width: 150%;
-    background-position: center;
-    object-fit: cover;
-`
 
-export const PhotoContainer = styled.div`
-    display: block;
-`
+
+

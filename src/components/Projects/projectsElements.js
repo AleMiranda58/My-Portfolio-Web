@@ -4,53 +4,78 @@ import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md'
 
 
 export const SectionProjects = styled.div`
-  /*Contenedor general de toda mi section projectos */
-  display: flex;
-  flex-direction: column;
-  margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    ${'' /* margin-top: 160px; */}
 `
 
 
-// Primera parte de la seccion projectos: description de technologias
 export const AboutContainer = styled.div`
     width: 100%;
-    height: 100vh;
-    position: relative;
+    height: 100%;
     z-index: 1;
+    position: relative;
 `
+
 
 export const AboutContent = styled.div`
     width: 100%;
-    height: 100vh;
     display: flex;
+    flex-direction: column;
 `
 
-export const LeftSide = styled.div`
-    width: 70%;
+export const SidesBg = styled.div`
+    ${'' /* width: 20px;
     height: 100%;
+    background: rgba(255,255,255, 0.5);
+    left: 10px;
+    position: absolute; */}
+`
+
+
+export const Content = styled.div`
+    width: 75%;
+    height: 92vh;
     margin: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-evenly;
 `
 
-export const TitleSection = styled.h3`
-    font-size: 70px;
-    font-weight: 600;
+export const TitleSection = styled.h2`
+    font-family: 'Montserrat', sans-serif;
     color: #fff;
-    
+    font-size: 80px;
+    font-weight: 800;
 `
 
 export const Psection = styled.p`
+    width: 100%;
     color: #fff;
-    font-size: 45px;
-    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+`
+
+
+export const Text = styled.div`
+    
 `
 
 export const Skills = styled.div`
     width: 100%;
-    height: 15%;
+    height: 20%;
     z-index: 2;
+
+    & .plus {
+        font-weight: 800;
+        font-size: 60px;
+        font-style: italic;
+        color: #000;
+        text-align: center;
+    }
 `
 
 export const ListSkill = styled.div`
@@ -91,7 +116,8 @@ export const Item = styled(SVG)`
     top: 0;
     right: 0;
     path {
-        fill: rgba(255,255,255, 0.5); 
+        ${'' /* fill: rgba(255,255,255, 0.5);  */}
+        fill: #fff; 
 ;
     }
     &:hover {
@@ -136,46 +162,23 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
     font-size: 20px;
 `
 
-export const RightSide = styled.div`
-    width: 10%;
-    position: relative;
-`
-
-export const Bground = styled.div`
-    ${'' /* clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 50% 100%, 0% 50%, 50% 0); */}
-    clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 100% 100%, 0 50%, 98% 0);
-    width: 100%;
-    height: 100%;
-    background: rgba(255,255,255, 0.5);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-`
-// export const Text = styled.div`
-//     padding-left: 60px;
-//     color: #172438;
-// `
-
-
-
-// export const Subtitle = styled.p`
-//     text-align: center;
-//     color: #fff;
-//     font-size: 50px;
-// `
-
-/*  Listado de projectos: segunda parte */
 export const AllProjects = styled.div`
   width: 75%;
-  margin: auto;
+  margin: 80px auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  text-align: center;
   z-index: 2;
+
+  & .watch {
+        font-weight: 800;
+        font-size: 60px;
+        color: #fff;
+        text-align: center;
+        background: #000;
+        height: 120px;
+    }
 `
 
 export const ProjectsLlist = styled.div`
@@ -185,9 +188,3 @@ export const ProjectsLlist = styled.div`
   justify-content: space-between;
 `
 
-export const SeeMore = styled.div`
-  width: 30%;
-  margin-top: 15px;
-  z-index: 3;
-`
-/*  Fin listado de projectos: segunda parte */

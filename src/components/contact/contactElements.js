@@ -5,12 +5,12 @@ export const ContactSection = styled.div`
   position: relative;
   height: 100vh;
   background: rgba(0, 0, 0, 0.2);
-  z-index: 2;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-top: 100px;
 `
 export const ContentIntro = styled.div`
@@ -23,18 +23,19 @@ export const ContentIntro = styled.div`
 
 export const TitleSection = styled.h2`
   font-size: 80px;
-  font-weight: 500;
+  font-weight: 800;
   color: #fff;
-  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+
 `
 
 
 export const Container = styled.div`
   width: 100%;
-  height: 80%;
+  height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  ${'' /* align-items: center; */}
 `
 
 export const ContactInfo = styled.div`
@@ -108,11 +109,12 @@ export const ValueItem = styled.p`
 
 export const ContactForm = styled.div`
   width: 40%;
+  height: 90%;
   padding: 40px;
   background: rgba(0, 0, 0, 0.2);
 `
+
 export const Form = styled.form`
-  
 `
 
 export const FormTitle = styled.h2`
@@ -135,7 +137,7 @@ export const InputForm = styled.input`
   outline: none;
   font-size: 16px;
   resize: none;
-  background: rgba(225, 225, 225, 0.7);
+  background: #fff;
 
   &:focus ~ span {
     color: #e91e63;
@@ -148,18 +150,28 @@ export const InputForm = styled.input`
   }
 
   &[type="submit"] {
-        width: 100px;
-        background: #00bcd4;
+        width: 20%;
         color: #fff;
+        background: transparent;
         border: none;
         cursor: pointer;
         padding: 10px;
         font-size: 18px;
+        border: 2px solid #fff;
+        border-radius: 3px;
+        ${'' /* position: absolute;
+        top: -25px; */}
+
+        &:hover {
+          background: #fff;
+          border: 1px solid #000;
+          color: #000;
+        }
       }
 `
 export const InputDescr = styled.span`
   position: absolute;
-  left: 0;
+  left: 5px;
   padding: 5px 0;
   margin: 10px 0;
   font-size: 16px;
@@ -169,7 +181,7 @@ export const InputDescr = styled.span`
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
-  color: #666;
+  color: rgba(0,0,0, 0.5);
 `
 export const TextAreaForm = styled.textarea`
   width: 100%;
@@ -180,7 +192,7 @@ export const TextAreaForm = styled.textarea`
   outline: none;
   font-size: 16px;
   resize: none;
-  background: rgba(225, 225, 225, 0.7);
+  background: #fff;
 
   &:focus ~ span {
     color: #e91e63;

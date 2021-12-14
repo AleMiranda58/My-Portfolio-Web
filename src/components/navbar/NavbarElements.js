@@ -4,9 +4,10 @@ import { Link as LinkScroll } from 'react-scroll'
 
 export const Nav = styled.nav`
     ${'' /* background: ${({ scrollNav }) => (scrollNav ? '#fff' : '#000')}; */}
-    background: ${({ scrollNav }) => (scrollNav ? '#000' : '#000')};
-    border-bottom: 1px solid  rgba(255, 255, 255, 0.2);
-    height: 80px;
+    ${'' /* background: ${({ scrollNav }) => (scrollNav ? '#000' : '#000')}; */}
+    background: ${({ scrollNav }) => (scrollNav ? '#0d47a1' : '#0d47a1')};
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.1);
+    height: 8vh;
     ${'' /* margin-top: -80px; */}
     display: flex;
     align-items: center;
@@ -58,16 +59,16 @@ export const Nav = styled.nav`
     `
    /*Testing */
    export const Name = styled.p`
-    font-size: 20px;
-    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
     color: #fff;
+    &:after {
+        content: '< AleMiranda />';
+    }
    `
 
-   export const Profession = styled.p`
-    font-size: 15px;
-    font-weight: bold;
-    `
-
+   
     export const ImgLogo = styled.img`
     width: 300px;
     padding-top: 10px;
@@ -118,17 +119,17 @@ export const Nav = styled.nav`
     align-items: center;
     text-decoration: none;
     color: #fff;
-    font-size: 20px;
+    font-size: 15px;
     margin: 0 1rem;
     height: 35px;
     cursor: pointer;
-    border-bottom: 1px solid #000;
-    ${'' /* border-bottom: ${({ borderBottom }) => (borderBottom ? '#fff' : '#000')}; */}
-    ${'' /* color: ${({ color }) => (color ? '#000' : '#fff')}; */}
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    ${'' /* border-bottom: 1px solid #000; */}
+    border-bottom: 1px solid #0d47a1;
 
     &.active {
         border-bottom: 1px solid #fff;
-        ${'' /* border-bottom: ${({ borderBottom }) => (borderBottom ? 'red' : 'blue')}; */}
         
     }
 
