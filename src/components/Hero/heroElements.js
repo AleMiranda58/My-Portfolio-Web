@@ -2,8 +2,30 @@ import styled from "styled-components";
 
 
 export const SectionContainer = styled.section`
-    height: 92vh; 
+    ${'' /* height: 92vh;  */}
     margin-bottom: 50px;
+
+    @media only screen and (max-width: 600px) {
+        height: 40vh;
+    }
+
+    @media only screen and (min-width: 600px) {
+        height: 50vh;
+    }
+
+    @media only screen and (min-width: 768px) {
+        height: 70vh;
+    }
+
+    @media only screen and (min-width: 889px) {
+        height: 80vh;
+
+    }
+
+    @media only screen and (min-width: 1200px) {
+    height: 92vh; 
+
+    }
 `
 
 export const Content = styled.div`
@@ -11,6 +33,25 @@ export const Content = styled.div`
     height: 100%;
     display: flex;
     position: relative;
+
+    @media only screen and (max-width: 600px) {
+        margin-top: 60px;
+    }
+
+    @media only screen and (min-width: 600px) {
+        margin-top: 60px;
+    }
+
+    @media only screen and (min-width: 768px) {
+        margin-top: 0px;
+        
+    }
+
+    @media only screen and (min-width: 889px) {
+    }
+
+    @media only screen and (min-width: 1200px) {
+    }
 `
 
 export const LeftSide = styled.div`
@@ -22,7 +63,27 @@ export const LeftSide = styled.div`
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-bottom: 80px;
+    ${'' /* margin-bottom: 80px; */}
+
+    @media only screen and (max-width: 600px) {
+        width: 70%;
+
+    }
+
+    @media only screen and (min-width: 600px) {
+        width: 60%;
+    }
+
+    @media only screen and (min-width: 768px) {
+        width: 70%;
+    }
+
+    @media only screen and (min-width: 889px) {
+        width: 60%;
+    }
+
+    @media only screen and (min-width: 1200px) {
+    }
 `
 
 export const Intro = styled.div`
@@ -56,16 +117,87 @@ export const Text = styled.p`
 
     }
 
-     /* & + & + & + & + &{
+    @media only screen and (max-width: 600px) {
+        font-size: 18px;
+        & + & {
+            font-size: 25px;
+        }
+        & + & + &{
+            font-size: 30px;
+        }
+        & + & + & + &{
+            font-size: 18px;
+        }
+    }
+
+    @media only screen and (min-width: 600px) {
+        font-size: 30px;
+        & + & {
+            font-size: 35px;
+        }
+        & + & + &{
+            font-size: 60px;
+        }
+        & + & + & + &{
+            font-size: 20px;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        font-size: 30px;
+        & + & {
+            font-size: 30px;
+        }
+        & + & + &{
+            font-size: 60px;
+        }
+        & + & + & + &{
+            font-size: 30px;
+        }
+    }
+
+    @media only screen and (min-width: 889px) {
+        font-size: 45px;
+        & + & {
+            font-size: 40px;
+        }
+        & + & + &{
+            font-size: 80px;
+        }
+        & + & + & + &{
+            font-size: 40px;
+        }
+    }
+
+    @media only screen and (min-width: 1200px) {
+        width: 100%;
         font-weight: 200;
+        font-size: 60px;
+        color: #fff;
+
+    & + & {
+        font-weight: 600;
+        font-size: 60px;
+    }
+    
+    & + & + &{
+        font-weight: 900;
+        font-size: 100px;
+        color: #000;
+    }
+
+    & + & + & + &{
+        font-weight: 600;
         font-size: 40px;
-        font-style: italic;
-        color: rgba(255,255,255, 0.5)
-    }*/
+        letter-spacing: 10px;
+        color: #000;
+
+    }
+    }
 `
 
 export const MediaBar = styled.div`
-   height: 100%;
+   ${'' /* height: 100%;
    width: 120px;
    position: absolute;
    left: 20px;
@@ -73,7 +205,36 @@ export const MediaBar = styled.div`
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: flex-end;
+   justify-content: flex-end; */}
+
+   @media only screen and (max-width: 600px) {
+        display: none;
+    }
+
+    @media only screen and (min-width: 600px) {
+        display: none;
+    }
+
+    @media only screen and (min-width: 768px) {
+        display: none;
+    }
+
+    @media only screen and (min-width: 889px) {
+        display: none;
+
+    }
+
+    @media only screen and (min-width: 1200px) {
+        height: 100%;
+        width: 120px;
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
 `
 
 export const Icons = styled.div`
@@ -87,14 +248,56 @@ export const Icons = styled.div`
 
 export const RightSide = styled.div`
     width: 50%;
+
+    @media only screen and (max-width: 600px) {
+        width: 40%;
+    }
+
+    @media only screen and (min-width: 600px) {
+        width: 40%;
+    }
+
+    @media only screen and (min-width: 768px) {
+        width: 30%;
+    }
+
+    @media only screen and (min-width: 889px) {
+        width: 40%;
+
+    }
+
+    @media only screen and (min-width: 1200px) {
+    }
 `
 
 export const SideBg = styled.div`
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
-    width: 100%;
-    height: 100%;
+    ${'' /* width: 100%;
+    height: 100%; */}
     background: rgba(255,255,255, 0.8);
     position: relative;
+
+    @media only screen and (max-width: 600px) {
+        height: 100%;
+    }
+
+    @media only screen and (min-width: 600px) {
+        height: 100%;
+    }
+
+    @media only screen and (min-width: 768px) {
+        height: 80%;
+    }
+
+    @media only screen and (min-width: 889px) {
+        height: 100%;
+
+    }
+
+    @media only screen and (min-width: 1200px) {
+        width: 100%;
+        height: 100%;
+    }
 `
 
 export const PhotoContainer = styled.div`
@@ -107,8 +310,31 @@ export const Photo = styled.img`
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    ${'' /* width: 80%; */}
     object-fit: cover;
+
+    @media only screen and (max-width: 600px) {
+        width: 80%;
+    }
+
+    @media only screen and (min-width: 600px) {
+        width: 80%;
+
+    }
+
+    @media only screen and (min-width: 768px) {
+        width: 100%;
+    }
+
+    @media only screen and (min-width: 889px) {
+        width: 90%;
+
+    }
+
+    @media only screen and (min-width: 1200px) {
+        width: 80%;
+
+    }
 `
 
 export const Svgcontent = styled.svg`
@@ -123,9 +349,25 @@ export const Svgcontent = styled.svg`
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
 
-    @media screen and (max-width: 900px) {
+    @media only screen and (max-width: 600px) {
+
+    }
+
+    @media only screen and (min-width: 600px) {
+    }
+
+    @media only screen and (min-width: 768px) {
         width: 42%;
     }
+
+    @media only screen and (min-width: 889px) {
+        width: 39%;
+
+    }
+
+    @media only screen and (min-width: 1200px) {
+    }
+   
 `
 
 export const PathContent = styled.path`
