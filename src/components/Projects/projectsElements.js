@@ -6,7 +6,24 @@ import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md'
 export const SectionProjects = styled.div`
     width: 100%;
     height: 100%;
-    ${'' /* margin-top: 160px; */}
+
+    @media only screen and (max-width: 600px) {
+        margin-top: 40px;
+
+    }
+
+    @media only screen and (min-width: 600px) {
+    }
+
+    @media only screen and (min-width: 768px) {
+        margin-top: -40px;
+    }
+
+    @media only screen and (min-width: 889px) {
+    }
+
+    @media only screen and (min-width: 1200px) {
+    }
 `
 
 
@@ -46,8 +63,32 @@ export const Content = styled.div`
 export const TitleSection = styled.h2`
     font-family: 'Montserrat', sans-serif;
     color: #fff;
-    font-size: 80px;
-    font-weight: 800;
+    
+
+    @media only screen and (max-width: 600px) {
+        font-size: 60px;
+        font-weight: 600;
+    }
+
+    @media only screen and (min-width: 600px) {
+        font-size: 65px;
+        font-weight: 600;
+    }
+
+    @media only screen and (min-width: 768px) {
+        font-size: 60px;
+        font-weight: 600;
+    }
+
+    @media only screen and (min-width: 889px) {
+        font-size: 70px;
+        font-weight: 800;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        font-size: 80px;
+        font-weight: 800;
+    }
 `
 
 export const Psection = styled.p`
@@ -55,8 +96,32 @@ export const Psection = styled.p`
     color: #fff;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 35px;
+    
+
+    @media only screen and (max-width: 600px) {
+        font-weight: 200;
+        font-size: 20px;
+    }
+
+    @media only screen and (min-width: 600px) {
+        font-weight: 200;
+        font-size: 30px;
+    }
+
+    @media only screen and (min-width: 768px) {
+        font-weight: 200;
+        font-size: 30px;
+    }
+
+    @media only screen and (min-width: 889px) {
+        font-weight: 400;
+        font-size: 35px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        font-weight: 400;
+        font-size: 35px;
+    }
 `
 
 
@@ -70,11 +135,35 @@ export const Skills = styled.div`
     z-index: 2;
 
     & .plus {
-        font-weight: 800;
-        font-size: 60px;
+        
         font-style: italic;
         color: #000;
         text-align: center;
+
+        @media only screen and (max-width: 600px) {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        @media only screen and (min-width: 600px) {
+            font-weight: 800;
+            font-size: 30px;
+        }
+
+        @media only screen and (min-width: 768px) {
+            font-weight: 600;
+            font-size: 30px;
+        }
+
+        @media only screen and (min-width: 889px) {
+            font-weight: 800;
+            font-size: 40px;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            font-weight: 800;
+            font-size: 60px;
+        }
     }
 `
 
@@ -90,12 +179,33 @@ export const ListSkill = styled.div`
 
 export const ItemContainer = styled.div`
     height: 90px;
-    width: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     position: relative;
+
+    @media only screen and (max-width: 600px) {
+        width: 20px;
+    }
+
+    @media only screen and (min-width: 600px) {
+        width: 25px;
+
+    }
+
+    @media only screen and (min-width: 768px) {
+        width: 30px;
+
+    @media only screen and (min-width: 889px) {
+        width: 40px;
+
+    }
+
+    @media only screen and (min-width: 1200px) {
+        width: 50px;
+    }
 `
 
 export const TextItem = styled.p`
@@ -172,13 +282,36 @@ export const AllProjects = styled.div`
   z-index: 2;
 
   & .watch {
-        font-weight: 800;
-        font-size: 60px;
         color: #fff;
         text-align: center;
         background: #000;
-        height: 120px;
-    }
+        height: auto;
+        padding: 10px;
+    
+            @media only screen and (max-width: 600px) {
+                font-weight: 400;
+                font-size: 20px;
+            }
+
+            @media only screen and (min-width: 600px) {
+                font-weight: 400;
+                font-size: 30px;
+            }
+
+            @media only screen and (min-width: 768px) {
+                font-weight: 600;
+                font-size: 30px;
+            
+            @media only screen and (min-width: 889px) {
+                font-weight: 600;
+                font-size: 40px;
+            }
+
+            @media only screen and (min-width: 1200px) {
+                font-weight: 600;
+                font-size: 60px;
+            }
+        }
 `
 
 export const ProjectsLlist = styled.div`
