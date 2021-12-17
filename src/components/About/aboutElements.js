@@ -3,18 +3,61 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.div`
     width: 100%;
-    height: 92vh;
     position: relative;
+    height: 92vh;
+
+  
+
+    @media only screen and (max-width: 600px) {
+        height: 50vh;
+    }
+
+    @media only screen and (min-width: 600px) {
+        height: 50vh;
+    }
+
+    @media only screen and (min-width: 768px) {
+        height: 70vh;
+    }
+
+    @media only screen and (min-width: 889px) {
+        height: 100vh;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        height: 100vh;
+        margin-top: 80px;
+    }
 `
 
 
 export const AboutContent = styled.div`
     height: 100%;
     display: flex;
+    
 `
 
 export const LeftSide = styled.div`
     width: 30%;
+
+    @media only screen and (max-width: 600px) {
+    }
+
+    @media only screen and (min-width: 600px) {
+    }
+
+    @media only screen and (min-width: 768px) {
+        width: 30%;
+
+    }
+
+    @media only screen and (min-width: 889px) {
+
+    }
+
+    @media only screen and (min-width: 1200px) {
+
+    }
 `
 
 export const BgPhoto = styled.div`
@@ -23,6 +66,26 @@ export const BgPhoto = styled.div`
     height: 100%;
     background: rgba(255,255,255, 0.5);
     position: relative;
+
+   
+
+     @media only screen and (max-width: 600px) {
+    }
+
+    @media only screen and (min-width: 600px) {
+    }
+
+    @media only screen and (min-width: 768px) {
+        height: 80%;
+    }
+
+    @media only screen and (min-width: 889px) {
+        height: 100%;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        height: 100%;
+    }
 
 `
 
@@ -46,9 +109,6 @@ export const Intro = styled.div`
 
 export const Text = styled.p`
     color: #fff;
-    font-size: 50px;
-    font-weight: 200;
-    letter-spacing: 5px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 
@@ -65,6 +125,59 @@ export const Text = styled.p`
         color: #fff;
         letter-spacing: 3px;
     }
+
+
+
+    @media only screen and (max-width: 600px) {
+        font-size: 18px;
+        & + & + &{
+            font-size: 25px;
+        }
+        & + & + & + &{
+            font-size: 16px;
+            letter-spacing: 0px;
+        }
+    }
+
+    @media only screen and (min-width: 600px) {
+        font-size: 18px;
+        & + & + &{
+            font-size: 25px;
+        }
+        & + & + & + &{
+            font-size: 16px;
+            letter-spacing: 0px;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        font-size: 25px;
+        & + & + &{
+            font-size: 45px;
+        }
+        & + & + & + &{
+            font-size: 20px;
+            letter-spacing: 0px;
+        }
+    }
+
+    @media only screen and (min-width: 889px) {
+
+    }
+
+    @media only screen and (min-width: 1200px) {
+    font-size: 50px;
+    font-weight: 200;
+    letter-spacing: 5px;
+
+    & + & + &{
+        font-size: 80px;
+    }
+    & + & + & + &{
+        font-size: 40px;
+    }
+    
+
 `
 
 export const RightSide = styled.div`
@@ -75,10 +188,51 @@ export const RightSide = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media only screen and (max-width: 600px) {
+    }
+
+    @media only screen and (min-width: 600px) {
+    }
+
+    @media only screen and (min-width: 768px) {
+        width: 70%;
+        height: 80%;
+    }
+
+    @media only screen and (min-width: 889px) {
+
+    }
+
+    @media only screen and (min-width: 1200px) {
+
+    }
 `
 
 export const Slider = styled.div`
     margin-top: 80px;
+
+    @media only screen and (max-width: 600px) {
+        margin-top: 30px;
+
+    }
+
+    @media only screen and (min-width: 600px) {
+        margin-top: 30px;
+
+    }
+
+    @media only screen and (min-width: 768px) {
+        margin-top: 30px;
+    }
+
+    @media only screen and (min-width: 889px) {
+
+    }
+
+    @media only screen and (min-width: 1200px) {
+
+    }
 `
 
 export const Item = styled.p`
@@ -87,6 +241,28 @@ export const Item = styled.p`
     font-size: 40px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+
+    @media only screen and (max-width: 600px) {
+        font-size: 20px;
+    }
+
+    @media only screen and (min-width: 600px) {
+        font-size: 20px;
+
+    }
+
+    @media only screen and (min-width: 768px) {
+        font-size: 25px;
+    }
+
+    @media only screen and (min-width: 889px) {
+
+    }
+
+    @media only screen and (min-width: 1200px) {
+
+    }
+    
 `
 
 
