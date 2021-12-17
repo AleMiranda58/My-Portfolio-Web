@@ -3,19 +3,16 @@ import { Link as LinkRouter } from 'react-router-dom'
 import { Link as LinkScroll } from 'react-scroll'
 
 export const Nav = styled.nav`
-    ${'' /* background: ${({ scrollNav }) => (scrollNav ? '#fff' : '#000')}; */}
-    ${'' /* background: ${({ scrollNav }) => (scrollNav ? '#000' : '#000')}; */}
-    background: ${({ scrollNav }) => (scrollNav ? '#0d47a1' : '#0d47a1')};
-    border-bottom: 1px solid  rgba(255, 255, 255, 0.1);
+    width: 100%;
     height: 8vh;
-    ${'' /* margin-top: -80px; */}
+    z-index: 4;
     display: flex;
     align-items: center;
+    background: ${({ scrollNav }) => (scrollNav ? '#0d47a1' : '#0d47a1')};
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.1);
     font-size: 1rem;
     position: sticky;
     top: 0;
-    z-index: 4;
-    width: 100%;
 
 
     @media screen and (max-width: 960px) {
@@ -34,13 +31,11 @@ export const Nav = styled.nav`
     z-index: 1;
     width: 100%;
     padding: 0 24px;
-    ${'' /* max-width: 1700px; */}
     `
 
     export const NavLogo = styled(LinkRouter)`
     width: 100%;
     margin-left: 24px;
-    ${'' /* font-weight: bold; */}
     text-decoration: none;
     margin-left: 40px;
     cursor: pointer;
@@ -52,9 +47,10 @@ export const Nav = styled.nav`
     
 
     @media screen and (max-width: 768px) {
-        margin-left: 0;
+        ${'' /* margin-left: 0;
         display: flex;
-        align-items: center;
+        align-items: center; */}
+        display: none;
     }
     `
    /*Testing */
@@ -86,12 +82,19 @@ export const Nav = styled.nav`
     display: none;
 
     @media screen and (max-width: 768px) {
-        display: flex;
+        ${'' /* display: flex;
         align-items: center;
         tranform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
-        color: #fff
+        color: #fff; */}
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: #fff;
     }
     `
 

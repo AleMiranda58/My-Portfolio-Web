@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import {SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink} from './sidebarElements'
 
+
 const Sidebar = ({ isOpen, toggle }) => {
     const [scrollNav, setScrollNav] = useState(false)
 
@@ -19,53 +20,53 @@ const Sidebar = ({ isOpen, toggle }) => {
 
     return (
         <SidebarContainer isOpen={isOpen} onClick={toggle} scrollNav={scrollNav}>
-        <Icon onClick={toggle}>
-            <CloseIcon />
-        </Icon>
-        <SidebarWrapper>
-            <SidebarMenu>
-                <SidebarLink
-                to="home"
-                onClick={toggle}
-                smooth={true}
-                duration={1000}
-                spy={true}
-                offset={-80}
-                activeClass="active">
-                HOME
-                </SidebarLink>
-                <SidebarLink
-                to="about"
-                onClick={toggle}
-                smooth={true}
-                duration={1000}
-                spy={true}
-                offset={-80}
-                activeClass="active">
-                ABOUT
-                </SidebarLink>
-                <SidebarLink
-                to="projects" 
-                onClick={toggle}
-                smooth={true}
-                duration={1000}
-                spy={true}
-                offset={-80}
-                activeClass="active">
-                PROJECTS
-                </SidebarLink>
-                <SidebarLink
-                to="contact"
-                onClick={toggle}
-                smooth={true}
-                duration={1000}
-                spy={true}
-                offset={-80}
-                activeClass="active">
-                CONTACT
-                </SidebarLink>
-            </SidebarMenu>
-        </SidebarWrapper>
+            <Icon onClick={toggle}>
+                <CloseIcon />
+            </Icon>
+            <SidebarWrapper>
+                <SidebarMenu>
+                    <SidebarLink
+                    to="home"
+                    onClick={toggle}
+                    smooth={true}
+                    duration={1000}
+                    spy={true}
+                    offset={-80}
+                    activeClass="active">
+                    HOME
+                    </SidebarLink>
+                    <SidebarLink
+                    to="about"
+                    onClick={toggle}
+                    smooth={true}
+                    duration={1000}
+                    spy={true}
+                    offset={-80}
+                    activeClass="active">
+                    ABOUT
+                    </SidebarLink>
+                    <SidebarLink
+                    to="projects" 
+                    onClick={toggle}
+                    smooth={true}
+                    duration={1000}
+                    spy={true}
+                    offset={-80}
+                    activeClass="active">
+                    PROJECTS
+                    </SidebarLink>
+                    <SidebarLink
+                    to="contact"
+                    onClick={toggle}
+                    smooth={true}
+                    duration={1000}
+                    spy={true}
+                    offset={-80}
+                    activeClass="active">
+                    CONTACT
+                    </SidebarLink>
+                </SidebarMenu>
+            </SidebarWrapper>
         </SidebarContainer>
     )
 }
