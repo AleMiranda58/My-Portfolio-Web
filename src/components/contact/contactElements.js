@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const ContactSection = styled.div`
   position: relative;
-  height: 100vh;
+  ${'' /* height: 100vh; */}
   background: rgba(0, 0, 0, 0.2);
   z-index: 1;
   display: flex;
@@ -12,6 +12,26 @@ export const ContactSection = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   margin-top: 100px;
+
+  @media only screen and (max-width: 600px) {
+    height: auto;
+    }
+
+    @media only screen and (min-width: 600px) {
+      height: auto;
+    }
+
+    @media only screen and (min-width: 768px) {
+      height: auto;
+    }
+
+    @media only screen and (min-width: 889px) {
+      height: 100vh;
+    }
+
+    @media only screen and (min-width: 1200px) {
+      height: 100vh;
+    }
 `
 export const ContentIntro = styled.div`
   padding: 100px 0px;
@@ -22,11 +42,33 @@ export const ContentIntro = styled.div`
 `
 
 export const TitleSection = styled.h2`
-  font-size: 80px;
-  font-weight: 800;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
 
+  @media only screen and (max-width: 600px) {
+    font-size: 30px;
+    font-weight: 800;
+    }
+
+    @media only screen and (min-width: 600px) {
+      font-size: 40px;
+      font-weight: 800;
+    }
+
+    @media only screen and (min-width: 768px) {
+      font-size: 40px;
+      font-weight: 800;
+    }
+
+    @media only screen and (min-width: 889px) {
+      font-size: 60px;
+      font-weight: 800;
+    }
+
+    @media only screen and (min-width: 1200px) {
+      font-size: 80px;
+      font-weight: 800;
+    }
 `
 
 
@@ -36,12 +78,59 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   ${'' /* align-items: center; */}
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column-reverse;
+    }
+
+    @media only screen and (min-width: 600px) {
+      flex-direction: column-reverse;
+
+    }
+
+    @media only screen and (min-width: 768px) {
+      flex-direction: column-reverse;
+
+    }
+
+    @media only screen and (min-width: 889px) {
+      flex-direction: row;
+
+    }
+
+    @media only screen and (min-width: 1200px) {
+      flex-direction: row;
+
+    }
 `
 
 export const ContactInfo = styled.div`
-  width: 50%;
+  ${'' /* width: 50%; */}
   display: flex;
   flex-direction: column;
+
+  @media only screen and (max-width: 600px) {
+      width: 80%;
+      margin: 40px auto;
+    }
+
+    @media only screen and (min-width: 600px) {
+      width: 80%;
+      margin: 40px auto;
+    }
+
+    @media only screen and (min-width: 768px) {
+      width: 80%;
+      margin: 40px auto;
+    }
+
+    @media only screen and (min-width: 889px) {
+      width: 40%;
+    }
+
+    @media only screen and (min-width: 1200px) {
+      width: 40%;
+    }
   
 `
 
@@ -108,18 +197,48 @@ export const ValueItem = styled.p`
 
 
 export const ContactForm = styled.div`
-  width: 40%;
+  ${'' /* width: 40%; */}
   height: 90%;
   padding: 40px;
   background: rgba(0, 0, 0, 0.2);
+
+  @media only screen and (max-width: 600px) {
+      width: 80%;
+      margin: 0 auto;
+
+    }
+
+    @media only screen and (min-width: 600px) {
+      width: 80%;
+      margin: 0 auto;
+
+
+    }
+
+    @media only screen and (min-width: 768px) {
+      width: 80%;
+      margin: 0 auto;
+
+
+    }
+
+    @media only screen and (min-width: 889px) {
+      width: 40%;
+
+    }
+
+    @media only screen and (min-width: 1200px) {
+      width: 40%;
+
+    }
 `
 
 export const Form = styled.form`
 `
 
 export const FormTitle = styled.h2`
-  font-size: 30px;
   color: white;
+  font-size: 30px;
   font-weight: 500;
 `
   
