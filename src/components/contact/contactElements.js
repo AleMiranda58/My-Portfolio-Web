@@ -42,7 +42,8 @@ export const ContentIntro = styled.div`
 `
 
 export const TitleSection = styled.h2`
-  color: #fff;
+  color: #01BF71;
+  padding: 50px 0px;
   font-family: 'Montserrat', sans-serif;
 
   @media only screen and (max-width: 600px) {
@@ -146,6 +147,8 @@ export const IconBg = styled.div`
   width: 60px;
   height: 60px;
   background: #fff;
+  ${'' /* background: #01BF71; */}
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,6 +204,7 @@ export const ContactForm = styled.div`
   height: 90%;
   padding: 40px;
   background: rgba(0, 0, 0, 0.2);
+  ${'' /* background: rgba(1, 191, 113, 0.8); */}
 
   @media only screen and (max-width: 600px) {
       width: 80%;
@@ -253,6 +257,7 @@ export const InputForm = styled.input`
   margin: 10px 0;
   border: none;
   border-bottom: 2px solid #333;
+  ${'' /* border-bottom: 2px solid rgba(1, 191, 113, 0.8); */}
   outline: none;
   font-size: 16px;
   resize: none;
@@ -308,6 +313,7 @@ export const TextAreaForm = styled.textarea`
   margin: 10px 0;
   border: none;
   border-bottom: 2px solid #333;
+  ${'' /* border-bottom: 2px solid rgba(1, 191, 113, 0.8); */}
   outline: none;
   font-size: 16px;
   resize: none;

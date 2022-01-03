@@ -38,7 +38,7 @@ export const AboutContent = styled.div`
 `
 
 export const LeftSide = styled.div`
-    width: 30%;
+    width: 50%;
 
     @media only screen and (max-width: 600px) {
     }
@@ -47,7 +47,7 @@ export const LeftSide = styled.div`
     }
 
     @media only screen and (min-width: 768px) {
-        width: 30%;
+        width: 50%;
 
     }
 
@@ -56,7 +56,7 @@ export const LeftSide = styled.div`
     }
 
     @media only screen and (min-width: 1200px) {
-
+        width: 40%;
     }
 `
 
@@ -64,10 +64,9 @@ export const BgPhoto = styled.div`
     clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0% 100%, 0 50%, 0% 0%);
     width: 100%;
     height: 100%;
-    background: rgba(255,255,255, 0.5);
+    ${'' /* background: rgba(255,255,255, 0.8); */}
+    background: #01BF71;
     position: relative;
-
-   
 
      @media only screen and (max-width: 600px) {
     }
@@ -90,93 +89,81 @@ export const BgPhoto = styled.div`
 `
 
 export const Photo = styled.img`
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     object-fit: cover;
 `
 
 export const PhotoContainer = styled.div`
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
 `
 
 export const Intro = styled.div`
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 `
 
 export const Text = styled.p`
-    color: #fff;
-    text-align: center;
+    color: #01BF71;
+    text-align: justify;
     font-family: 'Montserrat', sans-serif;
-
-    & + & + &{
-        font-size: 80px;
-        font-weight: 800;
-        color: #000;
-        letter-spacing: 2px;
+    
+    & + & {
+        color: rgba(255,255,255, 0.8);
+        text-align: justify;
     }
-
-    & + & + & + &{
-        font-size: 40px;
-        font-weight: 200;
-        color: #fff;
-        letter-spacing: 3px;
-    }
-
-
 
     @media only screen and (max-width: 600px) {
         font-size: 18px;
-        & + & + &{
-            font-size: 25px;
-        }
-        & + & + & + &{
+        & + & {
             font-size: 16px;
-            letter-spacing: 0px;
         }
     }
 
     @media only screen and (min-width: 600px) {
         font-size: 18px;
-        & + & + &{
-            font-size: 25px;
-        }
-        & + & + & + &{
-            font-size: 16px;
-            letter-spacing: 0px;
+        font-weight: 600;
+
+        & + & {
+        font-size: 18px;
+        font-weight: 200;
         }
     }
 
     @media only screen and (min-width: 768px) {
-        font-size: 25px;
-        & + & + &{
-            font-size: 45px;
-        }
-        & + & + & + &{
-            font-size: 20px;
-            letter-spacing: 0px;
+        font-size: 20px;
+        font-weight: 600;
+
+        & + & {
+        font-size: 16px;
+        font-weight: 400;
         }
     }
 
     @media only screen and (min-width: 889px) {
+        font-size: 30px;
+        font-weight: 600;
 
+        & + & {
+        font-size: 18px;
+        font-weight: 400;
+        }
     }
 
     @media only screen and (min-width: 1200px) {
-    font-size: 50px;
-    font-weight: 200;
-    letter-spacing: 5px;
+    font-size: 80px;
+    font-weight: 900;
+    text-align: center;
 
-    & + & + &{
-        font-size: 80px;
+    & + & {
+        font-size: 30px;
     }
-    & + & + & + &{
-        font-size: 40px;
-    }
-    
+   
 
 `
 
@@ -187,7 +174,7 @@ export const RightSide = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
     @media only screen and (max-width: 600px) {
     }
@@ -196,7 +183,7 @@ export const RightSide = styled.div`
     }
 
     @media only screen and (min-width: 768px) {
-        width: 70%;
+        width: 50%;
         height: 80%;
     }
 
@@ -205,65 +192,10 @@ export const RightSide = styled.div`
     }
 
     @media only screen and (min-width: 1200px) {
-
+        width: 50%;
     }
 `
 
-export const Slider = styled.div`
-    margin-top: 80px;
-
-    @media only screen and (max-width: 600px) {
-        margin-top: 30px;
-
-    }
-
-    @media only screen and (min-width: 600px) {
-        margin-top: 30px;
-
-    }
-
-    @media only screen and (min-width: 768px) {
-        margin-top: 30px;
-    }
-
-    @media only screen and (min-width: 889px) {
-
-    }
-
-    @media only screen and (min-width: 1200px) {
-
-    }
-`
-
-export const Item = styled.p`
-    color: #fff;
-    font-weight: 500;
-    font-size: 40px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-
-    @media only screen and (max-width: 600px) {
-        font-size: 20px;
-    }
-
-    @media only screen and (min-width: 600px) {
-        font-size: 20px;
-
-    }
-
-    @media only screen and (min-width: 768px) {
-        font-size: 25px;
-    }
-
-    @media only screen and (min-width: 889px) {
-
-    }
-
-    @media only screen and (min-width: 1200px) {
-
-    }
-    
-`
 
 
 

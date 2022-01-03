@@ -2,8 +2,6 @@ import styled from "styled-components";
 
 
 export const SectionContainer = styled.section`
-    ${'' /* height: 92vh;  */}
-    margin-bottom: 50px;
 
     @media only screen and (max-width: 600px) {
         height: 40vh;
@@ -97,75 +95,114 @@ export const Text = styled.p`
         font-weight: 200;
         font-size: 60px;
         color: #fff;
+        ${'' /* color: rgba(255,255,255, 0.3); */}
 
     & + & {
         font-weight: 600;
         font-size: 60px;
+        ${'' /* color: rgba(255,255,255, 0.5); */}
+        ${'' /* color: rgba(255,255,255, 0.5); */}
     }
     
-    & + & + &{
-        font-weight: 900;
-        font-size: 100px;
-        color: #000;
-    }
-
-    & + & + & + &{
+    & + & + & {
         font-weight: 600;
         font-size: 40px;
         letter-spacing: 10px;
-        color: #000;
+        color: #fff;
+        letter-spacing: 0;
+        ${'' /* color: rgba(255,255,255, 0.3) */}
 
+        
+    }
+
+    & + & + & + &{
+        font-weight: 900;
+        font-size: 100px;
+        color: #01BF71;
+        letter-spacing: 0;
+        ${'' /* color: #fff; */}
     }
 
     @media only screen and (max-width: 600px) {
-        font-size: 18px;
+        font-size: 20px;
         & + & {
-            font-size: 25px;
+            font-size: 20px;
         }
         & + & + &{
-            font-size: 30px;
+            font-size: 20px;
+            letter-spacing: 0;
         }
         & + & + & + &{
-            font-size: 18px;
+            font-size: 20px;
+        }
+        & + & + & + & + & {
+            font-size: 20px;
+            font-weight: 200;
+            color: #fff;
         }
     }
 
     @media only screen and (min-width: 600px) {
         font-size: 30px;
         & + & {
-            font-size: 35px;
+            font-size: 30px;
         }
         & + & + &{
-            font-size: 60px;
+            font-size: 25px;
+            letter-spacing: 0;
         }
         & + & + & + &{
             font-size: 20px;
+        }
+        & + & + & + & + & {
+            font-size: 20px;
+            font-weight: 200;
+            color: #fff;
+
         }
     }
 
     @media only screen and (min-width: 768px) {
         font-size: 30px;
+        letter-spacing: 0;
+        & + & {
+            font-size: 30px;
+            letter-spacing: 0;
+        }
+        & + & + &{
+            font-size: 30px;
+            letter-spacing: 0;
+
+        }
+        & + & + & + &{
+            font-size: 30px;
+            letter-spacing: 0;
+
+        }
+        & + & + & + & + & {
+            font-size: 30px;
+            font-weight: 200;
+            color: #fff;
+        }
+    }
+
+    @media only screen and (min-width: 889px) {
+        font-size: 30px;
+        letter-spacing: 0;
         & + & {
             font-size: 30px;
         }
         & + & + &{
             font-size: 60px;
+            letter-spacing: 0;
         }
         & + & + & + &{
             font-size: 30px;
         }
-    }
-
-    @media only screen and (min-width: 889px) {
-        font-size: 45px;
-        & + & {
-            font-size: 40px;
-        }
-        & + & + &{
-            font-size: 80px;
-        }
-        & + & + & + &{
-            font-size: 40px;
+        & + & + & + & + & {
+            font-size: 30px;
+            font-weight: 200;
+            color: #fff;
         }
     }
 
@@ -173,26 +210,32 @@ export const Text = styled.p`
         width: 100%;
         font-weight: 200;
         font-size: 60px;
-        color: #fff;
 
     & + & {
         font-weight: 600;
-        font-size: 60px;
+        font-size: 80px;
     }
     
     & + & + &{
-        font-weight: 900;
-        font-size: 100px;
-        color: #000;
+        font-weight: 500;
+        font-size: 70px;
+        letter-spacing: 0;
+       
     }
 
     & + & + & + &{
+        font-size: 70px;
         font-weight: 600;
-        font-size: 40px;
-        letter-spacing: 10px;
-        color: #000;
-
+        letter-spacing: 0;
     }
+
+    & + & + & + & + & {
+        font-size: 50px;
+        font-weight: 500;
+        letter-spacing: 0;
+        color: #fff;
+    }
+
     }
 `
 
@@ -225,15 +268,18 @@ export const MediaBar = styled.div`
     }
 
     @media only screen and (min-width: 1200px) {
-        height: 100%;
-        width: 120px;
+        height: 20%;
+        width: 60px;
         position: absolute;
-        left: 20px;
-        bottom: 20px;
+        left: 0px;
+        ${'' /* bottom: 0px; */}
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: center;
+        ${'' /* background: rgba(255,255,255, 0.8); */}
+        background: #01BF71;
+        ${'' /* justify-content: flex-end; */}
     }
 `
 
@@ -242,7 +288,7 @@ export const Icons = styled.div`
    font-size: 30px;
    color: #fff;
    &:hover {
-       color: #000;
+       color: #172438;
    }
 `
 
@@ -274,7 +320,8 @@ export const SideBg = styled.div`
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
     ${'' /* width: 100%;
     height: 100%; */}
-    background: rgba(255,255,255, 0.8);
+    ${'' /* background: rgba(255,255,255, 0.8); */}
+    background: #01BF71;
     position: relative;
 
     @media only screen and (max-width: 600px) {
@@ -337,64 +384,64 @@ export const Photo = styled.img`
     }
 `
 
-export const Svgcontent = styled.svg`
-    width: 31%;
-    height: 500px;
-    position: absolute;
-    top: 29%;
-    left: 52%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
+// export const Svgcontent = styled.svg`
+//     width: 31%;
+//     height: 500px;
+//     position: absolute;
+//     top: 29%;
+//     left: 52%;
+//     transform: translate(-50%, -50%);
+//     -webkit-transform: translate(-50%, -50%);
+//     -moz-transform: translate(-50%, -50%);
+//     -ms-transform: translate(-50%, -50%);
+//     -o-transform: translate(-50%, -50%);
 
-    @media only screen and (max-width: 600px) {
+//     @media only screen and (max-width: 600px) {
 
-    }
+//     }
 
-    @media only screen and (min-width: 600px) {
-    }
+//     @media only screen and (min-width: 600px) {
+//     }
 
-    @media only screen and (min-width: 768px) {
-        width: 42%;
-    }
+//     @media only screen and (min-width: 768px) {
+//         width: 42%;
+//     }
 
-    @media only screen and (min-width: 889px) {
-        width: 39%;
+//     @media only screen and (min-width: 889px) {
+//         width: 39%;
 
-    }
+//     }
 
-    @media only screen and (min-width: 1200px) {
-    }
+//     @media only screen and (min-width: 1200px) {
+//     }
    
-`
+// `
 
-export const PathContent = styled.path`
-    stroke: #fff;
-    stroke-width: 1px;
-    fill: transparent;
-    stroke-dasharray: 1500;
-    stroke-dashoffset: 1500;
-    stroke-linejoin: round;
-    animation: animate 5s forwards infinite;
-    -webkit-animation: animate 5s forwards infinite;
+// export const PathContent = styled.path`
+//     stroke: #fff;
+//     stroke-width: 1px;
+//     fill: transparent;
+//     stroke-dasharray: 1500;
+//     stroke-dashoffset: 1500;
+//     stroke-linejoin: round;
+//     animation: animate 5s forwards infinite;
+//     -webkit-animation: animate 5s forwards infinite;
 
-    @keyframes animate {
-          0% {
-            filter: drop-shadow(0px 0px 1px #fff)
-            drop-shadow(0px 0px 3px #fff)
-            drop-shadow(0px 0px 10px #ff80b3)
-            drop-shadow(0px 0px 10px #ff4d94)
-            drop-shadow(0px 0px 10px #ff0066);
-          }
+//     @keyframes animate {
+//           0% {
+//             filter: drop-shadow(0px 0px 1px #fff)
+//             drop-shadow(0px 0px 3px #fff)
+//             drop-shadow(0px 0px 10px #ff80b3)
+//             drop-shadow(0px 0px 10px #ff4d94)
+//             drop-shadow(0px 0px 10px #ff0066);
+//           }
 
-          100% {
-            stroke-dashoffset: 0;
-            filter: drop-shadow(0px 0px 3px #fff)
-            drop-shadow(0px 0px 6px #fff)
-            drop-shadow(0px 0px 15px #ff80b3)
-            drop-shadow(0px 0px 5px #ff4d94)
-            drop-shadow(0px 0px 5px #ff0066);
-          }
-`
+//           100% {
+//             stroke-dashoffset: 0;
+//             filter: drop-shadow(0px 0px 3px #fff)
+//             drop-shadow(0px 0px 6px #fff)
+//             drop-shadow(0px 0px 15px #ff80b3)
+//             drop-shadow(0px 0px 5px #ff4d94)
+//             drop-shadow(0px 0px 5px #ff0066);
+//           }
+// `

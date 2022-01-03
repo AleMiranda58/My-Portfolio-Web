@@ -14,7 +14,7 @@ const Projects = () => {
                 <Content>
                     <TitleSection>PROJECTS</TitleSection>
                     <Text>
-                    <Psection>I have developed some projects such as websites, eCommerce, and apps using the following technologies.</Psection>
+                    <Psection>During my carreer, I had the opportunity to work in a variety of projects such as websites developing, eCommerce, and Apps using the following technologies.</Psection>
                     </Text>
                     <Skills>
                         <ListSkill>
@@ -91,12 +91,10 @@ const Projects = () => {
                                 <TextItem>HTML</TextItem>
                             </ItemContainer>
                         </ListSkill>
-                        <Psection className='plus'>+ I'm ready to learn new ones !</Psection>
+                        <Psection className='plus'></Psection>
                     </Skills>
                 </Content>
-                <AllProjects>
-                        <Psection className='watch'>Take a look at my projects  </Psection>
-                {/* <Psection className='test'>Take a look at my projects </Psection> */}
+                <AllProjects id='projects-list'>
                     <ProjectsLlist>
                         { projects.map((item)=> (
                         <Project key={item.id} img={item.img} link={item.link} description={item.description} />

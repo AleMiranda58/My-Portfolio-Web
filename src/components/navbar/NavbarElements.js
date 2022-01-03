@@ -9,7 +9,7 @@ export const Nav = styled.nav`
     display: flex;
     align-items: center;
     background: ${({ scrollNav }) => (scrollNav ? '#0d47a1' : '#0d47a1')};
-    border-bottom: 1px solid  rgba(255, 255, 255, 0.1);
+    ${'' /* border-bottom: 1px solid  rgba(255, 255, 255, 0.1); */}
     font-size: 1rem;
     position: sticky;
     top: 0;
@@ -60,7 +60,7 @@ export const Nav = styled.nav`
     font-size: 25px;
     color: #fff;
     &:after {
-        content: '< AleMiranda />';
+        ${'' /* content: '< AleMiranda />'; */}
     }
    `
 
@@ -121,19 +121,19 @@ export const Nav = styled.nav`
     align-items: center;
     align-items: center;
     text-decoration: none;
-    color: #fff;
-    font-size: 15px;
+    color: #f0f0f0;
+    font-size: 22px;
     margin: 0 1rem;
     height: 35px;
     cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
     ${'' /* border-bottom: 1px solid #000; */}
     border-bottom: 1px solid #0d47a1;
 
     &.active {
         border-bottom: 1px solid #fff;
-        
+        color: #fff;
     }
 
     &:hover {

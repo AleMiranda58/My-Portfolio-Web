@@ -14,9 +14,11 @@ export const ProjectElement = styled.div`
   z-index: 2;
   display: flex;
   flex-direction: row;
+    border: 3px solid rgb(1, 191, 113);
+
 
   &:hover {
-    border: 1px solid rgb(243, 243, 243);
+  border: 3px solid rgb(243, 243, 243);
   
   }
 
@@ -43,7 +45,8 @@ export const ProjectElement = styled.div`
     }
 
     @media only screen and (min-width: 1200px) {
-  flex-direction: row;
+      flex-direction: row;
+      height: 50vh;
 
     }
 `
@@ -51,7 +54,9 @@ export const ProjectElement = styled.div`
 
 export const Browsesr = styled.div`
    height: 20px;
-    background-color: #424040;
+    ${'' /* background-color: #424040; */}
+    ${'' /* background-color: #172438; */}
+    background-color: #01bf71;
     display: flex;
     align-items: center;
     position: sticky;
@@ -67,7 +72,7 @@ export const Circles = styled.div`
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  background-color: #808080;
+  ${'' /* background-color: #fff; */}
 `
 
 export const ImgProject = styled.img`
@@ -98,25 +103,27 @@ export const DescriptionProject = styled.div`
   bottom: 0;
   z-index: 3;
   bottom: 0;
-  background: rgba(0,0,0, 0.3);
+  ${'' /* background: rgba(255,255,255, 0.8); */}
+  background: #01BF71;
   padding: 40px;
+
 
     @media only screen and (max-width: 600px) {
       height: 40%;
-      background: #000;
+      ${'' /* background: #000; */}
       padding: 15px 30px;
 
     }
 
     @media only screen and (min-width: 600px) {
       height: 40%;
-      background: #000;
+      ${'' /* background: #000; */}
       padding: 15px 30px;
     }
 
     @media only screen and (min-width: 768px) {
       height: 40%;
-      background: #000;
+      ${'' /* background: #000; */}
       padding: 15px 30px;
     }
 
@@ -169,8 +176,9 @@ export const ProDescription = styled.p`
     }
 
     @media only screen and (min-width: 1200px) {
+      font-size: 20px;
+      font-weight: 400;
       ${'' /* height: 100%;
-      font-size: 14px;
       margin: 5px 0; */}
     }
 `

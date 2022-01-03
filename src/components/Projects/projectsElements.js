@@ -6,6 +6,8 @@ import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md'
 export const SectionProjects = styled.div`
     width: 100%;
     height: 100%;
+    margin-top: 10px;
+
 
     @media only screen and (max-width: 600px) {
         margin-top: 40px;
@@ -16,7 +18,7 @@ export const SectionProjects = styled.div`
     }
 
     @media only screen and (min-width: 768px) {
-        margin-top: -40px;
+        ${'' /* margin-top: -40px; */}
     }
 
     @media only screen and (min-width: 889px) {
@@ -96,6 +98,7 @@ export const Psection = styled.p`
     color: #fff;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    ${'' /* text-align: justify; */}
     
 
     @media only screen and (max-width: 600px) {
@@ -120,7 +123,7 @@ export const Psection = styled.p`
 
     @media only screen and (min-width: 1200px) {
         font-weight: 400;
-        font-size: 35px;
+        font-size: 40px;
     }
 `
 
@@ -131,7 +134,7 @@ export const Text = styled.div`
 
 export const Skills = styled.div`
     width: 100%;
-    height: 20%;
+    height: auto;
     z-index: 2;
 
     & .plus {
@@ -226,9 +229,7 @@ export const Item = styled(SVG)`
     top: 0;
     right: 0;
     path {
-        ${'' /* fill: rgba(255,255,255, 0.5);  */}
-        fill: #fff; 
-;
+        fill: #01BF71;
     }
     &:hover {
         width: 60px;
@@ -274,48 +275,17 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
 
 export const AllProjects = styled.div`
   width: 75%;
-  margin: 80px auto;
+  margin: auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   z-index: 2;
-
-  & .watch {
-        color: #fff;
-        text-align: center;
-        background: #000;
-        height: auto;
-        padding: 10px;
-    
-            @media only screen and (max-width: 600px) {
-                font-weight: 400;
-                font-size: 20px;
-            }
-
-            @media only screen and (min-width: 600px) {
-                font-weight: 400;
-                font-size: 30px;
-            }
-
-            @media only screen and (min-width: 768px) {
-                font-weight: 600;
-                font-size: 30px;
-            
-            @media only screen and (min-width: 889px) {
-                font-weight: 600;
-                font-size: 40px;
-            }
-
-            @media only screen and (min-width: 1200px) {
-                font-weight: 600;
-                font-size: 60px;
-            }
-        }
 `
 
 export const ProjectsLlist = styled.div`
   width: 100%;
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

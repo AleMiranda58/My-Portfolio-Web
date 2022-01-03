@@ -35,7 +35,7 @@ const Project = ({ img, link, description }) => {
                         rel="noreferrer"
                         primary= "true"
                         fontBig= "true"
-                        bold= "true"
+                        light= 'true'
                         smooth={true}
                         duration={1000}
                         spy={true}

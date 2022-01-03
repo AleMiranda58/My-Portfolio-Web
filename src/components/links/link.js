@@ -3,26 +3,27 @@ import styled from "styled-components";
 export const LinksProjects = styled.a`
     ${'' /* width: 35%; */}
     ${'' /* height: 35px; */}
-    width: auto;
+    width: 45%;
     height: auto;
-    color: #fff ;
     text-decoration: none;
-    border-radius: 10px;
-    background: ${({primary}) => (primary ? 'transparent' : '#fff')};
-    font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
+    border-radius: 20px;
+    background: ${({primary}) => (primary ? 'transparent' : '#01BF71')};
+    color: ${({light}) => (light ? '#fff' : '#000')};
+    font-size: ${({fontBig}) => (fontBig ? '25px' : '16px')};
     outline: none;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     align-items: center;
     transition: all 0.2s ease-in-out;
     padding: 5px 10px;
+    margin-bottom: 20px;
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: ${({primary}) => (primary ? '#fff' : 'transparent')}; 
-        color: #010606;
+        background: ${({primary}) => (primary ? '#172438' : 'transparent')}; 
+        color: ${({light}) => (light ? '#fff' : '#000')};
     }
 
     @media screen and (max-width: 768px) {
