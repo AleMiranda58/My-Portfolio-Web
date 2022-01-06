@@ -78,6 +78,7 @@ export const LeftSide = styled.div`
 
     @media only screen and (min-width: 889px) {
         width: 60%;
+       
     }
 
     @media only screen and (min-width: 1200px) {
@@ -93,7 +94,7 @@ export const Intro = styled.div`
 export const Text = styled.p`
         width: 100%;
         font-weight: 200;
-        font-size: 60px;
+        font-size: 50px;
         color: #fff;
         ${'' /* color: rgba(255,255,255, 0.3); */}
 
@@ -111,8 +112,6 @@ export const Text = styled.p`
         color: #fff;
         letter-spacing: 0;
         ${'' /* color: rgba(255,255,255, 0.3) */}
-
-        
     }
 
     & + & + & + &{
@@ -187,20 +186,20 @@ export const Text = styled.p`
     }
 
     @media only screen and (min-width: 889px) {
-        font-size: 30px;
+        font-size: 40px;
         letter-spacing: 0;
         & + & {
-            font-size: 30px;
+            font-size: 40px;
         }
         & + & + &{
-            font-size: 60px;
+            font-size: 80px;
             letter-spacing: 0;
         }
         & + & + & + &{
-            font-size: 30px;
+            font-size: 40px;
         }
         & + & + & + & + & {
-            font-size: 30px;
+            font-size: 40px;
             font-weight: 200;
             color: #fff;
         }
@@ -212,13 +211,13 @@ export const Text = styled.p`
         font-size: 60px;
 
     & + & {
-        font-weight: 600;
+        font-weight: 400;
         font-size: 80px;
     }
     
     & + & + &{
-        font-weight: 500;
-        font-size: 70px;
+        font-weight: 400;
+        font-size: 50px;
         letter-spacing: 0;
        
     }
@@ -231,7 +230,7 @@ export const Text = styled.p`
 
     & + & + & + & + & {
         font-size: 50px;
-        font-weight: 500;
+        font-weight: 400;
         letter-spacing: 0;
         color: #fff;
     }
@@ -283,7 +282,7 @@ export const MediaBar = styled.div`
     }
 `
 
-export const Icons = styled.div`
+export const Icons = styled.a`
    margin: 10px 0px;
    font-size: 30px;
    color: #fff;
@@ -304,7 +303,7 @@ export const RightSide = styled.div`
     }
 
     @media only screen and (min-width: 768px) {
-        width: 30%;
+        width: 60%;
     }
 
     @media only screen and (min-width: 889px) {
@@ -325,11 +324,11 @@ export const SideBg = styled.div`
     position: relative;
 
     @media only screen and (max-width: 600px) {
-        height: 100%;
+        height: 70%;
     }
 
     @media only screen and (min-width: 600px) {
-        height: 100%;
+        height: 70%;
     }
 
     @media only screen and (min-width: 768px) {
@@ -337,7 +336,7 @@ export const SideBg = styled.div`
     }
 
     @media only screen and (min-width: 889px) {
-        height: 100%;
+        height: 80%;
 
     }
 
@@ -370,7 +369,7 @@ export const Photo = styled.img`
     }
 
     @media only screen and (min-width: 768px) {
-        width: 100%;
+        width: 80%;
     }
 
     @media only screen and (min-width: 889px) {
@@ -383,65 +382,3 @@ export const Photo = styled.img`
 
     }
 `
-
-// export const Svgcontent = styled.svg`
-//     width: 31%;
-//     height: 500px;
-//     position: absolute;
-//     top: 29%;
-//     left: 52%;
-//     transform: translate(-50%, -50%);
-//     -webkit-transform: translate(-50%, -50%);
-//     -moz-transform: translate(-50%, -50%);
-//     -ms-transform: translate(-50%, -50%);
-//     -o-transform: translate(-50%, -50%);
-
-//     @media only screen and (max-width: 600px) {
-
-//     }
-
-//     @media only screen and (min-width: 600px) {
-//     }
-
-//     @media only screen and (min-width: 768px) {
-//         width: 42%;
-//     }
-
-//     @media only screen and (min-width: 889px) {
-//         width: 39%;
-
-//     }
-
-//     @media only screen and (min-width: 1200px) {
-//     }
-   
-// `
-
-// export const PathContent = styled.path`
-//     stroke: #fff;
-//     stroke-width: 1px;
-//     fill: transparent;
-//     stroke-dasharray: 1500;
-//     stroke-dashoffset: 1500;
-//     stroke-linejoin: round;
-//     animation: animate 5s forwards infinite;
-//     -webkit-animation: animate 5s forwards infinite;
-
-//     @keyframes animate {
-//           0% {
-//             filter: drop-shadow(0px 0px 1px #fff)
-//             drop-shadow(0px 0px 3px #fff)
-//             drop-shadow(0px 0px 10px #ff80b3)
-//             drop-shadow(0px 0px 10px #ff4d94)
-//             drop-shadow(0px 0px 10px #ff0066);
-//           }
-
-//           100% {
-//             stroke-dashoffset: 0;
-//             filter: drop-shadow(0px 0px 3px #fff)
-//             drop-shadow(0px 0px 6px #fff)
-//             drop-shadow(0px 0px 15px #ff80b3)
-//             drop-shadow(0px 0px 5px #ff4d94)
-//             drop-shadow(0px 0px 5px #ff0066);
-//           }
-// `

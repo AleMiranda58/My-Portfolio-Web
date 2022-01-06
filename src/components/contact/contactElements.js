@@ -184,7 +184,7 @@ export const InfoLink = styled.a`
   font-weight: 300;
   justify-content: center;
     &:hover{
-    color: blue;
+    color: #fff;
     }
 `
 
@@ -195,7 +195,9 @@ export const Item = styled.h3`
 
 export const ValueItem = styled.p`
   color: #fff;
-  
+  &:hover{
+    cursor: context-menu;
+  }
 `
 
 

@@ -31,7 +31,7 @@ const About = () => {
                 <RightSide>
                     <Intro>
                     <Text>Creative & Logical Thinker</Text>
-                    <Text>My journey started when I was working in marketing, making marketing plans to help businesses to get new customers, make more money and stand out from the crowd. But my intellectual curiosity and the need to provide better solutions led me to explore the web development and I discover a new passion in my life which is the Front-End development.</Text>
+                    <Text>My journey started when I was working in marketing, making marketing plans to help businesses to get new customers, make more money and stand out from the crowd. But my intellectual curiosity and the need to provide better solutions led me to explore the web development world and I discovered a new passion in my life which is the Front-End development.</Text>
                     </Intro>
                     <Button
                     to='projects-list'
@@ -43,7 +43,7 @@ const About = () => {
                     duration={1000}
                     spy={true}
                     fontBig='true'
-                    >Take a look at my projects</Button>
+                    >See my projects</Button>
                 </RightSide>
             </AboutContent>
         </AboutContainer>

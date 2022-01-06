@@ -48,7 +48,7 @@ const Contact = () => {
                         <IconBg>
                             <IconImage src={Linkedin}/>
                         </IconBg>
-                        <InfoLink href="https://www.linkedin.com/in/alejandra-mirandareyes/" target="_blank" rel="noreferrer">
+                        <InfoLink>
                             <Item>Linkedin</Item>
                             <ValueItem>www.linkedin.com/in/alejandra-mirandareyes/</ValueItem>
                         </InfoLink>

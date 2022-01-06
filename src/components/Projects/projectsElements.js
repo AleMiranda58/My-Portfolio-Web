@@ -6,15 +6,14 @@ import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md'
 export const SectionProjects = styled.div`
     width: 100%;
     height: 100%;
-    margin-top: 10px;
 
 
     @media only screen and (max-width: 600px) {
         margin-top: 40px;
-
     }
 
     @media only screen and (min-width: 600px) {
+        margin-top: 40px;
     }
 
     @media only screen and (min-width: 768px) {
@@ -60,6 +59,28 @@ export const Content = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+
+    @media only screen and (max-width: 600px) {
+        height: 40vh;
+        
+    }
+
+    @media only screen and (min-width: 600px) {
+        height: 50vh;
+       
+    }
+
+    @media only screen and (min-width: 768px) {
+        height: 50vh;
+    }
+
+    @media only screen and (min-width: 889px) {
+        height: 92vh;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        height: 92vh;
+    }
 `
 
 export const TitleSection = styled.h2`
@@ -68,12 +89,12 @@ export const TitleSection = styled.h2`
     
 
     @media only screen and (max-width: 600px) {
-        font-size: 60px;
-        font-weight: 600;
+        font-size: 35px;
+        font-weight: 400;
     }
 
     @media only screen and (min-width: 600px) {
-        font-size: 65px;
+        font-size: 40px;
         font-weight: 600;
     }
 
@@ -103,17 +124,17 @@ export const Psection = styled.p`
 
     @media only screen and (max-width: 600px) {
         font-weight: 200;
-        font-size: 20px;
+        font-size: 16px;
     }
 
     @media only screen and (min-width: 600px) {
         font-weight: 200;
-        font-size: 30px;
+        font-size: 20px;
     }
 
     @media only screen and (min-width: 768px) {
         font-weight: 200;
-        font-size: 30px;
+        font-size: 26px;
     }
 
     @media only screen and (min-width: 889px) {

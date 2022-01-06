@@ -41,18 +41,19 @@ export const LeftSide = styled.div`
     width: 50%;
 
     @media only screen and (max-width: 600px) {
+        width: 25%;
     }
 
     @media only screen and (min-width: 600px) {
+        width: 30%;
     }
 
     @media only screen and (min-width: 768px) {
-        width: 50%;
-
+        width: 40%;
     }
 
     @media only screen and (min-width: 889px) {
-
+        width: 40%;
     }
 
     @media only screen and (min-width: 1200px) {
@@ -64,22 +65,23 @@ export const BgPhoto = styled.div`
     clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0% 100%, 0 50%, 0% 0%);
     width: 100%;
     height: 100%;
-    ${'' /* background: rgba(255,255,255, 0.8); */}
     background: #01BF71;
     position: relative;
 
      @media only screen and (max-width: 600px) {
+        height: 70%;
     }
 
     @media only screen and (min-width: 600px) {
+        height: 70%;
     }
 
     @media only screen and (min-width: 768px) {
-        height: 80%;
+        height: 70%;
     }
 
     @media only screen and (min-width: 889px) {
-        height: 100%;
+        height: 70%;
     }
 
     @media only screen and (min-width: 1200px) {
@@ -130,7 +132,7 @@ export const Text = styled.p`
         font-weight: 600;
 
         & + & {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 200;
         }
     }
@@ -146,11 +148,12 @@ export const Text = styled.p`
     }
 
     @media only screen and (min-width: 889px) {
-        font-size: 30px;
+        font-size: 50px;
         font-weight: 600;
+        text-align: center;
 
         & + & {
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 400;
         }
     }
@@ -177,22 +180,25 @@ export const RightSide = styled.div`
     justify-content: space-around;
 
     @media only screen and (max-width: 600px) {
+        height: 70%;
     }
 
     @media only screen and (min-width: 600px) {
+        height: 70%;
     }
 
     @media only screen and (min-width: 768px) {
         width: 50%;
-        height: 80%;
+        height: 70%;
     }
 
     @media only screen and (min-width: 889px) {
-
+        height: 70%;
     }
 
     @media only screen and (min-width: 1200px) {
         width: 50%;
+        height: 100%;
     }
 `
 

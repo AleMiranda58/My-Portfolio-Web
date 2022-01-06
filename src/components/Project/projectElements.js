@@ -84,11 +84,11 @@ export const ImgProject = styled.img`
   -ms-transition: all 10s ease;
   -o-transition: all 10s ease;
   &:hover {
-    transform: translateY(-100%);
-    -webkit-transform: translateY(-100%);
-    -moz-transform: translateY(-100%);
-    -ms-transform: translateY(-100%);
-    -o-transform: translateY(-100%);
+    transform: translateY(-70%);
+    -webkit-transform: translateY(-70%);
+    -moz-transform: translateY(-70%);
+    -ms-transform: translateY(-70%);
+    -o-transform: translateY(-70%);
   }
 `
 
@@ -159,19 +159,19 @@ export const ProDescription = styled.p`
 
     @media only screen and (min-width: 600px) {
       height: 100%;
-      font-size: 14px;
+      font-size: 16px;
       margin: 5px 0;
     }
 
     @media only screen and (min-width: 768px) {
       height: 100%;
-      font-size: 14px;
+      font-size: 18px;
       margin: 5px 0;
     }
 
     @media only screen and (min-width: 889px) {
       height: 100%;
-      font-size: 14px;
+      font-size: 20px;
       margin: 5px 0;
     }
 

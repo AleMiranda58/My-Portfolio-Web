@@ -2,30 +2,30 @@
 export const projects = [
     {
     id: 1,
-    img: "https://i.ibb.co/ctQ1bYH/testing-Full-Img.png",
+    img: "https://i.ibb.co/YN636Sx/advertising-agency.png",
     link: "https://github.com/AleMiranda58",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum turpis id nunc sodales varius. Mauris vel aliquet libero. Vestibulum sit amet gravida velit. Aliquam id elementum elit, feugiat iaculis augue. Phasellus ligula arcu, dapibus et ligula sit amet, convallis tempor ante." ,
-    technologies: 'logos: react, redux, striple, etc'
+    description: "This is a website for an advertising agency. It's fully adaptive to any device. All its functionalities were made by implementing JavaScript and the jQuery library, besides the style was created with CSS." ,
+    technologies: ''
     },
     {
     id: 2,
-    img: "https://i.ibb.co/ctQ1bYH/testing-Full-Img.png",
+    img: "https://i.ibb.co/5rYrT3n/bakery-shop.png",
     link: "https://github.com/AleMiranda58",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum turpis id nunc sodales varius. Mauris vel aliquet libero. Vestibulum sit amet gravida velit. Aliquam id elementum elit, feugiat iaculis augue. Phasellus ligula arcu, dapibus et ligula sit amet, convallis tempor ante." ,
-    technologies: 'logos: JavaScript ES6+, sass, API'
+    description: "This is a website for a bakery shop. It's fully adaptive to any device and all its functionalities were built with JavaScript. The style was created with SASS" ,
+    technologies: ''
     },
     {
     id: 3,
-    img: "https://i.ibb.co/ctQ1bYH/testing-Full-Img.png",
+    img: "https://i.ibb.co/CHhTY4Q/handcraft-shop.png",
     link: "https://github.com/AleMiranda58",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum turpis id nunc sodales varius. Mauris vel aliquet libero. Vestibulum sit amet gravida velit. Aliquam id elementum elit, feugiat iaculis augue. Phasellus ligula arcu, dapibus et ligula sit amet, convallis tempor ante." ,
-    technologies: 'logos: React, sass, API'
+    description: "This is website for a handicraft shop. It's fully adaptive to any device. It's functionalities were built with jQuery and the styles were made with BootStrap and SASS." ,
+    technologies: ''
     },
     {
     id: 4,
-    img: "https://i.ibb.co/ctQ1bYH/testing-Full-Img.png",
+    img: "https://i.ibb.co/qnnCtSn/e-commerce.png",
     link: "https://github.com/AleMiranda58",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum turpis id nunc sodales varius. Mauris vel aliquet libero. Vestibulum sit amet gravida velit. Aliquam id elementum elit, feugiat iaculis augue. Phasellus ligula arcu, dapibus et ligula sit amet, convallis tempor ante." ,
-    technologies: "jQuery website, SASS, Email.js, third-party library"
+    description: "This an e-Commerce website for a clothing store build with React, Redux, Firebase, etc. And styled with Styled Components. This website is currently in development, also it's part of an online course." ,
+    technologies: ""
     }
 ]

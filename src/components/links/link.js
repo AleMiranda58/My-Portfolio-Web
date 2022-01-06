@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const LinksProjects = styled.a`
     ${'' /* width: 35%; */}
     ${'' /* height: 35px; */}
-    width: 45%;
+    
     height: auto;
     text-decoration: none;
     border-radius: 20px;
@@ -32,5 +32,33 @@ export const LinksProjects = styled.a`
         ${'' /* font-size: 12px */}
         border-radius: 3px;
         margin: 20px auto;
+    }
+
+
+
+    @media only screen and (max-width: 600px) { 
+        width: 50%;
+        font-size: ${({fontBig}) => (fontBig ? '18px' : '16px')};
+    }
+
+    @media only screen and (min-width: 600px) {
+        width: 50%;
+        font-size: ${({fontBig}) => (fontBig ? '18px' : '16px')};
+    }
+
+    @media only screen and (min-width: 768px) {
+        width: 40%;
+        font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
+
+    }
+
+    @media only screen and (min-width: 889px) {
+        width: 40%;
+        font-size: ${({fontBig}) => (fontBig ? '22px' : '16px')};
+    }
+
+    @media only screen and (min-width: 1200px) {
+        width: 55%;
+        font-size: ${({fontBig}) => (fontBig ? '18px' : '16px')};
     }
 `
