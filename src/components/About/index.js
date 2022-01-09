@@ -8,7 +8,8 @@ import {AboutContainer,
         PhotoContainer, 
         BgPhoto, 
         Photo} from './aboutElements'
-import {ProfilePicture as me} from '../../assets/index'
+// import {ProfilePicture as me} from '../../assets/index'
+import {PhotoDescription as me} from '../../assets/index'
 import { Button } from '../Button/buttonElements'
 
 

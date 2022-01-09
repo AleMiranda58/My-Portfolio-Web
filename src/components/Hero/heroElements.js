@@ -355,30 +355,30 @@ export const PhotoContainer = styled.div`
 export const Photo = styled.img`
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 0px;
     ${'' /* width: 80%; */}
     object-fit: cover;
 
     @media only screen and (max-width: 600px) {
-        width: 80%;
+        width: 85%;
     }
 
     @media only screen and (min-width: 600px) {
-        width: 80%;
+        width: 85%;
 
     }
 
     @media only screen and (min-width: 768px) {
-        width: 80%;
+        width: 85%;
     }
 
     @media only screen and (min-width: 889px) {
-        width: 90%;
+        width: 85%;
 
     }
 
     @media only screen and (min-width: 1200px) {
-        width: 80%;
+        width: 85%;
 
     }
 `

@@ -1,4 +1,5 @@
 import ProfilePicture from '../assets/profilePicutre.png';
+import PhotoDescription from '../assets/PhotoDescription.png';
 import Logo from '../assets/logo.png';
 
 
@@ -22,7 +23,6 @@ import Email from '../assets/SocialMedia/email.svg';
 import Linkedin from '../assets/SocialMedia/linkedin.svg';
 import Phone from '../assets/SocialMedia/phone.svg';
 
-import Developer from '../assets/photos/developer.jpg';
 
 import Heart from '../assets/about/heart-regular.svg';
 import Star from '../assets/about/star-regular.svg';
@@ -51,9 +51,9 @@ export {
     Phone,
     Linkedin,
     Tailwindcss,
-    Developer,
     Heart,
     Star,
     Energy,
-    Smile
+    Smile,
+    PhotoDescription
 }
