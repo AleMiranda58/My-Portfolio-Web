@@ -23,9 +23,9 @@ export const projects = [
     },
     {
     id: 4,
-    img: "https://i.ibb.co/qnnCtSn/e-commerce.png",
+    img: "https://i.ibb.co/Yy1rVYj/ecommerce-Web-Site.png",
     link: "https://github.com/AleMiranda58/eCommerce-clothing-store",
-    description: "This an e-Commerce website for a clothing store build with React, Redux, Firebase, etc. And styled with Styled Components. This website is currently in development, also it's part of an online course." ,
+    description: "This an e-Commerce website for a clothing store build with React.js, Redux, Firebase, etc. And styled with Styled Components. This website is currently in development, which it's part of an online course." ,
     technologies: ""
     }
 ]

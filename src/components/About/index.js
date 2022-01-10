@@ -8,8 +8,8 @@ import {AboutContainer,
         PhotoContainer, 
         BgPhoto, 
         Photo} from './aboutElements'
-// import {ProfilePicture as me} from '../../assets/index'
-import {PhotoDescription as me} from '../../assets/index'
+import {PhotoAlejandra as me} from '../../assets/index'
+
 import { Button } from '../Button/buttonElements'
 
 
@@ -32,7 +32,7 @@ const About = () => {
                 <RightSide>
                     <Intro>
                     <Text>Creative & Logical Thinker</Text>
-                    <Text>My journey started when I was working in marketing, making marketing plans to help businesses to get new customers, make more money and stand out from the crowd. But my intellectual curiosity and the need to provide better solutions led me to explore the web development world and I discovered a new passion in my life which is the Front-End development.</Text>
+                    <Text>My journey started when I was working in marketing, by doing the marketing plans to help businesses grow. But my technical curiosity and the need on optaining better solutions led me to explore the web development world, where I discovered a new passion which is the Front-End development.</Text>
                     </Intro>
                     <Button
                     to='projects-list'

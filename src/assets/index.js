@@ -1,5 +1,5 @@
 import ProfilePicture from '../assets/profilePicutre.png';
-import PhotoDescription from '../assets/PhotoDescription.png';
+import PhotoAlejandra from '../assets/Alejandra.png';
 import Logo from '../assets/logo.png';
 
 
@@ -24,11 +24,6 @@ import Linkedin from '../assets/SocialMedia/linkedin.svg';
 import Phone from '../assets/SocialMedia/phone.svg';
 
 
-import Heart from '../assets/about/heart-regular.svg';
-import Star from '../assets/about/star-regular.svg';
-import Energy from '../assets/about/charging-station-solid.svg';
-import Smile from '../assets/about/smile-regular.svg';
-
 
 export {
     ProfilePicture,
@@ -51,9 +46,5 @@ export {
     Phone,
     Linkedin,
     Tailwindcss,
-    Heart,
-    Star,
-    Energy,
-    Smile,
-    PhotoDescription
+    PhotoAlejandra
 }

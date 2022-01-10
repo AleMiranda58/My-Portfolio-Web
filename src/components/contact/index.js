@@ -65,7 +65,7 @@ const Contact = () => {
                 </ContactInfo>
                 <ContactForm>
                     <Form ref={formRef} onSubmit={handleSubmit}>
-                        <FormTitle>Send me a message</FormTitle>
+                        <FormTitle>Reach me out</FormTitle>
                         <InputBox>
                             <InputForm type="text"  name="user_name" />
                             <InputDescr>Name</InputDescr>

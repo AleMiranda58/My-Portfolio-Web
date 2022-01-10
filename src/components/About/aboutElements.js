@@ -91,8 +91,8 @@ export const BgPhoto = styled.div`
 `
 
 export const Photo = styled.img`
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
     object-fit: cover;
 `
 
