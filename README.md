@@ -1,8 +1,8 @@
-# align="center" My portfolio
+<h3 align="center">My portfolio</h3>
 
-This is a website where you can take a look at my professional profile as well as my projects.
+<p align="center">This is a website where you can take a look at my professional profile as well as my projects.
 <br />This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-<br />Project link: https://portfolio-alejandramiranda.netlify.app
+<br />Project link: https://portfolio-alejandramiranda.netlify.app</p>
 
 
 ## Get up and running :rocket:
