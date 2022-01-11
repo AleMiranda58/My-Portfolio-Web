@@ -1,8 +1,8 @@
 # My portfolio
 
 This is a website where you can take a look at my professional profile as well as my projects.
-<p>This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).</p>
-<p>Project link: [https://portfolio-alejandramiranda.netlify.app](https://portfolio-alejandramiranda.netlify.app)</p>
+<br />This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br />Project link: https://portfolio-alejandramiranda.netlify.app
 
 
 ## Get up and running :rocket:
