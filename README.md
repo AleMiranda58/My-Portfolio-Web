@@ -1,4 +1,4 @@
-# My portfolio
+# align="center" My portfolio
 
 This is a website where you can take a look at my professional profile as well as my projects.
 <br />This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
