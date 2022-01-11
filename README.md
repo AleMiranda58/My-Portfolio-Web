@@ -5,10 +5,10 @@
 <br />Project link: https://portfolio-alejandramiranda.netlify.app</p>
 
 <h4 align="center">Get up and running :rocket:</h4>
-<p align="center">`npm install`  > `npm start` > `npm test`</p>
+<p align="center">npm install  > npm start > npm test</p>
 
 <p align="center">
-Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Runs the app in the development mode./ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits. You will also see any lint errors in the console.<p>
 
 
