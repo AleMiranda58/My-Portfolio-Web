@@ -1,4 +1,4 @@
-<h1 align="center">:bulb: My portfolio :woman:</h1>
+<h1 align="center">:bulb: My portfolio </h1>
 
 <p align="center">This is a website where you can take a look at my professional profile as well as my projects.
 <br />This project was bootstrapped with Create React App.
