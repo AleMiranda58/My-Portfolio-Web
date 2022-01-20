@@ -5,7 +5,7 @@
 <br />Project link: https://portfolio-alejandramiranda.netlify.app</p>
 
 <p align="center">Get up and running :rocket:
-<br /> npm install > npm start > npm test</p>
+<br /> npm install > npm start </p>
 
 <p align="center">Runs the app in the development mode.
 <br />Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
