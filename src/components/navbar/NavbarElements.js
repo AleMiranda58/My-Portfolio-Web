@@ -44,7 +44,16 @@ export const Nav = styled.nav`
         cursor: pointer;
         color: #fff;
     }
-    `
+
+    @media only screen and (orientation: landscape) {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: #fff;
+    }
+`
 
     export const NavMenu = styled.ul`
     list-style: none;
@@ -53,7 +62,11 @@ export const Nav = styled.nav`
     @media screen and (max-width: 768px) {
         display: none;
     }
-    `
+
+    @media only screen and (orientation: landscape) {
+        display: none;
+    }
+   `
 
     export const NavItem = styled.li`
     height: 80px;

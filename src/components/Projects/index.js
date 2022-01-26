@@ -116,16 +116,15 @@ const Projects = () => {
                         <Psection className='plus'></Psection>
                     </Skills>
                 </Content>
-                </AboutContent>
-                <AllProjects>
-                    <ProjectsLlist>
-                        { projects.map((item)=> (
-                        <Project 
-                        // key={item.id} img={item.img} link={item.link} description={item.description} />
-                        key={item.id} img={item.img} link={item.link} />
-                        ))}
-                    </ProjectsLlist>
-                </AllProjects>
+            </AboutContent>
+            <AllProjects>
+                <ProjectsLlist>
+                    { projects.map((item)=> (
+                    <Project 
+                    key={item.id} img={item.img} link={item.link} />
+                    ))}
+                </ProjectsLlist>
+            </AllProjects>
            
         </AboutContainer>
         

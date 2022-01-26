@@ -38,6 +38,10 @@ export const ProjectElement = styled.div`
     @media only screen and (min-width: 1200px) {
       height: 70vh;
     }
+
+    @media only screen and (orientation: landscape) {
+      height: 60vh;
+    }
 `
 
 

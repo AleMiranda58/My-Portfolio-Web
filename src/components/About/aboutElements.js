@@ -28,6 +28,10 @@ export const AboutContainer = styled.div`
         height: 100vh;
         margin-top: 80px;
     }
+
+    @media only screen and (orientation: landscape)  {
+        margin-top: 80px;
+    }
 `
 
 
@@ -83,8 +87,7 @@ export const RightSide = styled.div`
 
     @media only screen and (max-width: 600px) {
         height: 70%;
-        margin: auto auto;
-
+        margin: auto;
     }
 
     @media only screen and (min-width: 600px) {
@@ -105,6 +108,11 @@ export const RightSide = styled.div`
     @media only screen and (min-width: 1200px) {
         width: 70%;
         height: 100%;
+    }
+
+    @media only screen and (orientation: landscape)  {
+        height: 100%;
+        margin: auto;
     }
 `
 
@@ -151,6 +159,12 @@ export const TitleSection = styled.h3`
         font-weight: 900;
         text-align: center;
     }
+
+    @media only screen and (orientation: landscape) {
+        font-size: 36px;
+        text-align: center;
+        font-weight: 900;
+    }
 `
 
 export const Text = styled.p`
@@ -185,6 +199,12 @@ export const Text = styled.p`
         font-weight: 600;
     }
 
+    @media only screen and (orientation: landscape) {
+        font-size: 20px;
+        text-align: center;
+        font-weight: 400;
+    }
+
     & + & {
         color: #ffffff;
         @media only screen and (max-width: 600px) {
@@ -214,6 +234,11 @@ export const Text = styled.p`
             font-weight: 600;
         }
   
+        @media only screen and (orientation: landscape) {
+            font-size: 20px;
+            text-align: center;
+            font-weight: 200;
+        }
 `
 
 

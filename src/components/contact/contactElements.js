@@ -38,6 +38,10 @@ export const ContentIntro = styled.div`
   height: 20%;
   display: flex;
   align-items: center;
+
+  @media only screen and (orientation: landscape) {
+    padding:  0px;
+  }
 `
 
 export const TitleSection = styled.h2`
@@ -66,6 +70,11 @@ export const TitleSection = styled.h2`
 
     @media only screen and (min-width: 1200px) {
       font-size: 80px;
+      font-weight: 800;
+    }
+
+    @media only screen and (orientation: landscape) {
+      font-size: 50px;
       font-weight: 800;
     }
 `

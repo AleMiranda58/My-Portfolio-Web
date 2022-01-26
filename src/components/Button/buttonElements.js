@@ -32,16 +32,9 @@ export const Button = styled(Link)`
         height: auto;
     }
 
-    @media only screen and (min-width: 600px) {
-    }
-
-    @media only screen and (min-width: 768px) {
-    }
-
-    @media only screen and (min-width: 889px) {
-
-    }
-
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (orientation: landscape) {
+        font-size: 14px;
+        width: 60%;
+        height: auto;
     }
 `

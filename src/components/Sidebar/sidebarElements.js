@@ -72,5 +72,9 @@ export const SidebarLink = styled(LinkScroll)`
         color: #fff;
         transition: 0.2s ease-in-out;
     }
+
+    @media only screen and (orientation: landscape) {
+        font-size: 24px;
+      }
 `
 
