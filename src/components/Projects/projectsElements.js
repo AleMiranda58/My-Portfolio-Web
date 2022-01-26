@@ -77,11 +77,14 @@ export const Content = styled.div`
         height: 92vh;
     }
 
-    @media only screen and (orientation: landscape) {
-        height: 92vh;
-        width: 75%;
-        margin: 0 auto;
-        justify-content: space-evenly;
+    @media screen
+        and (min-width: 360px)
+        and (max-width: 768px)
+        and (orientation: landscape) {
+            height: 92vh;
+            width: 75%;
+            margin: 0 auto;
+            justify-content: space-evenly;
     }
 `
 
@@ -115,7 +118,10 @@ export const TitleSection = styled.h2`
         text-align: justify;
     }
 
-    @media only screen and (orientation: landscape) {
+    @media screen
+    and (min-width: 360px)
+    and (max-width: 768px)
+    and (orientation: landscape) {
         font-size: 36px;
         font-weight: 900;
     }
@@ -152,7 +158,10 @@ export const Psection = styled.p`
         font-size: 40px;
     }
 
-    @media only screen and (orientation: landscape)  {
+    @media screen
+    and (min-width: 360px)
+    and (max-width: 768px)
+    and (orientation: landscape) {
         font-weight: 200;
         font-size: 24px;
     }

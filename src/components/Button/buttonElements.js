@@ -25,14 +25,16 @@ export const Button = styled(Link)`
         color: ${({dark}) => (dark ? '#fff' : '#010606')};
     }
 
-
     @media only screen and (max-width: 600px) {
         font-size: 14px;
         width: 30%;
         height: auto;
     }
 
-    @media only screen and (orientation: landscape) {
+    @media screen
+    and (min-width: 360px)
+    and (max-width: 768px)
+    and (orientation: landscape) {
         font-size: 14px;
         width: 60%;
         height: auto;

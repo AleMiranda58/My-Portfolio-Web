@@ -25,7 +25,10 @@ export const SectionContainer = styled.section`
         height: 92vh; 
     }
 
-    @media only screen and (orientation: landscape) {
+    @media screen
+    and (min-width: 360px)
+    and (max-width: 768px)
+    and (orientation: landscape) {
         margin-top: 0px;
         height: 92vh;
     }
@@ -65,7 +68,10 @@ export const Content = styled.div`
         flex-direction: row;
     }
 
-    @media only screen and (orientation: landscape) {
+    @media screen
+    and (min-width: 360px)
+    and (max-width: 768px)
+    and (orientation: landscape) {
         margin-top: 0px;
         flex-direction: row;
         justify-content: space-between;
@@ -119,7 +125,10 @@ export const LeftSide = styled.div`
         pading: 0 50px;
     }
 
-    @media only screen and (orientation: landscape) {
+    @media screen
+    and (min-width: 360px)
+    and (max-width: 768px)
+    and (orientation: landscape) {
         width: 40%;
         height: 100vh;
         align-items: center;
@@ -162,18 +171,24 @@ export const RightSide = styled.div`
         height: 92vh;
     }
 
-    @media only screen and (orientation: landscape) {
+    @media screen
+    and (min-width: 360px)
+    and (max-width: 768px)
+    and (orientation: landscape) {
         width: 50%;
-        height: 92vh;
+        height: 92vh; 
     }
 `
 
 export const Intro = styled.div`
-    @media only screen and (orientation: landscape) {
+    @media screen
+    and (min-width: 360px)
+    and (max-width: 768px)
+    and (orientation: landscape) {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        height: 80%;
+        height: 50%;
     }
 `
 
@@ -344,10 +359,13 @@ export const Text = styled.p`
         }
     }
 
-    @media only screen and (orientation: landscape) {
-        font-size: 25px;
+    @media screen
+    and (min-width: 360px)
+    and (max-width: 915px)
+    and (orientation: landscape) {
+        font-size: 20px;
         & + & {
-            font-size: 30px;
+            font-size: 20px;
         }
         & + & + &{
             font-size: 30px;
@@ -355,11 +373,11 @@ export const Text = styled.p`
             color: red;
         }
         & + & + & + &{
-            font-size: 25px;
+            font-size: 20px;
              font-weight: 600;
         }
         & + & + & + & + & {
-            font-size: 24px;
+            font-size: 16px;
             font-weight: 200;
             color: #fff;
         }
@@ -441,8 +459,10 @@ export const SideBg = styled.div`
         clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
     }
 
-
-    @media only screen and (orientation: landscape) {
+    @media screen
+    and (min-width: 360px)
+    and (max-width: 768px)
+    and (orientation: landscape) {
         height: 100vh;
         clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
     }
@@ -463,7 +483,6 @@ export const Photo = styled.img`
     @media only screen and (max-width: 600px) {
         width: 60%;
         margin-right: 20px;
-
     }
 
     @media only screen and (min-width: 600px) {
@@ -493,7 +512,10 @@ export const Photo = styled.img`
         margin-right: 0px;
     }
 
-    @media only screen and (orientation: landscape) {
+    @media screen
+    and (min-width: 360px)
+    and (max-width: 768px)
+    and (orientation: landscape) {
         width: 50%;
         height: 100%;
         margin-right: 120px;

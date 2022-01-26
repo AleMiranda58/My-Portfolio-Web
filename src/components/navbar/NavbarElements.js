@@ -44,14 +44,18 @@ export const Nav = styled.nav`
         cursor: pointer;
         color: #fff;
     }
-
-    @media only screen and (orientation: landscape) {
+ 
+    @media screen
+    and (min-width: 360px)
+    and (max-width: 768px)
+    and (orientation: landscape) {
         display: flex;
         align-items: center;
         justify-content: flex-start;
         font-size: 1.8rem;
         cursor: pointer;
         color: #fff;
+        margin-left: 50px;
     }
 `
 
@@ -63,10 +67,13 @@ export const Nav = styled.nav`
         display: none;
     }
 
-    @media only screen and (orientation: landscape) {
+    @media screen
+    and (min-width: 360px)
+    and (max-width: 768px)
+    and (orientation: landscape) {
         display: none;
     }
-   `
+ `
 
     export const NavItem = styled.li`
     height: 80px;
