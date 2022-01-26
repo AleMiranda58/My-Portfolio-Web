@@ -1,8 +1,12 @@
 import React, {useState, useEffect} from 'react'
-import { animateScroll as scroll} from 'react-scroll'
+// import { animateScroll as scroll} from 'react-scroll'
 import {FaBars} from 'react-icons/fa'
-import {Nav, NavbarContainer, NavLogo, Name, MobileIcon, NavMenu, NavItem, NavLinks} from './NavbarElements'
-// import {Logo} from '../../assets'............... also add up there "ImgLogo" component
+import {Nav,
+        NavbarContainer,
+        MobileIcon,
+        NavMenu,
+        NavItem,
+        NavLinks} from './NavbarElements'
 
 
 const Navbar = ( { toggle }) => {
@@ -20,18 +24,12 @@ const Navbar = ( { toggle }) => {
         window.addEventListener('scroll', changeNav)
     }, [])
 
-    const toggleHome = () => {
-        scroll.scrollToTop();
-    }
+    
 
     return (
         <>
         <Nav scrollNav={scrollNav}>
             <NavbarContainer>
-                <NavLogo to='/' onClick={toggleHome}>
-                <Name></Name>
-                {/* <ImgLogo src={Logo} alt="logo" /> */}
-                </NavLogo>
                 <MobileIcon onClick={toggle}>
                     <FaBars />
                 </MobileIcon>

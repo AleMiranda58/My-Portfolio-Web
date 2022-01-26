@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 export const ContactSection = styled.div`
   position: relative;
-  ${'' /* height: 100vh; */}
   background: rgba(0, 0, 0, 0.2);
   z-index: 1;
   display: flex;
@@ -26,11 +25,11 @@ export const ContactSection = styled.div`
     }
 
     @media only screen and (min-width: 889px) {
-      height: 100vh;
+      height: auto;
     }
 
     @media only screen and (min-width: 1200px) {
-      height: 100vh;
+      height: auto;
     }
 `
 export const ContentIntro = styled.div`
@@ -44,7 +43,6 @@ export const ContentIntro = styled.div`
 export const TitleSection = styled.h2`
   color: #01BF71;
   padding: 50px 0px;
-  font-family: 'Montserrat', sans-serif;
 
   @media only screen and (max-width: 600px) {
     font-size: 30px;
@@ -78,7 +76,6 @@ export const Container = styled.div`
   height: 100%;
   display: flex;
   justify-content: center;
-  ${'' /* align-items: center; */}
 
   @media only screen and (max-width: 600px) {
     flex-direction: column-reverse;
@@ -90,12 +87,12 @@ export const Container = styled.div`
     }
 
     @media only screen and (min-width: 768px) {
-      flex-direction: column-reverse;
+      // flex-direction: column-reverse;
 
     }
 
     @media only screen and (min-width: 889px) {
-      flex-direction: row;
+      // flex-direction: column-reverse;
 
     }
 
@@ -106,7 +103,6 @@ export const Container = styled.div`
 `
 
 export const ContactInfo = styled.div`
-  ${'' /* width: 50%; */}
   display: flex;
   flex-direction: column;
 
@@ -126,7 +122,8 @@ export const ContactInfo = styled.div`
     }
 
     @media only screen and (min-width: 889px) {
-      width: 40%;
+      width: 80%;
+      margin: 40px auto;
     }
 
     @media only screen and (min-width: 1200px) {
@@ -147,8 +144,6 @@ export const IconBg = styled.div`
   width: 60px;
   height: 60px;
   background: #fff;
-  ${'' /* background: #01BF71; */}
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,11 +152,11 @@ export const IconBg = styled.div`
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  font-size: 22px;
 `
 
 export const IconImage = styled.img`
-  width: 25px;
+  width: 50%;
+  hight: 50%;
 `
 
 export const Info = styled.div`
@@ -202,40 +197,32 @@ export const ValueItem = styled.p`
 
 
 export const ContactForm = styled.div`
-  ${'' /* width: 40%; */}
   height: 90%;
   padding: 40px;
   background: rgba(0, 0, 0, 0.2);
-  ${'' /* background: rgba(1, 191, 113, 0.8); */}
 
   @media only screen and (max-width: 600px) {
       width: 80%;
       margin: 0 auto;
-
     }
 
     @media only screen and (min-width: 600px) {
       width: 80%;
       margin: 0 auto;
-
-
     }
 
     @media only screen and (min-width: 768px) {
       width: 80%;
       margin: 0 auto;
-
-
     }
 
     @media only screen and (min-width: 889px) {
-      width: 40%;
-
+      width: 80%;
+      margin: 0 auto;
     }
 
     @media only screen and (min-width: 1200px) {
       width: 40%;
-
     }
 `
 
@@ -259,7 +246,6 @@ export const InputForm = styled.input`
   margin: 10px 0;
   border: none;
   border-bottom: 2px solid #333;
-  ${'' /* border-bottom: 2px solid rgba(1, 191, 113, 0.8); */}
   outline: none;
   font-size: 16px;
   resize: none;
@@ -276,7 +262,7 @@ export const InputForm = styled.input`
   }
 
   &[type="submit"] {
-        width: 20%;
+        width: 50%;
         color: #fff;
         background: transparent;
         border: none;
@@ -285,15 +271,35 @@ export const InputForm = styled.input`
         font-size: 18px;
         border: 2px solid #fff;
         border-radius: 3px;
-        ${'' /* position: absolute;
-        top: -25px; */}
 
         &:hover {
           background: #fff;
           border: 1px solid #000;
           color: #000;
         }
-      }
+
+              
+          @media only screen and (max-width: 600px) {
+            width: 50%;
+          }
+        
+          @media only screen and (min-width: 600px) {
+            width: 50%;
+          }
+        
+          @media only screen and (min-width: 768px) {
+            width: 30%;
+          }
+        
+          @media only screen and (min-width: 889px) {
+            // width: 100%;
+          }
+        
+          @media only screen and (min-width: 1200px) {
+            // width: 100%;
+          }
+    }
+
 `
 export const InputDescr = styled.span`
   position: absolute;

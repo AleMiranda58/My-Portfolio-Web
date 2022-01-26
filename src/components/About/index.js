@@ -1,50 +1,39 @@
-import React, {useState} from 'react'
+import React, {useEffect} from 'react'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 import {AboutContainer,  
         AboutContent, 
         LeftSide, 
         RightSide, 
         Text, 
-        Intro, 
-        PhotoContainer, 
-        BgPhoto, 
-        Photo} from './aboutElements'
-import {PhotoAlejandra as me} from '../../assets/index'
+        TitleSection,
+        TitleContainer,
+        Intro} from './aboutElements'
 
-import { Button } from '../Button/buttonElements'
 
 
 const About = () => {
-    const [hover, setHover] = useState(false)
-    const onHover = () => {
-        setHover(!hover)
-    }
+    useEffect(() => {
+        Aos.init({
+            offset: 200,
+            duration: 600,
+            easing: 'ease-in-sine',
+            delay: 100,})
+    })
 
     return (
         <AboutContainer id="about">
             <AboutContent>
-                <LeftSide>
-                        <BgPhoto>
-                            <PhotoContainer>
-                            <Photo src={me} alt="web-dev-person" className="profile-picture" />
-                            </PhotoContainer>
-                        </BgPhoto>
-                </LeftSide>
+                <LeftSide />
                 <RightSide>
+                    <TitleContainer>
+                    <TitleSection>ABOUT ME</TitleSection>
+                    </TitleContainer>
                     <Intro>
-                    <Text>Creative & Logical Thinker</Text>
-                    <Text>My journey started when I was working in marketing, by doing the marketing plans to help businesses grow. But my technical curiosity and the need on optaining better solutions led me to explore the web development world, where I discovered a new passion which is the Front-End development.</Text>
+                    {/* data-aos="zoom-out" */}
+                    <Text>I DESCRIBE MYSELF AS A CREATIVE AND LOGICAL THINKER. BESIDES, I AM SOMEONE WHO IS TRULY PASSIONATE ABOUT WEB DEVELOPMENT.</Text>
+                    <Text>MY PASSION FOR TECHNOLOGY LIES IN THE ENDLESS POSSIBILITIES IT OFFERS FOR CREATING AND DEVELOPING ANY PROJECT YOU MAY HAVE IN MIND.</Text>
                     </Intro>
-                    <Button
-                    to='projects-list'
-                    onMouseEnter={onHover}
-                    onMouseLeave={onHover}
-                    primary='true'
-                    dark='true'
-                    smooth={true}
-                    duration={1000}
-                    spy={true}
-                    fontBig='true'
-                    >See my projects</Button>
                 </RightSide>
             </AboutContent>
         </AboutContainer>

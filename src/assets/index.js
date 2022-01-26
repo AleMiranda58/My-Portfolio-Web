@@ -1,23 +1,22 @@
-import ProfilePicture from '../assets/profilePicutre.png';
-import PhotoAlejandra from '../assets/Alejandra.png';
-import Logo from '../assets/logo.png';
+import ProfilePicture from '../assets/Photos/profilePicutre.png';
+import PhotoAlejandra from '../assets/Photos/Alejandra.png';
 
 
-import Js from '../assets/Tech/js.svg';
-import Jquery from '../assets/Tech/jquery.svg';
-import LogoReact from '../assets/Tech/react.svg';
-import Redux from '../assets/Tech/redux.svg';
-import Firebase from '../assets/Tech/firebase.svg';
-import Git from '../assets/Tech/git.svg';
-import GitHub from '../assets/Tech/github.svg';
-import GitLab from '../assets/Tech/gitlab.svg';
-import Html from '../assets/Tech/html.svg';
-import Css from '../assets/Tech/css.svg';
-import Sass from '../assets/Tech/sass.svg';
-import Figma from '../assets/Tech/figma.svg';
-import Photoshop from '../assets/Tech/photoshop.svg';
-import Illustrator from '../assets/Tech/illustrator.svg';
-import Tailwindcss from '../assets/Tech/tailwindcss.svg';
+import Js from '../assets/Technologies/js.svg';
+import Jquery from '../assets/Technologies/jquery.svg';
+import LogoReact from '../assets/Technologies/react.svg';
+import Redux from '../assets/Technologies/redux.svg';
+import Firebase from '../assets/Technologies/firebase.svg';
+import Git from '../assets/Technologies/git.svg';
+import GitHub from '../assets/Technologies/github.svg';
+import GitLab from '../assets/Technologies/gitlab.svg';
+import Html from '../assets/Technologies/html.svg';
+import Css from '../assets/Technologies/css.svg';
+import Sass from '../assets/Technologies/sass.svg';
+import Figma from '../assets/Technologies/figma.svg';
+import Photoshop from '../assets/Technologies/photoshop.svg';
+import Illustrator from '../assets/Technologies/illustrator.svg';
+import Tailwindcss from '../assets/Technologies/tailwindcss.svg';
 
 import Email from '../assets/SocialMedia/email.svg';
 import Linkedin from '../assets/SocialMedia/linkedin.svg';
@@ -27,7 +26,6 @@ import Phone from '../assets/SocialMedia/phone.svg';
 
 export {
     ProfilePicture,
-    Logo,
     Css,
     Figma,
     Illustrator,

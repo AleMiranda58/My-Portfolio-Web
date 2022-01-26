@@ -6,14 +6,12 @@ export const AboutContainer = styled.div`
     position: relative;
     height: 92vh;
 
-  
-
     @media only screen and (max-width: 600px) {
-        height: 50vh;
+        height: 100vh;
     }
 
     @media only screen and (min-width: 600px) {
-        height: 50vh;
+        height: 100vh;
     }
 
     @media only screen and (min-width: 768px) {
@@ -22,6 +20,8 @@ export const AboutContainer = styled.div`
 
     @media only screen and (min-width: 889px) {
         height: 100vh;
+        margin-top: 80px;
+
     }
 
     @media only screen and (min-width: 1200px) {
@@ -34,46 +34,26 @@ export const AboutContainer = styled.div`
 export const AboutContent = styled.div`
     height: 100%;
     display: flex;
-    
 `
 
 export const LeftSide = styled.div`
-    width: 50%;
-
-    @media only screen and (max-width: 600px) {
-        width: 25%;
-    }
-
-    @media only screen and (min-width: 600px) {
-        width: 30%;
-    }
-
-    @media only screen and (min-width: 768px) {
-        width: 40%;
-    }
-
-    @media only screen and (min-width: 889px) {
-        width: 40%;
-    }
-
-    @media only screen and (min-width: 1200px) {
-        width: 40%;
-    }
-`
-
-export const BgPhoto = styled.div`
-    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0% 100%, 0 50%, 0% 0%);
-    width: 100%;
+    clip-path: polygon(0 0, 100% 50%, 0 100%, 0% 100%, 0 51%, 0% 0%);
+    width: 40%;
     height: 100%;
     background: #01BF71;
     position: relative;
-
-     @media only screen and (max-width: 600px) {
-        height: 70%;
+    
+    @media only screen and (max-width: 600px) {
+        height: 30%;
+        width: 20%;
+        margin: auto 0px;
     }
 
     @media only screen and (min-width: 600px) {
-        height: 70%;
+        // height: 50%;
+        height: 30%;
+        width: 20%;
+        margin: auto 0px;
     }
 
     @media only screen and (min-width: 768px) {
@@ -86,89 +66,11 @@ export const BgPhoto = styled.div`
 
     @media only screen and (min-width: 1200px) {
         height: 100%;
+        width: 10%;
     }
-
 `
 
-export const Photo = styled.img`
-    width: 90%;
-    height: 90%;
-    object-fit: cover;
-`
 
-export const PhotoContainer = styled.div`
-    display: block;
-    position: absolute;
-    bottom: -5px;
-`
-
-export const Intro = styled.div`
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-`
-
-export const Text = styled.p`
-    color: #01BF71;
-    text-align: justify;
-    font-family: 'Montserrat', sans-serif;
-    
-    & + & {
-        color: rgba(255,255,255, 0.8);
-        text-align: justify;
-    }
-
-    @media only screen and (max-width: 600px) {
-        font-size: 18px;
-        & + & {
-            font-size: 16px;
-        }
-    }
-
-    @media only screen and (min-width: 600px) {
-        font-size: 18px;
-        font-weight: 600;
-
-        & + & {
-        font-size: 16px;
-        font-weight: 200;
-        }
-    }
-
-    @media only screen and (min-width: 768px) {
-        font-size: 20px;
-        font-weight: 600;
-
-        & + & {
-        font-size: 16px;
-        font-weight: 400;
-        }
-    }
-
-    @media only screen and (min-width: 889px) {
-        font-size: 50px;
-        font-weight: 600;
-        text-align: center;
-
-        & + & {
-        font-size: 20px;
-        font-weight: 400;
-        }
-    }
-
-    @media only screen and (min-width: 1200px) {
-    font-size: 80px;
-    font-weight: 900;
-    text-align: center;
-
-    & + & {
-        font-size: 30px;
-    }
-   
-
-`
 
 export const RightSide = styled.div`
     width: 60%;
@@ -177,14 +79,17 @@ export const RightSide = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
     @media only screen and (max-width: 600px) {
         height: 70%;
+        margin: auto auto;
+
     }
 
     @media only screen and (min-width: 600px) {
         height: 70%;
+        margin: auto auto;
     }
 
     @media only screen and (min-width: 768px) {
@@ -193,14 +98,128 @@ export const RightSide = styled.div`
     }
 
     @media only screen and (min-width: 889px) {
-        height: 70%;
+        width: 60%;
+        height: 100%;
     }
 
     @media only screen and (min-width: 1200px) {
-        width: 50%;
+        width: 70%;
         height: 100%;
     }
 `
+
+
+export const Intro = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+`
+
+
+export const TitleContainer = styled.div`
+    
+`
+
+export const TitleSection = styled.h3`
+    color: #01BF71;
+        
+    @media only screen and (max-width: 600px) {
+        font-size: 48px;
+        text-align: center;
+        font-weight: 900;
+    }
+
+    @media only screen and (min-width: 600px) {
+        font-size: 60px;
+        font-weight: 700;
+        text-align: center;
+
+    }
+
+    @media only screen and (min-width: 768px) {
+        font-size: 60px;
+        font-weight: 900;
+    }
+
+    @media only screen and (min-width: 889px) {
+        font-size: 80px;
+        font-weight: 900;
+    }
+
+    @media only screen and (min-width: 1200px){ 
+        font-size: 80px;
+        font-weight: 900;
+        text-align: center;
+    }
+`
+
+export const Text = styled.p`
+    color: #01BF71;
+    margin-bottom: 40px;
+    
+    @media only screen and (max-width: 600px) {
+        font-size: 24px;
+        text-align: center;
+        font-weight: 400;
+        margin-top: 40px;
+    }
+    
+    @media only screen and (min-width: 600px) {
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    @media only screen and (min-width: 768px) {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    @media only screen and (min-width: 889px) {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    @media only screen and (min-width: 1200px){ 
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    & + & {
+        color: #ffffff;
+        @media only screen and (max-width: 600px) {
+            font-size: 24px;
+            text-align: center;
+            font-weight: 200;
+        }
+        
+        @media only screen and (min-width: 600px) {
+            font-size: 24px;
+            font-weight: 400;
+            text-align: center;
+        }
+    
+        @media only screen and (min-width: 768px) {
+            font-size: 24px;
+            font-weight: 400;
+        }
+    
+        @media only screen and (min-width: 889px) {
+            font-size: 24px;
+            font-weight: 400;
+        }
+    
+        @media only screen and (min-width: 1200px){ 
+            font-size: 36px;
+            font-weight: 600;
+        }
+  
+`
+
+
+
+
+
 
 
 

@@ -40,15 +40,10 @@ export const AboutContent = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
+    background: rgba(0, 0, 0, 0.2);
+    
 `
 
-export const SidesBg = styled.div`
-    ${'' /* width: 20px;
-    height: 100%;
-    background: rgba(255,255,255, 0.5);
-    left: 10px;
-    position: absolute; */}
-`
 
 
 export const Content = styled.div`
@@ -84,7 +79,6 @@ export const Content = styled.div`
 `
 
 export const TitleSection = styled.h2`
-    font-family: 'Montserrat', sans-serif;
     color: #fff;
     
 
@@ -110,7 +104,9 @@ export const TitleSection = styled.h2`
 
     @media only screen and (min-width: 1200px) {
         font-size: 80px;
-        font-weight: 800;
+        font-weight: 500;
+        text-align: justify;
+
     }
 `
 
@@ -118,8 +114,6 @@ export const Psection = styled.p`
     width: 100%;
     color: #fff;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    ${'' /* text-align: justify; */}
     
 
     @media only screen and (max-width: 600px) {

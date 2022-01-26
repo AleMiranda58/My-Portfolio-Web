@@ -1,5 +1,8 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Particles from 'react-tsparticles'
+import Aos from 'aos'
+import "aos/dist/aos.css"
+import { Button } from '../Button/buttonElements'
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
 import {SectionContainer,
         Content,
@@ -16,14 +19,28 @@ import {ProfilePicture as me} from '../../assets/index'
 
 
 const Hero = () => {
+    const [hover, setHover] = useState(false)
+    const onHover = () => {
+        setHover(!hover)
+    }
+
     const particlesInit = (main) => {
-      console.log(main);
+    //   console.log(main);
     };
 
     const particlesLoaded = (container) => {
-        console.log(container);
+        // console.log(container);
     };
 
+    useEffect(() => {
+        Aos.init({
+            offset: 200,
+            duration: 600,
+            easing: 'ease-in-sine',
+            delay: 100,})
+    })
+
+    
     return (
         <SectionContainer id="home">
             <Particles
@@ -116,11 +133,22 @@ const Hero = () => {
                         <Icons href="https://github.com/AleMiranda58" target="_blank" rel="noreferrer"><BsGithub /></Icons>
                     </MediaBar>
                     <Intro>
-                    <Text>Welcome to my portfolio,</Text>
+                    <Text>Hello !</Text>
                     <Text>I'm Alejandra Miranda</Text>
                     <Text></Text>
                     <Text>A Front-End Developer</Text>
-                    <Text>who enjoys finding solutions</Text>
+                    <Text>who enjoys finding solutions.</Text>
+                    <Button
+                    to='projects'
+                    onMouseEnter={onHover}
+                    onMouseLeave={onHover}
+                    primary='true'
+                    dark='true'
+                    smooth={true}
+                    duration={1000}
+                    spy={true}
+                    data-aos="slide-left"
+                    >My Projects</Button>
                     </Intro>
                 </LeftSide>
                 <RightSide>

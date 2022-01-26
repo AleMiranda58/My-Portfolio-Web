@@ -50,7 +50,7 @@ const Contact = () => {
                         </IconBg>
                         <InfoLink>
                             <Item>Linkedin</Item>
-                            <ValueItem>www.linkedin.com/in/alejandra-mirandareyes/</ValueItem>
+                            <ValueItem>/in/alejandra-mirandareyes/</ValueItem>
                         </InfoLink>
                     </Box>
                     <Box>

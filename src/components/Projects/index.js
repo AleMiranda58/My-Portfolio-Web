@@ -1,20 +1,42 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Project from '../Project'
 import { projects } from '../../data'
-import {AboutContainer, TitleSection, AboutContent, Content, Text, SidesBg, Psection, Skills, ListSkill, Item, TextItem, ItemContainer, LogoContainer, SectionProjects, AllProjects, ProjectsLlist} from './projectsElements'
+import Aos from 'aos'
+import "aos/dist/aos.css"
+import {AboutContainer,
+        TitleSection,
+        AboutContent,
+        Content,
+        Text,
+        Psection,
+        Skills,
+        ListSkill,
+        Item,
+        TextItem,
+        ItemContainer,
+        LogoContainer,
+        SectionProjects,
+        AllProjects,
+        ProjectsLlist} from './projectsElements'
 import {Html, Css, Js, Jquery, LogoReact, Redux, Firebase, Sass, Git, GitHub, GitLab, Tailwindcss} from '../../assets'
-// import { Button } from '../Button/buttonElements'
 
 const Projects = () => {
+    useEffect(() => {
+        Aos.init({
+            offset: 200,
+            duration: 600,
+            easing: 'ease-in-sine',
+            delay: 100,})
+    })
+
     return (
     <SectionProjects id="projects">
         <AboutContainer>
-                <SidesBg />
             <AboutContent>
                 <Content>
-                    <TitleSection>PROJECTS</TitleSection>
+                    <TitleSection>MY PROJECTS</TitleSection>
                     <Text>
-                    <Psection>During my carreer, I had the opportunity to work in a variety of projects such as websites developing, eCommerce, and Apps using the following technologies.</Psection>
+                    <Psection>I had the opportunity to work in projects such as websites developing, eCommerce, and Apps using the following technologies.</Psection>
                     </Text>
                     <Skills>
                         <ListSkill>
@@ -94,14 +116,17 @@ const Projects = () => {
                         <Psection className='plus'></Psection>
                     </Skills>
                 </Content>
-                <AllProjects id='projects-list'>
+                </AboutContent>
+                <AllProjects>
                     <ProjectsLlist>
                         { projects.map((item)=> (
-                        <Project key={item.id} img={item.img} link={item.link} description={item.description} />
+                        <Project 
+                        // key={item.id} img={item.img} link={item.link} description={item.description} />
+                        key={item.id} img={item.img} link={item.link} />
                         ))}
                     </ProjectsLlist>
                 </AllProjects>
-            </AboutContent>
+           
         </AboutContainer>
         
     </SectionProjects>
