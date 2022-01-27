@@ -4,6 +4,7 @@ import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md'
 
 
 export const SectionProjects = styled.div`
+    overflow : hidden;
     width: 100%;
     height: 100%;
 

@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { Link as LinkScroll } from 'react-scroll'
 
 export const Nav = styled.nav`
+    overflow : hidden;
     width: 100%;
     height: 8vh;
     z-index: 4;

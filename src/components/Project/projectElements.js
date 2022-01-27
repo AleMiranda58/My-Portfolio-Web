@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 
 export const ProjectElement = styled.div`
+  overflow : hidden;
   width: 100%;
   height: 100%;
   // height: 50vh;

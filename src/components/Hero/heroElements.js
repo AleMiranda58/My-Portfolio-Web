@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 
 export const SectionContainer = styled.section`
+    overflow : hidden;
     @media only screen and (max-width: 600px) {
         height: 100vh;
         margin-top: 80px;

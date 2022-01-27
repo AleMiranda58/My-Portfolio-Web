@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 
 export const ContactSection = styled.div`
+  overflow : hidden;
   position: relative;
   background: rgba(0, 0, 0, 0.2);
   z-index: 1;
