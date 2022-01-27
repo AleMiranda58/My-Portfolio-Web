@@ -138,9 +138,11 @@ export const TitleSection = styled.h3`
     color: #01BF71;
         
     @media only screen and (max-width: 600px) {
-        font-size: 48px;
+        font-size: 40px;
         text-align: center;
-        font-weight: 900;
+        font-weight: 700;
+        color: #fff;
+        margin-top: 100px;
     }
 
     @media only screen and (min-width: 600px) {
@@ -160,6 +162,12 @@ export const TitleSection = styled.h3`
         font-weight: 900;
     }
 
+    @media only screen and (min-width: 1024px){ 
+        font-size: 60px;
+        font-weight: 900;
+        text-align: center;
+    }
+
     @media only screen and (min-width: 1200px){ 
         font-size: 80px;
         font-weight: 900;
@@ -168,11 +176,12 @@ export const TitleSection = styled.h3`
 
     @media screen
     and (min-width: 360px)
-    and (max-width: 768px)
+    and (max-width: 915px)
     and (orientation: landscape) {
         font-size: 36px;
         text-align: center;
         font-weight: 900;
+        margin-top: 50px;
     }
 `
 
@@ -180,6 +189,13 @@ export const Text = styled.p`
     color: #01BF71;
     margin-bottom: 40px;
     
+    @media only screen and (min-width: 200px) {
+        font-size: 16px;
+        text-align: center;
+        font-weight: 200;
+        margin-top: 40px;
+    }
+
     @media only screen and (max-width: 600px) {
         font-size: 24px;
         text-align: center;
@@ -199,7 +215,12 @@ export const Text = styled.p`
     }
 
     @media only screen and (min-width: 889px) {
-        font-size: 24px;
+        font-size: 42px;
+        font-weight: 400;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        font-size: 30px;
         font-weight: 400;
     }
 
@@ -210,17 +231,18 @@ export const Text = styled.p`
 
     @media screen
     and (min-width: 360px)
-    and (max-width: 768px)
+    and (max-width: 915px)
     and (orientation: landscape) {
         font-size: 20px;
         text-align: center;
         font-weight: 400;
+        margin-bottom: 0px;
     }
 
     & + & {
         color: #ffffff;
         @media only screen and (max-width: 600px) {
-            font-size: 24px;
+            font-size: 16px;
             text-align: center;
             font-weight: 200;
         }
@@ -237,10 +259,16 @@ export const Text = styled.p`
         }
     
         @media only screen and (min-width: 889px) {
-            font-size: 24px;
+            font-size: 42px;
             font-weight: 400;
+            margin-top: 40px;
         }
     
+        @media only screen and (min-width: 1024px) {
+            font-size: 30px;
+            font-weight: 400;
+        }
+
         @media only screen and (min-width: 1200px){ 
             font-size: 36px;
             font-weight: 600;
@@ -248,7 +276,7 @@ export const Text = styled.p`
 
         @media screen
         and (min-width: 360px)
-        and (max-width: 768px)
+        and (max-width: 915px)
         and (orientation: landscape) {
             font-size: 20px;
             text-align: center;

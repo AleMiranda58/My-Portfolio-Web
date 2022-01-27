@@ -79,7 +79,7 @@ export const Content = styled.div`
 
     @media screen
         and (min-width: 360px)
-        and (max-width: 768px)
+        and (max-width: 900px)
         and (orientation: landscape) {
             height: 92vh;
             width: 75%;
@@ -120,7 +120,7 @@ export const TitleSection = styled.h2`
 
     @media screen
     and (min-width: 360px)
-    and (max-width: 768px)
+    and (max-width: 915px)
     and (orientation: landscape) {
         font-size: 36px;
         font-weight: 900;
@@ -160,7 +160,7 @@ export const Psection = styled.p`
 
     @media screen
     and (min-width: 360px)
-    and (max-width: 768px)
+    and (max-width: 915px)
     and (orientation: landscape) {
         font-weight: 200;
         font-size: 24px;

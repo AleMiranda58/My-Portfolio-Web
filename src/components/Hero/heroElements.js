@@ -108,6 +108,11 @@ export const LeftSide = styled.div`
         align-items: center;
     }
 
+    @media only screen and (min-width: 1024px) {
+        width: 40%;
+        align-items: center;
+    }
+
     @media only screen and (min-width: 1200px) {
         width: 70%;
         height: 100vh;
@@ -226,7 +231,6 @@ export const Text = styled.p`
         & + & + &{
             font-size: 40px;
             letter-spacing: 0;
-            color: red;
         }
         & + & + & + &{
             font-size: 30px;
@@ -248,7 +252,6 @@ export const Text = styled.p`
         & + & + &{
             font-size: 50px;
             letter-spacing: 0;
-            color: red;
         }
         & + & + & + &{
             font-size: 40px;
@@ -263,14 +266,13 @@ export const Text = styled.p`
     }
 
     @media only screen and (min-width: 768px) {
-        font-size: 60px;
+        font-size: 80px;
         & + & {
             font-size: 50px;
         }
         & + & + &{
             font-size: 40px;
             letter-spacing: 0;
-            color: red;
         }
         & + & + & + &{
             font-size: 40px;
@@ -285,14 +287,34 @@ export const Text = styled.p`
     }
 
     @media only screen and (min-width: 889px) {
-        font-size: 60px;
+        font-size: 80px;
         & + & {
-            font-size: 50px;
+            font-size: 60px;
         }
         & + & + &{
             font-size: 40px;
             letter-spacing: 0;
-            color: red;
+        }
+        & + & + & + &{
+            font-size: 60px;
+             font-weight: 600;
+
+        }
+        & + & + & + & + & {
+            font-size: 50px;
+            font-weight: 200;
+            color: #fff;
+        }
+    }
+
+    @media only screen and (min-width: 1024px) {
+        font-size: 60px;
+        & + & {
+            font-size: 40px;
+        }
+        & + & + &{
+            font-size: 40px;
+            letter-spacing: 0;
         }
         & + & + & + &{
             font-size: 40px;
@@ -300,7 +322,7 @@ export const Text = styled.p`
 
         }
         & + & + & + & + & {
-            font-size: 35px;
+            font-size: 30px;
             font-weight: 200;
             color: #fff;
         }
@@ -314,7 +336,6 @@ export const Text = styled.p`
         & + & + &{
             font-size: 0px;
             letter-spacing: 0;
-            color: red;
         }
         & + & + & + &{
             font-size: 60px;
@@ -370,7 +391,6 @@ export const Text = styled.p`
         & + & + &{
             font-size: 30px;
             letter-spacing: 0;
-            color: red;
         }
         & + & + & + &{
             font-size: 20px;
@@ -520,4 +540,5 @@ export const Photo = styled.img`
         height: 100%;
         margin-right: 120px;
     }
+
 `
