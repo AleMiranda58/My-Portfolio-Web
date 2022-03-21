@@ -1,7 +1,4 @@
 import ProfilePicture from '../assets/Photos/profilePicutre.png';
-import PhotoAlejandra from '../assets/Photos/Alejandra.png';
-
-
 import Js from '../assets/Technologies/js.svg';
 import Jquery from '../assets/Technologies/jquery.svg';
 import LogoReact from '../assets/Technologies/react.svg';
@@ -17,12 +14,9 @@ import Figma from '../assets/Technologies/figma.svg';
 import Photoshop from '../assets/Technologies/photoshop.svg';
 import Illustrator from '../assets/Technologies/illustrator.svg';
 import Tailwindcss from '../assets/Technologies/tailwindcss.svg';
-
 import Email from '../assets/SocialMedia/email.svg';
 import Linkedin from '../assets/SocialMedia/linkedin.svg';
 import Phone from '../assets/SocialMedia/phone.svg';
-
-
 
 export {
     ProfilePicture,
@@ -44,5 +38,4 @@ export {
     Phone,
     Linkedin,
     Tailwindcss,
-    PhotoAlejandra
 }

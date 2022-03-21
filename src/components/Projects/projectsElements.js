@@ -18,7 +18,6 @@ export const SectionProjects = styled.div`
     }
 
     @media only screen and (min-width: 768px) {
-        ${'' /* margin-top: -40px; */}
     }
 
     @media only screen and (min-width: 889px) {

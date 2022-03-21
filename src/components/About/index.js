@@ -30,7 +30,6 @@ const About = () => {
                     <TitleSection>ABOUT ME</TitleSection>
                     </TitleContainer>
                     <Intro>
-                    {/* data-aos="zoom-out" */}
                     <Text>I DESCRIBE MYSELF AS A CREATIVE AND LOGICAL THINKER. BESIDES, I AM SOMEONE WHO IS TRULY PASSIONATE ABOUT WEB DEVELOPMENT.</Text>
                     <Text>MY PASSION FOR TECHNOLOGY LIES IN THE ENDLESS POSSIBILITIES IT OFFERS FOR CREATING AND DEVELOPING ANY PROJECT YOU MAY HAVE IN MIND.</Text>
                     </Intro>

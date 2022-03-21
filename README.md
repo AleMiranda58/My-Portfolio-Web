@@ -1,16 +1,23 @@
-<h1 align="center">:bulb: My portfolio </h1>
+<h1 align="center">My portfolio web</h1>
+<h3 align="center">In this portfolio, you can take a look at some of my projects, such as:</h3>
+<br />
 
-<p align="center">This is a website where you can take a look at my professional profile as well as my projects.
-<br />This project was bootstrapped with Create React App.
-<br />Project link: https://portfolio-alejandramiranda.netlify.app</p>
+- **A website built with jQuery** -> Design Studio Website <br />
+  **Source code :** https://github.com/AleMiranda58/designStudio_website <br />
+  **Website :**  https://webdesign-58.netlify.app/
 
-<p align="center">Get up and running :rocket:
-<br /> npm install > npm start </p>
+- **A website built with Vanilla JavaScript** -> Bakery Shop <br />
+  **Source code :** https://github.com/AleMiranda58/Bakery-shop <br />
+  **Website :**  https://bakery-shop-ab.netlify.app/
 
-<p align="center">Runs the app in the development mode.
-<br />Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-<br />The page will reload if you make edits. You will also see any lint errors in the console.<p>
+- **An eCommerce built with ReactJS and Redux** -> Ecommerce <br />
+  **Source code :** https://github.com/AleMiranda58/eCommerce <br />
+  **Website :**  https://ecommerceprop.herokuapp.com/
 
+
+- You can by all means take a look at some other projects on my GitHub account.
+
+<br/>
 
 
 

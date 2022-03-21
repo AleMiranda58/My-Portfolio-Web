@@ -58,7 +58,6 @@ export const LeftSide = styled.div`
     }
 
     @media only screen and (min-width: 600px) {
-        // height: 50%;
         height: 30%;
         width: 20%;
         margin: auto 0px;
@@ -132,7 +131,6 @@ export const Intro = styled.div`
 
 
 export const TitleContainer = styled.div`
-    
 `
 
 export const TitleSection = styled.h3`

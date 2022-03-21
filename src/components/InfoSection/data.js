@@ -32,7 +32,6 @@ export const homeObjTwo = {
     buttonLabel: '>',
     imgStart: false,
     img: "",
-    // alt: '',
     dark: true,
     primary: true,
 }
